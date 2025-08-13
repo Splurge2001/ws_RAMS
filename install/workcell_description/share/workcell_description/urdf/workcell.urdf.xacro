@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="workcell">
+  <!-- 全局参数与材质 -->
+  <xacro:include filename="props/common_props.xacro"/>
+  <xacro:include filename="materials/common_materials.xacro"/>
+  <xacro:include filename="robots/irb6700_200_260.xacro"/>
+
+  <!-- 机器人主体 -->
+  <xacro:irb6700_200_260 prefix="${prefix}"
+      mesh_scale_visual="${mesh_scale_visual}"
+      mesh_scale_collision="${mesh_scale_collision}"/>
+
+  <!-- flange/tool0/TCP -->
+  <xacro:irb6700_tcp_frames prefix="${prefix}"/>
+
+  <!-- 末端执行器 -->
+  <xacro:mount_ee_tool prefix="${prefix}" parent_link="tool0" xyz="0 0 0" rpy="0 0 0"
+      scale_v="${mesh_scale_visual}" scale_c="${mesh_scale_collision}"/>
+
+  <!-- 手眼/固定相机（带开关） -->
+  <xacro:if value="${use_d435i}">
+    <xacro:mount_d435i prefix="${prefix}" parent_link="tool0"
+        xyz="${d435i_xyz}" rpy="${d435i_rpy}"
+        scale_v="${mesh_scale_visual}" scale_c="${mesh_scale_collision}"/>
+  </xacro:if>
+
+  <xacro:if value="${use_d415}">
+    <xacro:mount_d415 prefix="${prefix}" base_link="base_link"
+        xyz="${d415_xyz}" rpy="${d415_rpy}"/>
+  </xacro:if>
+
+  <!-- 场地 -->
+  <xacro:add_table prefix="${prefix}" base="base_link" xyz="0.8 0 0" rpy="0 0 0"/>
+</robot>
