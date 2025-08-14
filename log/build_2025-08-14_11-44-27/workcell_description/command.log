@@ -1,5 +1,5 @@
-Invoking command in '/home/ros2/ws_RAMS/build/workcell_description': /usr/bin/cmake /home/ros2/ws_RAMS/src/workcell_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/install/workcell_description
-Invoked command in '/home/ros2/ws_RAMS/build/workcell_description' returned '0': /usr/bin/cmake /home/ros2/ws_RAMS/src/workcell_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/install/workcell_description
+Invoking command in '/home/ros2/ws_RAMS/build/workcell_description': /usr/bin/cmake /home/ros2/ws_RAMS/src/workcell_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/install/workcell_description
+Invoked command in '/home/ros2/ws_RAMS/build/workcell_description' returned '0': /usr/bin/cmake /home/ros2/ws_RAMS/src/workcell_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/install/workcell_description
 Invoking command in '/home/ros2/ws_RAMS/build/workcell_description': /usr/bin/cmake --build /home/ros2/ws_RAMS/build/workcell_description -- -j2 -l2
 Invoked command in '/home/ros2/ws_RAMS/build/workcell_description' returned '0': /usr/bin/cmake --build /home/ros2/ws_RAMS/build/workcell_description -- -j2 -l2
 Invoking command in '/home/ros2/ws_RAMS/build/workcell_description': /usr/bin/cmake --install /home/ros2/ws_RAMS/build/workcell_description

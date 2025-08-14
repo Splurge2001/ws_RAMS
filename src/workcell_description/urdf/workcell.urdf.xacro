@@ -21,7 +21,7 @@
     scale_v:="${mesh_scale_visual}" scale_c:="${mesh_scale_collision}"
     tcp_offset:="0.150"/>
 
-  <!-- 手眼/固定相机（带开关） -->
+  <!-- 手眼/固定相机（带开关） 
   <xacro:if value="${use_d435i}">
     <xacro:mount_d435i prefix="${prefix}" parent_link="tool0"
         xyz="${d435i_xyz}" rpy="${d435i_rpy}"
@@ -33,6 +33,8 @@
         xyz="${d415_xyz}" rpy="${d415_rpy}"/>
   </xacro:if>
 
-  <!-- 场地 -->
+  场地 
   <xacro:add_table prefix="${prefix}" base="base_link" xyz="0.8 0 0" rpy="0 0 0"/>
+
+  -->
 </robot>

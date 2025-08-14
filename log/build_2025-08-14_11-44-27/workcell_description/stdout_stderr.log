@@ -18,6 +18,7 @@
   Manually-specified variables were not used by the project:
 
     CATKIN_INSTALL_INTO_PREFIX_ROOT
+    CATKIN_SYMLINK_INSTALL
 
 [0m
 -- Build files have been written to: /home/ros2/ws_RAMS/build/workcell_description
@@ -30,6 +31,7 @@
 -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/materials/common_materials.xacro
 -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/sensors
 -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/actuators
+-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/actuators/spindle.xacro
 -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/workcell.urdf.xacro
 -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/props
 -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/props/common_props.xacro
@@ -69,6 +71,7 @@
 -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/actuators/collision/spindle.STL
 -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/launch
 -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/launch/description.launch.py
+-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/launch/robot_viz.launch.py
 -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/ament_index/resource_index/package_run_dependencies/workcell_description
 -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/ament_index/resource_index/parent_prefix_path/workcell_description
 -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/environment/ament_prefix_path.sh

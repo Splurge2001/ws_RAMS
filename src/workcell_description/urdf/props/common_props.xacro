@@ -1,3 +1,4 @@
+<!--
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:property name="prefix"                value=""/>
@@ -9,4 +10,21 @@
   <xacro:property name="d435i_rpy" value="0 0 1.5708"/>
   <xacro:property name="d415_xyz"  value="0.80 0.00 1.20"/>
   <xacro:property name="d415_rpy"  value="0 0 0"/>
+</robot>
+-->
+
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <!-- 可覆盖参数（默认值） -->
+  <xacro:arg name="prefix"                default=""/>
+  <xacro:arg name="mesh_scale_visual"     default="1 1 1"/>
+  <xacro:arg name="mesh_scale_collision"  default="1 1 1"/>
+
+  <!-- 转成全局属性 -->
+  <xacro:property name="prefix"               value="$(arg prefix)"/>
+  <xacro:property name="mesh_scale_visual"    value="$(arg mesh_scale_visual)"/>
+  <xacro:property name="mesh_scale_collision" value="$(arg mesh_scale_collision)"/>
+
+  <!-- 小工具：角度→弧度 -->
+  <xacro:property name="deg" value="0.017453292519943295"/>
 </robot>

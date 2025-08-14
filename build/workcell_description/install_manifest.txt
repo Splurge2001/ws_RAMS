@@ -1,6 +1,7 @@
 /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/robots/irb6700_200_260.xacro
 /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/materials/common_colours.xacro
 /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/materials/common_materials.xacro
+/home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/actuators/spindle.xacro
 /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/workcell.urdf.xacro
 /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/props/common_props.xacro
 /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/visual/link_3.stl
@@ -28,6 +29,7 @@
 /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/actuators/visual/spindle.STL
 /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/actuators/collision/spindle.STL
 /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/launch/description.launch.py
+/home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/launch/robot_viz.launch.py
 /home/ros2/ws_RAMS/install/workcell_description/share/ament_index/resource_index/package_run_dependencies/workcell_description
 /home/ros2/ws_RAMS/install/workcell_description/share/ament_index/resource_index/parent_prefix_path/workcell_description
 /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/environment/ament_prefix_path.sh

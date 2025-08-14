@@ -43,10 +43,11 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/workcell_description" TYPE DIRECTORY FILES
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/workcell_description" TYPE DIRECTORY OPTIONAL FILES
     "/home/ros2/ws_RAMS/src/workcell_description/urdf"
     "/home/ros2/ws_RAMS/src/workcell_description/meshes"
     "/home/ros2/ws_RAMS/src/workcell_description/launch"
+    "/home/ros2/ws_RAMS/src/workcell_description/materials"
     )
 endif()
 

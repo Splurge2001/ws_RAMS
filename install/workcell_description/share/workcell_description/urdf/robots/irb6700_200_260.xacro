@@ -4,7 +4,8 @@
   <!-- include common materials -->
   <xacro:include filename="../materials/common_materials.xacro"/>
 
-  <xacro:macro name="irb6700_200_260" params="prefix">
+<xacro:macro name="irb6700_200_260"
+             params="prefix mesh_scale_visual:='1 1 1' mesh_scale_collision:='1 1 1'">
     <!-- === link list === -->
     <link name="${prefix}base_link">
       <inertial>
