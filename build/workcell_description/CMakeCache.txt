@@ -37,12 +37,6 @@ AMENT_TEST_RESULTS_DIR:PATH=/home/ros2/ws_RAMS/build/workcell_description/test_r
 //Build the testing tree.
 BUILD_TESTING:BOOL=ON
 
-//No help, variable specified on the command line.
-CATKIN_INSTALL_INTO_PREFIX_ROOT:UNINITIALIZED=0
-
-//No help, variable specified on the command line.
-CATKIN_SYMLINK_INSTALL:UNINITIALIZED=ON
-
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
