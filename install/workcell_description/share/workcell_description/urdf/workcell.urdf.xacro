@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot xmlns:xacro="http://ros.org/wiki/xacro" name="workcell">
-  <!-- 全局参数与材质 -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="workcell">
   <xacro:include filename="props/common_props.xacro"/>
   <xacro:include filename="materials/common_materials.xacro"/>
   <xacro:include filename="robots/irb6700_200_260.xacro"/>
   <xacro:include filename="actuators/spindle.xacro"/>
 
-  <!-- 机器人主体 -->
-  <xacro:irb6700_200_260 prefix="${prefix}"
+  <xacro:irb6700_200_260
+      prefix="${prefix}"
       mesh_scale_visual="${mesh_scale_visual}"
       mesh_scale_collision="${mesh_scale_collision}"/>
 
-  <!-- 末端执行器 -->
-  <xacro:mount_spindle prefix="${prefix}"
-    parent_link:="${prefix}tool0"
-    mount_xyz:="0 0 0" mount_rpy:="0 0 0"
-    scale_v:="${mesh_scale_visual}" scale_c:="${mesh_scale_collision}"
-    tcp_offset:="0.150"/>
-
+  <xacro:mount_spindle
+      prefix="${prefix}"
+      parent_link="tool0"
+      mount_xyz="0 0 0" mount_rpy="0 0 0"
+      scale_v="${mesh_scale_visual}" scale_c="${mesh_scale_collision}"
+      tcp_offset="0.150"/>
 </robot>
