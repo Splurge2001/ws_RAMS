@@ -13,7 +13,7 @@
   <xacro:mount_spindle
       prefix="${prefix}"
       parent_link="tool0"
-      mount_xyz="0 0 0" mount_rpy="0 0 0"
+      mount_xyz="0 0 0" mount_rpy="1.5708 3.1416 -1.5708"
       scale_v="${mesh_scale_visual}" scale_c="${mesh_scale_collision}"
       tcp_offset="0.150"/>
 </robot>
