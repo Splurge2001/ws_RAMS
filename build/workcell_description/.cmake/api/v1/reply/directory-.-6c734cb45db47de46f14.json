@@ -232,8 +232,7 @@
 			[
 				"urdf",
 				"meshes",
-				"launch",
-				"materials"
+				"launch"
 			],
 			"type" : "directory"
 		},

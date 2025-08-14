@@ -1,0 +1,88 @@
+[0.015s] Invoking command in '/home/ros2/ws_RAMS/build/workcell_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ros2/ws_RAMS/src/workcell_description -DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/install/workcell_description
+[0.374s] -- The C compiler identification is GNU 11.4.0
+[0.556s] -- The CXX compiler identification is GNU 11.4.0
+[0.567s] -- Detecting C compiler ABI info
+[0.667s] -- Detecting C compiler ABI info - done
+[0.671s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.672s] -- Detecting C compile features
+[0.672s] -- Detecting C compile features - done
+[0.675s] -- Detecting CXX compiler ABI info
+[0.747s] -- Detecting CXX compiler ABI info - done
+[0.752s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.752s] -- Detecting CXX compile features
+[0.752s] -- Detecting CXX compile features - done
+[0.764s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.875s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.026s] -- Configuring done
+[1.032s] -- Generating done
+[1.038s] -- Build files have been written to: /home/ros2/ws_RAMS/build/workcell_description
+[1.046s] Invoked command in '/home/ros2/ws_RAMS/build/workcell_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ros2/ws_RAMS/src/workcell_description -DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/install/workcell_description
+[1.047s] Invoking command in '/home/ros2/ws_RAMS/build/workcell_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros2/ws_RAMS/build/workcell_description -- -j2 -l2
+[1.074s] Invoked command in '/home/ros2/ws_RAMS/build/workcell_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ros2/ws_RAMS/build/workcell_description -- -j2 -l2
+[1.081s] Invoking command in '/home/ros2/ws_RAMS/build/workcell_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros2/ws_RAMS/build/workcell_description
+[1.087s] -- Install configuration: ""
+[1.087s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf
+[1.089s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/robots
+[1.089s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/robots/irb6700_200_260.xacro
+[1.089s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/materials
+[1.089s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/materials/common_colours.xacro
+[1.089s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/materials/common_materials.xacro
+[1.089s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/sensors
+[1.089s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/actuators
+[1.090s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/actuators/spindle.xacro
+[1.090s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/workcell.urdf.xacro
+[1.090s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/props
+[1.090s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/props/common_props.xacro
+[1.090s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes
+[1.090s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots
+[1.090s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/visual
+[1.090s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/visual/link_3.stl
+[1.103s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/visual/link_2.stl
+[1.121s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/visual/cylinder.stl
+[1.123s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/visual/link_1.stl
+[1.152s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/visual/link_6.stl
+[1.153s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/visual/base_link.stl
+[1.160s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/visual/piston.stl
+[1.162s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/visual/link_4.stl
+[1.174s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/visual/link_5.stl
+[1.178s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/collision
+[1.178s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/collision/link_3.stl
+[1.179s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/collision/link_2.stl
+[1.181s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/collision/cylinder.stl
+[1.181s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/collision/link_1.stl
+[1.183s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/collision/link_6.stl
+[1.183s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/collision/base_link.stl
+[1.183s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/collision/piston.stl
+[1.184s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/collision/link_4.stl
+[1.187s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/collision/link_5.stl
+[1.188s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/sensors
+[1.188s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/sensors/visual
+[1.188s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/sensors/visual/d415.stl
+[1.469s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/sensors/visual/d435.dae
+[1.693s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/sensors/collision
+[1.693s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/sensors/collision/d415.stl
+[1.929s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/sensors/collision/d435.dae
+[2.099s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/actuators
+[2.099s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/actuators/visual
+[2.099s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/actuators/visual/spindle.STL
+[2.120s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/actuators/collision
+[2.120s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/actuators/collision/spindle.STL
+[2.139s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/launch
+[2.140s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/launch/description.launch.py
+[2.140s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/launch/robot_viz.launch.py
+[2.140s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/ament_index/resource_index/package_run_dependencies/workcell_description
+[2.141s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/ament_index/resource_index/parent_prefix_path/workcell_description
+[2.142s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/environment/ament_prefix_path.sh
+[2.142s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/environment/ament_prefix_path.dsv
+[2.142s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/environment/path.sh
+[2.142s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/environment/path.dsv
+[2.142s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/local_setup.bash
+[2.142s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/local_setup.sh
+[2.142s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/local_setup.zsh
+[2.142s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/local_setup.dsv
+[2.142s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/package.dsv
+[2.142s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/ament_index/resource_index/packages/workcell_description
+[2.142s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/cmake/workcell_descriptionConfig.cmake
+[2.142s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/cmake/workcell_descriptionConfig-version.cmake
+[2.143s] -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/package.xml
+[2.144s] Invoked command in '/home/ros2/ws_RAMS/build/workcell_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ros2/ws_RAMS/build/workcell_description

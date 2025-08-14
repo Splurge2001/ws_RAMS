@@ -4,6 +4,30 @@
   <!-- include common materials -->
   <xacro:include filename="../materials/common_materials.xacro"/>
 
+<xacro:macro name="irb6700_link" params="prefix mesh_scale_visual:='1 1 1' mesh_scale_collision:='1 1 1' name mass ixx iyy izz">
+  <link name="${prefix}${name}">
+    <inertial>
+      <mass value="${mass}"/>
+      <origin xyz="0 0 0.1"/>
+      <inertia ixx="${ixx}" ixy="0" ixz="0" iyy="${iyy}" iyz="0" izz="${izz}"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://workcell_description/meshes/robots/visual/${name}.stl" scale="${mesh_scale_visual}"/>
+      </geometry>
+      <xacro:material_abb_white/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://workcell_description/meshes/robots/collision/${name}.stl" scale="${mesh_scale_collision}"/>
+      </geometry>
+      <xacro:material_abb_yellow/>
+    </collision>
+  </link>
+</xacro:macro>
+
 <xacro:macro name="irb6700_200_260"
              params="prefix mesh_scale_visual:='1 1 1' mesh_scale_collision:='1 1 1'">
     <!-- === link list === -->

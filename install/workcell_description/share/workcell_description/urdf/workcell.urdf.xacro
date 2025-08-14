@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="workcell">
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="workcell">
   <xacro:include filename="props/common_props.xacro"/>
   <xacro:include filename="materials/common_materials.xacro"/>
   <xacro:include filename="robots/irb6700_200_260.xacro"/>

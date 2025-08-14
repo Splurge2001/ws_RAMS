@@ -47,7 +47,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/ros2/ws_RAMS/src/workcell_description/urdf"
     "/home/ros2/ws_RAMS/src/workcell_description/meshes"
     "/home/ros2/ws_RAMS/src/workcell_description/launch"
-    "/home/ros2/ws_RAMS/src/workcell_description/materials"
     )
 endif()
 
