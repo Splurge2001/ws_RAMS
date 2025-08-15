@@ -26,6 +26,7 @@
 -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/actuators
 -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/actuators/spindle.xacro
 -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/workcell.urdf.xacro
+-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/workcell.urdf
 -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/props
 -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/props/common_props.xacro
 -- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes

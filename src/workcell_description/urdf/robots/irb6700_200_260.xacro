@@ -53,39 +53,15 @@
       </collision>
     </link>
 
-    <!-- Each link below now contains inertial placeholders -->
-    <xacro:macro name="irb6700_link" params="name mass ixx iyy izz">
-      <link name="${prefix}${name}">
-        <inertial>
-          <mass value="${mass}"/>
-          <origin xyz="0 0 0.1"/>
-          <inertia ixx="${ixx}" ixy="0" ixz="0" iyy="${iyy}" iyz="0" izz="${izz}"/>
-        </inertial>
-        <visual>
-          <origin xyz="0 0 0" rpy="0 0 0"/>
-          <geometry>
-            <mesh filename="package://workcell_description/meshes/robots/visual/${name}.stl" scale="${mesh_scale_visual}"/>
-          </geometry>
-          <xacro:material_abb_white/>
-        </visual>
-        <collision>
-          <origin xyz="0 0 0" rpy="0 0 0"/>
-          <geometry>
-            <mesh filename="package://workcell_description/meshes/robots/collision/${name}.stl" scale="${mesh_scale_collision}"/>
-          </geometry>
-          <xacro:material_abb_yellow/>
-        </collision>
-      </link>
-    </xacro:macro>
-
-    <xacro:irb6700_link name="link_1" mass="30.0" ixx="0.5" iyy="0.5" izz="0.5"/>
-    <xacro:irb6700_link name="link_2" mass="35.0" ixx="0.6" iyy="0.6" izz="0.6"/>
-    <xacro:irb6700_link name="link_3" mass="25.0" ixx="0.4" iyy="0.4" izz="0.4"/>
-    <xacro:irb6700_link name="link_4" mass="20.0" ixx="0.3" iyy="0.3" izz="0.3"/>
-    <xacro:irb6700_link name="link_5" mass="15.0" ixx="0.2" iyy="0.2" izz="0.2"/>
-    <xacro:irb6700_link name="link_6" mass="10.0" ixx="0.1" iyy="0.1" izz="0.1"/>
-    <xacro:irb6700_link name="cylinder" mass="5.0" ixx="0.05" iyy="0.05" izz="0.05"/>
-    <xacro:irb6700_link name="piston" mass="3.0" ixx="0.03" iyy="0.03" izz="0.03"/>
+    <!-- Each link below now uses the shared irb6700_link macro -->
+    <xacro:irb6700_link prefix="${prefix}" mesh_scale_visual="${mesh_scale_visual}" mesh_scale_collision="${mesh_scale_collision}" name="link_1" mass="30.0" ixx="0.5" iyy="0.5" izz="0.5"/>
+    <xacro:irb6700_link prefix="${prefix}" mesh_scale_visual="${mesh_scale_visual}" mesh_scale_collision="${mesh_scale_collision}" name="link_2" mass="35.0" ixx="0.6" iyy="0.6" izz="0.6"/>
+    <xacro:irb6700_link prefix="${prefix}" mesh_scale_visual="${mesh_scale_visual}" mesh_scale_collision="${mesh_scale_collision}" name="link_3" mass="25.0" ixx="0.4" iyy="0.4" izz="0.4"/>
+    <xacro:irb6700_link prefix="${prefix}" mesh_scale_visual="${mesh_scale_visual}" mesh_scale_collision="${mesh_scale_collision}" name="link_4" mass="20.0" ixx="0.3" iyy="0.3" izz="0.3"/>
+    <xacro:irb6700_link prefix="${prefix}" mesh_scale_visual="${mesh_scale_visual}" mesh_scale_collision="${mesh_scale_collision}" name="link_5" mass="15.0" ixx="0.2" iyy="0.2" izz="0.2"/>
+    <xacro:irb6700_link prefix="${prefix}" mesh_scale_visual="${mesh_scale_visual}" mesh_scale_collision="${mesh_scale_collision}" name="link_6" mass="10.0" ixx="0.1" iyy="0.1" izz="0.1"/>
+    <xacro:irb6700_link prefix="${prefix}" mesh_scale_visual="${mesh_scale_visual}" mesh_scale_collision="${mesh_scale_collision}" name="cylinder" mass="5.0" ixx="0.05" iyy="0.05" izz="0.05"/>
+    <xacro:irb6700_link prefix="${prefix}" mesh_scale_visual="${mesh_scale_visual}" mesh_scale_collision="${mesh_scale_collision}" name="piston" mass="3.0" ixx="0.03" iyy="0.03" izz="0.03"/>
 
     <!-- Add dynamics to joints -->
     <xacro:macro name="joint_dynamics" params="damping friction">
@@ -156,12 +132,22 @@
       <limit lower="-0.284" upper="0.371" effort="100" velocity="1.0"/>
     </joint>
 
+    <!-- Virtual prismatic joint to provide displacement equivalent to joint_2 rotation -->
+    <link name="${prefix}joint_2_slider"/>
+    <joint name="${prefix}joint_2_slider_joint" type="prismatic">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <parent link="${prefix}link_1" />
+      <child link="${prefix}joint_2_slider" />
+      <axis xyz="0 1 0" />
+      <limit lower="-0.25" upper="0.25" effort="100" velocity="1.0" />
+    </joint>
+
     <joint name="${prefix}piston_joint" type="prismatic">
       <origin xyz="0 0 0" rpy="0.20897 0 -1.5708" />
       <parent link="${prefix}cylinder" />
       <child link="${prefix}piston" />
       <axis xyz="0 1 0" />
-      <mimic joint="${prefix}joint_2" multiplier="0.15"/>
+      <mimic joint="${prefix}joint_2_slider_joint" multiplier="1.0"/>
       <limit lower="-0.25" upper="0.25" effort="100" velocity="1.0" />
     </joint>
 

@@ -3,6 +3,7 @@
 /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/materials/common_materials.xacro
 /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/actuators/spindle.xacro
 /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/workcell.urdf.xacro
+/home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/workcell.urdf
 /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/props/common_props.xacro
 /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/visual/link_3.stl
 /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/visual/link_2.stl
