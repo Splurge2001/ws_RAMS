@@ -62,4 +62,65 @@
     <color rgba="${colour_abb_yellow}"/>
   </material>
 
+  <!-- Convenience macros referencing the named materials -->
+  <xacro:macro name="material_abb_orange">
+    <material name="abb_orange"/>
+  </xacro:macro>
+
+  <xacro:macro name="material_abb_graphite_white">
+    <material name="abb_graphite_white"/>
+  </xacro:macro>
+
+  <xacro:macro name="material_abb_white">
+    <material name="abb_white"/>
+  </xacro:macro>
+
+  <xacro:macro name="material_abb_pebble_gray">
+    <material name="abb_pebble_gray"/>
+  </xacro:macro>
+
+  <xacro:macro name="material_abb_dark_gray">
+    <material name="abb_dark_gray"/>
+  </xacro:macro>
+
+  <xacro:macro name="material_abb_black">
+    <material name="abb_black"/>
+  </xacro:macro>
+
+  <xacro:macro name="material_abb_signal_red">
+    <material name="abb_signal_red"/>
+  </xacro:macro>
+
+  <xacro:macro name="material_abb_carmine_red">
+    <material name="abb_carmine_red"/>
+  </xacro:macro>
+
+  <xacro:macro name="material_abb_ultramarine_blue">
+    <material name="abb_ultramarine_blue"/>
+  </xacro:macro>
+
+  <xacro:macro name="material_abb_sky_blue">
+    <material name="abb_sky_blue"/>
+  </xacro:macro>
+
+  <xacro:macro name="material_abb_leaf_green">
+    <material name="abb_leaf_green"/>
+  </xacro:macro>
+
+  <xacro:macro name="material_abb_olive_green">
+    <material name="abb_olive_green"/>
+  </xacro:macro>
+
+  <xacro:macro name="material_abb_gray_white">
+    <material name="abb_gray_white"/>
+  </xacro:macro>
+
+  <xacro:macro name="material_abb_pure_white">
+    <material name="abb_pure_white"/>
+  </xacro:macro>
+
+  <xacro:macro name="material_abb_yellow">
+    <material name="abb_yellow"/>
+  </xacro:macro>
+
 </robot>

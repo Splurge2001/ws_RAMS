@@ -1,9 +1,6 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <!-- include common materials -->
-  <xacro:include filename="../materials/common_materials.xacro"/>
-
 <xacro:macro name="irb6700_link" params="prefix mesh_scale_visual:='1 1 1' mesh_scale_collision:='1 1 1' name mass ixx iyy izz">
   <link name="${prefix}${name}">
     <inertial>

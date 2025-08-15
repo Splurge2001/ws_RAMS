@@ -2,7 +2,6 @@
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:include filename="../materials/common_colours.xacro"/>
 
-  <!-- Global material definitions for reuse across links -->
   <material name="abb_orange">
     <color rgba="${colour_abb_orange}"/>
   </material>
