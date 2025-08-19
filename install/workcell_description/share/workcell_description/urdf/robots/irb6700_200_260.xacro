@@ -13,14 +13,12 @@
       <geometry>
         <mesh filename="package://workcell_description/meshes/robots/visual/${name}.stl" scale="${mesh_scale_visual}"/>
       </geometry>
-      <xacro:material_abb_white/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="package://workcell_description/meshes/robots/collision/${name}.stl" scale="${mesh_scale_collision}"/>
       </geometry>
-      <xacro:material_abb_yellow/>
     </collision>
   </link>
 </xacro:macro>
@@ -39,14 +37,12 @@
         <geometry>
           <mesh filename="package://workcell_description/meshes/robots/visual/base_link.stl" scale="${mesh_scale_visual}"/>
         </geometry>
-        <xacro:material_abb_white/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
           <mesh filename="package://workcell_description/meshes/robots/collision/base_link.stl" scale="${mesh_scale_collision}"/>
         </geometry>
-        <xacro:material_abb_yellow/>
       </collision>
     </link>
 
