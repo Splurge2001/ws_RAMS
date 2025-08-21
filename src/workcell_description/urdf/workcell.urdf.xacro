@@ -28,6 +28,13 @@
       scale_v="${mesh_scale_visual}" scale_c="${mesh_scale_collision}"
       tcp_offset="0.150"/>
 
+    <link name="wrist_cam_mount"/>
+    <joint name="tool0_to_wrist_cam_mount" type="fixed">
+        <parent link="tool0"/>
+        <child  link="wrist_cam_mount"/>
+        <origin xyz="0.48382454 -0.05195685 0.00106654" rpy="0.4532380750916326 -0.18874395720789294 0.10257963429950798"/>
+    </joint>
+
   <xacro:include filename="$(find workcell_config)/config/workcell.ros2_control.xacro"/>
   <xacro:workcell_ros2_control
     name="ABBMultiInterfaceHardware"

@@ -1,9 +1,0 @@
-# 请求：以 base_link 为参考系的盒子 ROI（中心位姿 + 尺寸）
-geometry_msgs/PoseStamped box_pose
-geometry_msgs/Vector3 box_size     # xyz (m)
-float64 approach_offset            # 沿法向外退多少米，比如 0.10
-string eef_axis                    # 让 eef 的哪个轴对齐法向："z"|"x"|"y"
----
-bool success
-string message
-geometry_msgs/PoseStamped target_pose

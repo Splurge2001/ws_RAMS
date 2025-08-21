@@ -1,11 +1,19 @@
-sensors:
-  - default_sensor
-default_sensor:
-  filtered_cloud_topic: filtered_d415
-  max_range: 3.0
-  max_update_rate: 30.0
-  padding_offset: 0.02
-  padding_scale: 1.0
-  point_cloud_topic: /d415_fixed/depth/color/points
-  point_subsample: 1
-  sensor_plugin: occupancy_map_monitor/PointCloudOctomapUpdater
+  ros__parameters:
+    sensors:
+      - sensor_plugin: occupancy_map_monitor/PointCloudOctomapUpdater
+        name: wrist_cam
+        point_cloud_topic: /wrist_cam/camera/depth/color/points
+        max_update_rate: 5.0
+        point_subsample: 1
+        padding_offset: 0.03
+        padding_scale: 1.0
+        filtered_cloud_topic: /wrist_cam/filtered_cloud
+
+      - sensor_plugin: occupancy_map_monitor/PointCloudOctomapUpdater
+        name: fixed_cam
+        point_cloud_topic: /fixed_cam/camera/depth/color/points
+        max_update_rate: 5.0
+        point_subsample: 1
+        padding_offset: 0.03
+        padding_scale: 1.0
+        filtered_cloud_topic: /fixed_cam/filtered_cloud

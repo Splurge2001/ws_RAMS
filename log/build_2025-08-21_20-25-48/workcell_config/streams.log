@@ -1,0 +1,62 @@
+[0.237s] Invoking command in '/home/ros2/ws_RAMS/build/workcell_config': CMAKE_PREFIX_PATH=/home/ros2/ws_RAMS/install/workcell_description:/home/ros2/ws_RAMS/install/workcell_config:/home/ros2/ws_abb_support/install/abb_irb6700_support:/home/ros2/ws_abb_ros2/install/abb_rws_client:/home/ros2/ws_abb_ros2/install/abb_ros2:/home/ros2/ws_abb_ros2/install/abb_robot_msgs:/home/ros2/ws_abb_ros2/install/abb_resources:/home/ros2/ws_abb_ros2/install/abb_rapid_sm_addin_msgs:/home/ros2/ws_abb_ros2/install/abb_rapid_msgs:/home/ros2/ws_abb_ros2/install/abb_hardware_interface:/home/ros2/ws_abb_ros2/install/abb_egm_rws_managers:/home/ros2/ws_abb_ros2/install/abb_librws:/home/ros2/ws_abb_ros2/install/abb_libegm:/home/ros2/ws_abb_ros2/install/abb_irb4600_support:/home/ros2/ws_abb_ros2/install/abb_irb1200_5_90_moveit_config:/home/ros2/ws_abb_ros2/install/abb_irb1200_support:/home/ros2/ws_abb_ros2/install/abb_egm_msgs:/home/ros2/ws_abb_ros2/install/abb_bringup:/opt/ros/humble /usr/bin/cmake /home/ros2/ws_RAMS/src/workcell_config -DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/install/workcell_config
+[1.125s] -- The C compiler identification is GNU 11.4.0
+[1.790s] -- The CXX compiler identification is GNU 11.4.0
+[1.892s] -- Detecting C compiler ABI info
+[3.007s] -- Detecting C compiler ABI info - done
+[3.047s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.052s] -- Detecting C compile features
+[3.059s] -- Detecting C compile features - done
+[3.070s] -- Detecting CXX compiler ABI info
+[4.214s] -- Detecting CXX compiler ABI info - done
+[4.261s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.262s] -- Detecting CXX compile features
+[4.267s] -- Detecting CXX compile features - done
+[4.293s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[5.579s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[6.684s] -- Configuring done
+[6.688s] -- Generating done
+[6.730s] -- Build files have been written to: /home/ros2/ws_RAMS/build/workcell_config
+[6.776s] Invoked command in '/home/ros2/ws_RAMS/build/workcell_config' returned '0': CMAKE_PREFIX_PATH=/home/ros2/ws_RAMS/install/workcell_description:/home/ros2/ws_RAMS/install/workcell_config:/home/ros2/ws_abb_support/install/abb_irb6700_support:/home/ros2/ws_abb_ros2/install/abb_rws_client:/home/ros2/ws_abb_ros2/install/abb_ros2:/home/ros2/ws_abb_ros2/install/abb_robot_msgs:/home/ros2/ws_abb_ros2/install/abb_resources:/home/ros2/ws_abb_ros2/install/abb_rapid_sm_addin_msgs:/home/ros2/ws_abb_ros2/install/abb_rapid_msgs:/home/ros2/ws_abb_ros2/install/abb_hardware_interface:/home/ros2/ws_abb_ros2/install/abb_egm_rws_managers:/home/ros2/ws_abb_ros2/install/abb_librws:/home/ros2/ws_abb_ros2/install/abb_libegm:/home/ros2/ws_abb_ros2/install/abb_irb4600_support:/home/ros2/ws_abb_ros2/install/abb_irb1200_5_90_moveit_config:/home/ros2/ws_abb_ros2/install/abb_irb1200_support:/home/ros2/ws_abb_ros2/install/abb_egm_msgs:/home/ros2/ws_abb_ros2/install/abb_bringup:/opt/ros/humble /usr/bin/cmake /home/ros2/ws_RAMS/src/workcell_config -DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/install/workcell_config
+[6.777s] Invoking command in '/home/ros2/ws_RAMS/build/workcell_config': CMAKE_PREFIX_PATH=/home/ros2/ws_RAMS/install/workcell_description:/home/ros2/ws_RAMS/install/workcell_config:/home/ros2/ws_abb_support/install/abb_irb6700_support:/home/ros2/ws_abb_ros2/install/abb_rws_client:/home/ros2/ws_abb_ros2/install/abb_ros2:/home/ros2/ws_abb_ros2/install/abb_robot_msgs:/home/ros2/ws_abb_ros2/install/abb_resources:/home/ros2/ws_abb_ros2/install/abb_rapid_sm_addin_msgs:/home/ros2/ws_abb_ros2/install/abb_rapid_msgs:/home/ros2/ws_abb_ros2/install/abb_hardware_interface:/home/ros2/ws_abb_ros2/install/abb_egm_rws_managers:/home/ros2/ws_abb_ros2/install/abb_librws:/home/ros2/ws_abb_ros2/install/abb_libegm:/home/ros2/ws_abb_ros2/install/abb_irb4600_support:/home/ros2/ws_abb_ros2/install/abb_irb1200_5_90_moveit_config:/home/ros2/ws_abb_ros2/install/abb_irb1200_support:/home/ros2/ws_abb_ros2/install/abb_egm_msgs:/home/ros2/ws_abb_ros2/install/abb_bringup:/opt/ros/humble /usr/bin/cmake --build /home/ros2/ws_RAMS/build/workcell_config -- -j2 -l2
+[7.231s] Invoked command in '/home/ros2/ws_RAMS/build/workcell_config' returned '0': CMAKE_PREFIX_PATH=/home/ros2/ws_RAMS/install/workcell_description:/home/ros2/ws_RAMS/install/workcell_config:/home/ros2/ws_abb_support/install/abb_irb6700_support:/home/ros2/ws_abb_ros2/install/abb_rws_client:/home/ros2/ws_abb_ros2/install/abb_ros2:/home/ros2/ws_abb_ros2/install/abb_robot_msgs:/home/ros2/ws_abb_ros2/install/abb_resources:/home/ros2/ws_abb_ros2/install/abb_rapid_sm_addin_msgs:/home/ros2/ws_abb_ros2/install/abb_rapid_msgs:/home/ros2/ws_abb_ros2/install/abb_hardware_interface:/home/ros2/ws_abb_ros2/install/abb_egm_rws_managers:/home/ros2/ws_abb_ros2/install/abb_librws:/home/ros2/ws_abb_ros2/install/abb_libegm:/home/ros2/ws_abb_ros2/install/abb_irb4600_support:/home/ros2/ws_abb_ros2/install/abb_irb1200_5_90_moveit_config:/home/ros2/ws_abb_ros2/install/abb_irb1200_support:/home/ros2/ws_abb_ros2/install/abb_egm_msgs:/home/ros2/ws_abb_ros2/install/abb_bringup:/opt/ros/humble /usr/bin/cmake --build /home/ros2/ws_RAMS/build/workcell_config -- -j2 -l2
+[7.262s] Invoking command in '/home/ros2/ws_RAMS/build/workcell_config': CMAKE_PREFIX_PATH=/home/ros2/ws_RAMS/install/workcell_description:/home/ros2/ws_RAMS/install/workcell_config:/home/ros2/ws_abb_support/install/abb_irb6700_support:/home/ros2/ws_abb_ros2/install/abb_rws_client:/home/ros2/ws_abb_ros2/install/abb_ros2:/home/ros2/ws_abb_ros2/install/abb_robot_msgs:/home/ros2/ws_abb_ros2/install/abb_resources:/home/ros2/ws_abb_ros2/install/abb_rapid_sm_addin_msgs:/home/ros2/ws_abb_ros2/install/abb_rapid_msgs:/home/ros2/ws_abb_ros2/install/abb_hardware_interface:/home/ros2/ws_abb_ros2/install/abb_egm_rws_managers:/home/ros2/ws_abb_ros2/install/abb_librws:/home/ros2/ws_abb_ros2/install/abb_libegm:/home/ros2/ws_abb_ros2/install/abb_irb4600_support:/home/ros2/ws_abb_ros2/install/abb_irb1200_5_90_moveit_config:/home/ros2/ws_abb_ros2/install/abb_irb1200_support:/home/ros2/ws_abb_ros2/install/abb_egm_msgs:/home/ros2/ws_abb_ros2/install/abb_bringup:/opt/ros/humble /usr/bin/cmake --install /home/ros2/ws_RAMS/build/workcell_config
+[7.388s] -- Install configuration: ""
+[7.388s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/ament_index/resource_index/package_run_dependencies/workcell_config
+[7.388s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/ament_index/resource_index/parent_prefix_path/workcell_config
+[7.389s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/environment/ament_prefix_path.sh
+[7.390s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/environment/ament_prefix_path.dsv
+[7.391s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/environment/path.sh
+[7.391s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/environment/path.dsv
+[7.394s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/local_setup.bash
+[7.394s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/local_setup.sh
+[7.395s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/local_setup.zsh
+[7.395s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/local_setup.dsv
+[7.395s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/package.dsv
+[7.395s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/ament_index/resource_index/packages/workcell_config
+[7.422s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/cmake/workcell_configConfig.cmake
+[7.424s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/cmake/workcell_configConfig-version.cmake
+[7.425s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/package.xml
+[7.427s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/launch
+[7.431s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/launch/demo.launch.py
+[7.432s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/launch/setup_assistant.launch.py
+[7.440s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/launch/static_virtual_joint_tfs.launch.py
+[7.441s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/launch/spawn_controllers.launch.py
+[7.442s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/launch/move_group.launch.py
+[7.442s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/launch/rsp.launch.py
+[7.442s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/launch/warehouse_db.launch.py
+[7.443s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/launch/moveit_rviz.launch.py
+[7.454s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config
+[7.455s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/moveit.rviz
+[7.455s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/ros2_controllers.yaml
+[7.455s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/sensors_3d.yaml
+[7.455s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/initial_positions.yaml
+[7.466s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/joint_limits.yaml
+[7.467s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/workcell.srdf
+[7.484s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/workcell.ros2_control.xacro
+[7.496s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/moveit_controllers.yaml
+[7.506s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/pilz_cartesian_limits.yaml
+[7.506s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/abb_controllers.yaml
+[7.507s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/workcell.urdf.xacro
+[7.507s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/kinematics.yaml
+[7.507s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/.setup_assistant
+[7.523s] Invoked command in '/home/ros2/ws_RAMS/build/workcell_config' returned '0': CMAKE_PREFIX_PATH=/home/ros2/ws_RAMS/install/workcell_description:/home/ros2/ws_RAMS/install/workcell_config:/home/ros2/ws_abb_support/install/abb_irb6700_support:/home/ros2/ws_abb_ros2/install/abb_rws_client:/home/ros2/ws_abb_ros2/install/abb_ros2:/home/ros2/ws_abb_ros2/install/abb_robot_msgs:/home/ros2/ws_abb_ros2/install/abb_resources:/home/ros2/ws_abb_ros2/install/abb_rapid_sm_addin_msgs:/home/ros2/ws_abb_ros2/install/abb_rapid_msgs:/home/ros2/ws_abb_ros2/install/abb_hardware_interface:/home/ros2/ws_abb_ros2/install/abb_egm_rws_managers:/home/ros2/ws_abb_ros2/install/abb_librws:/home/ros2/ws_abb_ros2/install/abb_libegm:/home/ros2/ws_abb_ros2/install/abb_irb4600_support:/home/ros2/ws_abb_ros2/install/abb_irb1200_5_90_moveit_config:/home/ros2/ws_abb_ros2/install/abb_irb1200_support:/home/ros2/ws_abb_ros2/install/abb_egm_msgs:/home/ros2/ws_abb_ros2/install/abb_bringup:/opt/ros/humble /usr/bin/cmake --install /home/ros2/ws_RAMS/build/workcell_config
