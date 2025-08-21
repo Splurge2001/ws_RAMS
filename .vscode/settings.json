@@ -1,5 +1,8 @@
 {
   "urdf-visualizer.packages": {
     "workcell_description": "src/workcell_description",
+  },
+  "files.associations": {
+    "functional": "cpp"
   }
 }

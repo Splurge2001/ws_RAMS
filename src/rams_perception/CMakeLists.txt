@@ -12,6 +12,7 @@ find_package(sensor_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(tf2_eigen REQUIRED)
+find_package(tf2_sensor_msgs REQUIRED)
 find_package(pcl_conversions REQUIRED)
 find_package(pcl_ros REQUIRED)
 find_package(visualization_msgs REQUIRED)
@@ -21,6 +22,14 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/RegionToGoal.srv"
   DEPENDENCIES geometry_msgs
 )
+
+add_executable(perception_server src/perception_server.cpp)
+ament_target_dependencies(perception_server
+  rclcpp sensor_msgs geometry_msgs tf2_ros tf2_eigen tf2_sensor_msgs
+  pcl_conversions pcl_ros visualization_msgs)
+rosidl_target_interfaces(perception_server
+  ${PROJECT_NAME} "rosidl_typesupport_cpp")
+install(TARGETS perception_server DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

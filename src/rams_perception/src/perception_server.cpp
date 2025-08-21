@@ -4,6 +4,7 @@
 #include <tf2_ros/transform_listener.h>
 #include <tf2_ros/buffer.h>
 #include <tf2_eigen/tf2_eigen.hpp>
+#include <tf2_sensor_msgs/tf2_sensor_msgs.h>
 
 #include <pcl/point_types.h>
 #include <pcl_conversions/pcl_conversions.h>
@@ -12,20 +13,20 @@
 #include <pcl/ModelCoefficients.h>
 #include <pcl/segmentation/sac_segmentation.h>
 
-#include "roi_nav/srv/region_to_goal.hpp"
+#include "rams_perception/srv/region_to_goal.hpp"
 
-using roi_nav::srv::RegionToGoal;
+using rams_perception::srv::RegionToGoal;
 
-class RoiServer : public rclcpp::Node {
+class PerServer : public rclcpp::Node {
 public:
-  RoiServer(): Node("roi_server") {
+  PerServer(): Node("perception_server") {
     std::string cloud_topic = declare_parameter<std::string>("cloud_topic", "/d415_fixed/depth/color/points");
     cloud_sub_ = create_subscription<sensor_msgs::msg::PointCloud2>(
       cloud_topic, rclcpp::SensorDataQoS(),
       [this](sensor_msgs::msg::PointCloud2::SharedPtr msg){ last_cloud_ = *msg; });
 
-    srv_ = create_service<RegionToGoal>("roi_nav/region_to_goal",
-      std::bind(&RoiServer::handle, this, std::placeholders::_1, std::placeholders::_2));
+    srv_ = create_service<RegionToGoal>("perception_server/region_to_goal",
+      std::bind(&PerServer::handle, this, std::placeholders::_1, std::placeholders::_2));
 
     tf_buf_ = std::make_unique<tf2_ros::Buffer>(get_clock());
     tf_ = std::make_unique<tf2_ros::TransformListener>(*tf_buf_);
@@ -129,7 +130,7 @@ private:
 
 int main(int argc, char** argv){
   rclcpp::init(argc, argv);
-  rclcpp::spin(std::make_shared<RoiServer>());
+  rclcpp::spin(std::make_shared<PerServer>());
   rclcpp::shutdown();
   return 0;
 }

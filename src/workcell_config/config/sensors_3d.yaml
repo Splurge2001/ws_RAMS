@@ -4,7 +4,17 @@ occupancy_map_monitor:
   max_range: 3.0
   monitor_diff: true
   plugins:
-    - name: default_sensor
+    - name: wrist_sensor
+      type: occupancy_map_monitor/PointCloudOctomapUpdater
+      params:
+        point_cloud_topic: /camera/camera/depth/color/points
+        max_update_rate: 5.0
+        point_subsample: 1
+        padding_offset: 0.03
+        padding_scale: 1.0
+        filtered_cloud_topic: filtered_cloud
+
+    - name: fixed_sensor
       type: occupancy_map_monitor/PointCloudOctomapUpdater
       params:
         point_cloud_topic: /camera/camera/depth/color/points

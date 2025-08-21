@@ -20,7 +20,7 @@
 // ---- 你自定义的服务接口（见下方 .srv 内容）----
 #include "roi_nav/srv/region_to_goal.hpp"
 
-namespace roi_nav
+namespace RegionToGoal
 {
 
 /**
@@ -35,7 +35,7 @@ namespace roi_nav
  * 5) 生成机器人目标位姿（姿态对齐平面法向 + 接近偏移）
  * 6) 发布可视化 Marker
  */
-class RoiServer : public rclcpp::Node
+class PerServer : public rclcpp::Node
 {
 public:
   explicit RoiServer(const rclcpp::NodeOptions& options = rclcpp::NodeOptions());
