@@ -1,2 +1,0 @@
-Invoking command in '/home/ros2/ws_RAMS/src/rams_perception/build/rams_perception': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros2/ws_RAMS/src/rams_perception -DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/src/rams_perception/install/rams_perception
-Invoked command in '/home/ros2/ws_RAMS/src/rams_perception/build/rams_perception' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros2/ws_RAMS/src/rams_perception -DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/src/rams_perception/install/rams_perception

@@ -19,7 +19,7 @@ find_package(visualization_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "srv/RegionToGoal.srv"
+  "srv/region_to_goal.srv"
   DEPENDENCIES geometry_msgs
 )
 
