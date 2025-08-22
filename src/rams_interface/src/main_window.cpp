@@ -10,13 +10,15 @@
 
 #include <rclcpp/clock.hpp>
 #include <rviz_common/display.hpp>
-#include <rviz_common/interaction/selection_manager.hpp>
 #include <rviz_common/render_panel.hpp>
 #include <rviz_common/ros_integration/ros_node_abstraction.hpp>
+#include <rviz_common/viewport_mouse_ray.hpp>
 #include <rviz_common/visualization_manager.hpp>
 #include <rviz_common/window_manager_interface.hpp>
 #include <rviz_rendering/render_window.hpp>
 
+#include <OgrePlane.h>
+#include <OgreRay.h>
 #include <OgreVector3.h>
 #include <OgreViewport.h>
 
@@ -42,19 +44,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
   Q_UNUSED(robot);
 
   rviz_common::Display *cloud = viz_manager_->createDisplay(
-      "rviz_default_plugins/PointCloud2", "Cloud", true);
-  if (cloud) {
-    cloud->subProp("Topic")->setValue("/rams/perception/cloud");
-  }
-
-  cloud_sub_ = node_->create_subscription<sensor_msgs::msg::PointCloud2>(
-      "/rams/perception/cloud", 1,
-      std::bind(&MainWindow::cloudCallback, this, std::placeholders::_1));
-  move_client_ = node_->create_client<rams_interface::srv::MoveToPose>(
-      "/rams_interface/move_to_pose");
-
-  render_panel_->installEventFilter(this);
-}
+@@ -58,45 +60,51 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
 
 void MainWindow::cloudCallback(const sensor_msgs::msg::PointCloud2::SharedPtr) {
   // no-op, subscription maintains connection
@@ -80,11 +70,17 @@ void MainWindow::handlePose(const geometry_msgs::msg::PoseStamped &pose) {
 bool MainWindow::eventFilter(QObject *obj, QEvent *event) {
   if (obj == render_panel_ && event->type() == QEvent::MouseButtonPress) {
     QMouseEvent *mouse = static_cast<QMouseEvent *>(event);
-    Ogre::Vector3 pos;
-    auto sel = viz_manager_->getSelectionManager();
     auto ogre_window = render_panel_->getRenderWindow();
     Ogre::Viewport *viewport = ogre_window->getViewport(0);
-    if (sel->get3DPoint(viewport, mouse->x(), mouse->y(), pos)) {
+    Ogre::Vector3 origin;
+    Ogre::Vector3 direction;
+    rviz_common::viewportMouseRay(viewport, mouse->x(), mouse->y(), origin,
+                                  direction);
+    Ogre::Ray mouse_ray(origin, direction);
+    Ogre::Plane plane(Ogre::Vector3::UNIT_Z, 0.0f);
+    auto result = mouse_ray.intersects(plane);
+    if (result.first) {
+      Ogre::Vector3 pos = mouse_ray.getPoint(result.second);
       geometry_msgs::msg::PoseStamped ps;
       ps.header.frame_id = viz_manager_->getFixedFrame().toStdString();
       ps.header.stamp = node_->now();

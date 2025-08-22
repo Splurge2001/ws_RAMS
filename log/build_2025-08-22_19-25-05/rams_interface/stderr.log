@@ -1,0 +1,8 @@
+[01m[K/home/ros2/ws_RAMS/src/rams_interface/src/main_window.cpp:15:10:[m[K [01;31m[Kfatal error: [m[Krviz_common/viewport_mouse_ray.hpp: No such file or directory
+   15 | #include [01;31m[K<rviz_common/viewport_mouse_ray.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/gui_node.dir/build.make:104: CMakeFiles/gui_node.dir/src/main_window.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:647: CMakeFiles/gui_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

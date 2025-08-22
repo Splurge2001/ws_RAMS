@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "rams_interface__py",
+		"source" : "/home/ros2/ws_RAMS/build/rams_interface/rams_interface__py"
+	}
+}
