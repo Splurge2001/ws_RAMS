@@ -1,0 +1,174 @@
+[0.008s] Invoking command in '/home/ros2/ws_RAMS/build/rams_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros2/ws_RAMS/src/rams_interface -DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/install/rams_interface
+[0.058s] -- The C compiler identification is GNU 11.4.0
+[0.104s] -- The CXX compiler identification is GNU 11.4.0
+[0.112s] -- Detecting C compiler ABI info
+[0.173s] -- Detecting C compiler ABI info - done
+[0.178s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.178s] -- Detecting C compile features
+[0.179s] -- Detecting C compile features - done
+[0.181s] -- Detecting CXX compiler ABI info
+[0.250s] -- Detecting CXX compiler ABI info - done
+[0.254s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.254s] -- Detecting CXX compile features
+[0.255s] -- Detecting CXX compile features - done
+[0.257s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.368s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.451s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.490s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.498s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.503s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.515s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.537s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.573s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.575s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.644s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.675s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.703s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.716s] -- Looking for pthread.h
+[0.788s] -- Looking for pthread.h - found
+[0.788s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.858s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.859s] -- Found Threads: TRUE  
+[0.901s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.926s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.944s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[0.951s] -- Found moveit_ros_planning_interface: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[0.965s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[1.058s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.085s] -- Found parameter_traits: 0.5.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.093s] -- Found rclcpp_lifecycle: 16.0.14 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.114s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[1.189s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.211s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.211s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.301s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[1.322s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[1.336s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[1.349s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.366s] -- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'
+[1.370s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[1.376s] -- Found OGRE
+[1.376s] --   static     : OFF
+[1.376s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[1.376s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[1.376s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[1.376s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[1.376s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[1.376s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[1.376s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[1.377s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[1.377s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[1.377s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[1.377s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[1.377s] -- Could not find freeimage library
+[1.387s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[1.389s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[1.461s] -- Found X11: /usr/include   
+[1.461s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[1.535s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[1.535s] -- Looking for gethostbyname
+[1.596s] -- Looking for gethostbyname - found
+[1.596s] -- Looking for connect
+[1.679s] -- Looking for connect - found
+[1.679s] -- Looking for remove
+[1.744s] -- Looking for remove - found
+[1.744s] -- Looking for shmat
+[1.816s] -- Looking for shmat - found
+[1.816s] -- Looking for IceConnectionNumber in ICE
+[1.881s] -- Looking for IceConnectionNumber in ICE - found
+[2.147s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.477s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.606s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.625s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.627s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.648s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.649s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.649s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.649s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.666s] -- Found PythonExtra: .so  
+[2.724s] -- Configuring done
+[2.824s] -- Generating done
+[2.845s] -- Build files have been written to: /home/ros2/ws_RAMS/build/rams_interface
+[2.859s] Invoked command in '/home/ros2/ws_RAMS/build/rams_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros2/ws_RAMS/src/rams_interface -DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/install/rams_interface
+[2.861s] Invoking command in '/home/ros2/ws_RAMS/build/rams_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros2/ws_RAMS/build/rams_interface -- -j2 -l2
+[2.907s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.929s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.243s] [  2%] Built target rams_interface__cpp
+[3.270s] [  2%] Built target ament_cmake_python_copy_rams_interface
+[3.305s] [  4%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.309s] [  5%] [34m[1mAutomatic MOC for target rams_interface__rosidl_generator_c[0m
+[3.370s] [  5%] Built target rams_interface__rosidl_generator_c_autogen
+[3.403s] [  7%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.487s] [  8%] [34m[1mAutomatic MOC for target rams_interface__rosidl_typesupport_cpp[0m
+[3.545s] [  8%] Built target rams_interface__rosidl_typesupport_cpp_autogen
+[3.583s] [ 10%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.647s] [ 11%] [34m[1mAutomatic MOC for target rams_interface__rosidl_typesupport_fastrtps_cpp[0m
+[3.679s] [ 11%] Built target rams_interface__rosidl_typesupport_fastrtps_cpp_autogen
+[3.974s] [ 13%] [34m[1mAutomatic MOC for target rams_interface__rosidl_typesupport_introspection_cpp[0m
+[4.067s] [ 13%] Built target rams_interface__rosidl_typesupport_introspection_cpp_autogen
+[4.120s] [ 14%] [32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_cpp.dir/rams_interface__rosidl_typesupport_cpp_autogen/mocs_compilation.cpp.o[0m
+[4.136s] running egg_info
+[4.136s] creating rams_interface.egg-info
+[4.138s] writing rams_interface.egg-info/PKG-INFO
+[4.138s] writing dependency_links to rams_interface.egg-info/dependency_links.txt
+[4.138s] writing top-level names to rams_interface.egg-info/top_level.txt
+[4.140s] writing manifest file 'rams_interface.egg-info/SOURCES.txt'
+[4.146s] reading manifest file 'rams_interface.egg-info/SOURCES.txt'
+[4.146s] writing manifest file 'rams_interface.egg-info/SOURCES.txt'
+[4.173s] [ 15%] [32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rams_interface/srv/move_to_pose__type_support.cpp.o[0m
+[4.202s] [ 15%] Built target ament_cmake_python_build_rams_interface_egg
+[4.245s] [ 17%] [32mBuilding CXX object CMakeFiles/rams_interface__rosidl_generator_c.dir/rams_interface__rosidl_generator_c_autogen/mocs_compilation.cpp.o[0m
+[4.284s] [ 18%] [32mBuilding C object CMakeFiles/rams_interface__rosidl_generator_c.dir/rosidl_generator_c/rams_interface/srv/detail/move_to_pose__functions.c.o[0m
+[4.389s] [ 20%] [32m[1mLinking CXX shared library librams_interface__rosidl_generator_c.so[0m
+[4.466s] [ 21%] [32m[1mLinking CXX shared library librams_interface__rosidl_typesupport_cpp.so[0m
+[4.469s] [ 23%] Built target rams_interface__rosidl_generator_c
+[4.501s] [ 24%] [32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_fastrtps_cpp.dir/rams_interface__rosidl_typesupport_fastrtps_cpp_autogen/mocs_compilation.cpp.o[0m
+[4.512s] [ 26%] Built target rams_interface__rosidl_typesupport_cpp
+[4.533s] [ 27%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[4.538s] [ 28%] [32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rams_interface/srv/detail/dds_fastrtps/move_to_pose__type_support.cpp.o[0m
+[4.699s] [ 30%] [34m[1mAutomatic MOC for target rams_interface__rosidl_typesupport_introspection_c[0m
+[4.727s] [ 30%] Built target rams_interface__rosidl_typesupport_introspection_c_autogen
+[4.744s] [ 31%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.890s] [ 33%] [34m[1mAutomatic MOC for target rams_interface__rosidl_typesupport_c[0m
+[4.915s] [ 33%] Built target rams_interface__rosidl_typesupport_c_autogen
+[4.934s] [ 34%] [32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_introspection_cpp.dir/rams_interface__rosidl_typesupport_introspection_cpp_autogen/mocs_compilation.cpp.o[0m
+[4.957s] [ 36%] [32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rams_interface/srv/detail/move_to_pose__type_support.cpp.o[0m
+[5.186s] [ 37%] [32m[1mLinking CXX shared library librams_interface__rosidl_typesupport_fastrtps_cpp.so[0m
+[5.313s] [ 39%] Built target rams_interface__rosidl_typesupport_fastrtps_cpp
+[5.351s] [ 40%] [34m[1mAutomatic MOC for target move_to_pose_server[0m
+[5.405s] [ 40%] Built target move_to_pose_server_autogen
+[5.426s] [ 42%] [32m[1mLinking CXX shared library librams_interface__rosidl_typesupport_introspection_cpp.so[0m
+[5.446s] [ 43%] [34m[1mAutomatic MOC for target gui_node[0m
+[5.531s] [ 43%] Built target gui_node_autogen
+[5.543s] [ 44%] Built target rams_interface__rosidl_typesupport_introspection_cpp
+[5.593s] [ 46%] [32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_introspection_c.dir/rams_interface__rosidl_typesupport_introspection_c_autogen/mocs_compilation.cpp.o[0m
+[5.605s] [ 47%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[5.636s] [ 49%] [32mBuilding C object CMakeFiles/rams_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rams_interface/srv/detail/move_to_pose__type_support.c.o[0m
+[5.672s] [ 50%] [32m[1mLinking CXX shared library librams_interface__rosidl_typesupport_introspection_c.so[0m
+[5.719s] [ 52%] Built target rams_interface__rosidl_typesupport_introspection_c
+[5.754s] [ 53%] [32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_c.dir/rams_interface__rosidl_typesupport_c_autogen/mocs_compilation.cpp.o[0m
+[5.791s] [ 55%] [32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/rams_interface/srv/move_to_pose__type_support.cpp.o[0m
+[5.841s] [ 56%] [32m[1mLinking CXX shared library librams_interface__rosidl_typesupport_c.so[0m
+[5.855s] [ 57%] [34m[1mAutomatic MOC for target rams_interface__rosidl_typesupport_fastrtps_c[0m
+[5.901s] [ 59%] Built target rams_interface__rosidl_typesupport_c
+[5.915s] [ 59%] Built target rams_interface__rosidl_typesupport_fastrtps_c_autogen
+[5.927s] [ 60%] [32mBuilding CXX object CMakeFiles/move_to_pose_server.dir/move_to_pose_server_autogen/mocs_compilation.cpp.o[0m
+[5.943s] [ 62%] [32mBuilding CXX object CMakeFiles/gui_node.dir/gui_node_autogen/mocs_compilation.cpp.o[0m
+[5.947s] [ 63%] [32mBuilding CXX object CMakeFiles/move_to_pose_server.dir/src/move_to_pose_server.cpp.o[0m
+[5.976s] [ 65%] [32mBuilding CXX object CMakeFiles/gui_node.dir/src/main.cpp.o[0m
+[10.264s] In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+[10.265s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[10.265s]                  from [01m[K/home/ros2/ws_RAMS/src/rams_interface/src/main.cpp:2[m[K:
+[10.265s] /usr/include/c++/11/bits/unique_ptr.h: In instantiation of ‘[01m[Kvoid std::default_delete<_Tp>::operator()(_Tp*) const [with _Tp = rviz_common::VisualizationManager][m[K’:
+[10.265s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:361:17:[m[K   required from ‘[01m[Kstd::unique_ptr<_Tp, _Dp>::~unique_ptr() [with _Tp = rviz_common::VisualizationManager; _Dp = std::default_delete<rviz_common::VisualizationManager>][m[K’
+[10.265s] [01m[K/home/ros2/ws_RAMS/src/rams_interface/include/rams_interface/main_window.h:25:3:[m[K   required from here
+[10.265s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:83:23:[m[K [01;31m[Kerror: [m[Kinvalid application of ‘[01m[Ksizeof[m[K’ to incomplete type ‘[01m[Krviz_common::VisualizationManager[m[K’
+[10.265s]    83 |         static_assert([01;31m[Ksizeof(_Tp)[m[K>0,
+[10.265s]       |                       [01;31m[K^~~~~~~~~~~[m[K
+[10.340s] gmake[2]: *** [CMakeFiles/gui_node.dir/build.make:90: CMakeFiles/gui_node.dir/src/main.cpp.o] Error 1
+[10.340s] gmake[1]: *** [CMakeFiles/Makefile2:647: CMakeFiles/gui_node.dir/all] Error 2
+[10.340s] gmake[1]: *** Waiting for unfinished jobs....
+[13.517s] [ 66%] [32m[1mLinking CXX executable move_to_pose_server[0m
+[13.826s] [ 66%] Built target move_to_pose_server
+[13.827s] gmake: *** [Makefile:146: all] Error 2
+[13.828s] Invoked command in '/home/ros2/ws_RAMS/build/rams_interface' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros2/ws_RAMS/build/rams_interface -- -j2 -l2

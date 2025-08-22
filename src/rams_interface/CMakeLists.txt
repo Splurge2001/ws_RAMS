@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
+cmake_policy(SET CMP0071 NEW)
 project(rams_interface)
 
 if(NOT CMAKE_CXX_STANDARD)

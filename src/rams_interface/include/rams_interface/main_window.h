@@ -22,7 +22,7 @@ class MainWindow : public QMainWindow
   Q_OBJECT
 public:
   explicit MainWindow(QWidget* parent = nullptr);
-  ~MainWindow() override;
+  ~MainWindow() override = default;
 
 protected:
   bool eventFilter(QObject* obj, QEvent* event) override;
