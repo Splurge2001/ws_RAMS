@@ -1,0 +1,6 @@
+{
+  "package_name": "rams_interface",
+  "non_idl_tuples": [
+    "/home/ros2/ws_RAMS/src/rams_interface:srv/MoveToPose.srv"
+  ]
+}

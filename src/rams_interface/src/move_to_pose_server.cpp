@@ -1,48 +1,50 @@
-#include <ros/ros.h>
-#include <geometry_msgs/PoseStamped.h>
+#include <rclcpp/rclcpp.hpp>
+#include <geometry_msgs/msg/pose_stamped.hpp>
 #include <moveit/move_group_interface/move_group_interface.h>
-#include "rams_interface/MoveToPose.h"
+#include "rams_interface/srv/move_to_pose.hpp"
+#include <memory>
+#include <string>
+#include <functional>
 
 class MoveToPoseServer
 {
 public:
-  MoveToPoseServer(const std::string& planning_group)
-    : move_group_(planning_group)
+  MoveToPoseServer(const rclcpp::Node::SharedPtr& node, const std::string& planning_group)
+    : node_(node), move_group_(node_, planning_group)
   {
-    service_ = nh_.advertiseService("move_to_pose", &MoveToPoseServer::callback, this);
-  }
-
-  bool callback(rams_interface::MoveToPose::Request& req,
-                rams_interface::MoveToPose::Response& res)
-  {
-    move_group_.setPoseTarget(req.target);
-    moveit::planning_interface::MoveGroupInterface::Plan plan;
-    bool success = (move_group_.plan(plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);
-    if (success)
-    {
-      success = (move_group_.execute(plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);
-    }
-    res.success = success;
-    return true;
+    service_ = node_->create_service<rams_interface::srv::MoveToPose>(
+      "move_to_pose",
+      std::bind(&MoveToPoseServer::callback, this, std::placeholders::_1, std::placeholders::_2));
   }
 
 private:
-  ros::NodeHandle nh_;
+  void callback(const std::shared_ptr<rams_interface::srv::MoveToPose::Request> req,
+                std::shared_ptr<rams_interface::srv::MoveToPose::Response> res)
+  {
+    move_group_.setPoseTarget(req->target);
+    moveit::planning_interface::MoveGroupInterface::Plan plan;
+    bool success = (move_group_.plan(plan) == moveit::core::MoveItErrorCode::SUCCESS);
+    if (success)
+    {
+      success = (move_group_.execute(plan) == moveit::core::MoveItErrorCode::SUCCESS);
+    }
+    res->success = success;
+    res->message = success ? "Motion executed" : "Planning or execution failed";
+  }
+
+  rclcpp::Node::SharedPtr node_;
   moveit::planning_interface::MoveGroupInterface move_group_;
-  ros::ServiceServer service_;
+  rclcpp::Service<rams_interface::srv::MoveToPose>::SharedPtr service_;
 };
 
 int main(int argc, char** argv)
 {
-  ros::init(argc, argv, "move_to_pose_server");
-  ros::AsyncSpinner spinner(1);
-  spinner.start();
-
-  ros::NodeHandle pnh("~");
-  std::string group;
-  pnh.param<std::string>("planning_group", group, "manipulator");
-
-  MoveToPoseServer server(group);
-  ros::waitForShutdown();
+  rclcpp::init(argc, argv);
+  auto node = rclcpp::Node::make_shared("move_to_pose_server");
+  node->declare_parameter<std::string>("planning_group", "manipulator");
+  std::string group = node->get_parameter("planning_group").as_string();
+  MoveToPoseServer server(node, group);
+  rclcpp::spin(node);
+  rclcpp::shutdown();
   return 0;
 }

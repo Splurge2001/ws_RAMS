@@ -3,10 +3,15 @@
 #include <QMouseEvent>
 #include <QMessageBox>
 
-#include <rviz/render_panel.h>
-#include <rviz/visualization_manager.h>
-#include <rviz/selection/selection_manager.h>
-#include <rviz/ogre_helpers/qt_ogre_render_window.h>
+#include <chrono>
+#include <functional>
+#include <memory>
+#include <future>
+
+#include <rviz_common/render_panel.hpp>
+#include <rviz_common/visualization_manager.hpp>
+#include <rviz_common/interaction/selection_manager.hpp>
+#include <rviz_rendering/ogre_helpers/qt_ogre_render_window.hpp>
 
 #include <OgreVector3.h>
 
@@ -16,46 +21,53 @@ namespace rams_interface
 MainWindow::MainWindow(QWidget* parent)
   : QMainWindow(parent)
 {
-  render_panel_ = new rviz::RenderPanel(this);
+  node_ = rclcpp::Node::make_shared("rams_gui");
+
+  render_panel_ = new rviz_common::RenderPanel(this);
   setCentralWidget(render_panel_);
 
-  viz_manager_ = new rviz::VisualizationManager(render_panel_);
+  viz_manager_ = new rviz_common::VisualizationManager(render_panel_);
   render_panel_->initialize(viz_manager_->getSceneManager(), viz_manager_);
   viz_manager_->initialize();
   viz_manager_->startUpdate();
 
-  rviz::Display* robot = viz_manager_->createDisplay("rviz/RobotModel", "Robot", true);
+  rviz_common::Display* robot =
+    viz_manager_->createDisplay("rviz_default_plugins/RobotModel", "Robot", true);
   Q_UNUSED(robot);
 
-  rviz::Display* cloud = viz_manager_->createDisplay("rviz/PointCloud2", "Cloud", true);
+  rviz_common::Display* cloud =
+    viz_manager_->createDisplay("rviz_default_plugins/PointCloud2", "Cloud", true);
   if (cloud)
   {
     cloud->subProp("Topic")->setValue("/rams/perception/cloud");
   }
 
-  cloud_sub_ = nh_.subscribe("/rams/perception/cloud", 1, &MainWindow::cloudCallback, this);
-  move_client_ = nh_.serviceClient<rams_interface::MoveToPose>("/rams_interface/move_to_pose");
+  cloud_sub_ = node_->create_subscription<sensor_msgs::msg::PointCloud2>(
+    "/rams/perception/cloud", 1,
+    std::bind(&MainWindow::cloudCallback, this, std::placeholders::_1));
+  move_client_ = node_->create_client<rams_interface::srv::MoveToPose>(
+    "/rams_interface/move_to_pose");
 
   render_panel_->installEventFilter(this);
 }
 
-MainWindow::~MainWindow()
-{
-}
+MainWindow::~MainWindow() = default;
 
-void MainWindow::cloudCallback(const sensor_msgs::PointCloud2ConstPtr&)
+void MainWindow::cloudCallback(const sensor_msgs::msg::PointCloud2::SharedPtr)
 {
   // no-op, subscription maintains connection
 }
 
-void MainWindow::handlePose(const geometry_msgs::PoseStamped& pose)
+void MainWindow::handlePose(const geometry_msgs::msg::PoseStamped& pose)
 {
-  rams_interface::MoveToPose srv;
-  srv.request.target = pose;
-  if (move_client_.call(srv))
+  auto request = std::make_shared<rams_interface::srv::MoveToPose::Request>();
+  request->target = pose;
+  auto future = move_client_->async_send_request(request);
+  if (future.wait_for(std::chrono::seconds(5)) == std::future_status::ready)
   {
-    QString msg = srv.response.message.c_str();
-    if (srv.response.success)
+    auto response = future.get();
+    QString msg = QString::fromStdString(response->message);
+    if (response->success)
       QMessageBox::information(this, "MoveToPose", msg);
     else
       QMessageBox::warning(this, "MoveToPose", msg);
@@ -72,13 +84,13 @@ bool MainWindow::eventFilter(QObject* obj, QEvent* event)
   {
     QMouseEvent* mouse = static_cast<QMouseEvent*>(event);
     Ogre::Vector3 pos;
-    rviz::SelectionManager* sel = viz_manager_->getSelectionManager();
+    auto* sel = viz_manager_->getSelectionManager();
     Ogre::Viewport* viewport = render_panel_->getRenderWindow()->getViewport(0);
     if (sel->get3DPoint(viewport, mouse->x(), mouse->y(), pos))
     {
-      geometry_msgs::PoseStamped ps;
+      geometry_msgs::msg::PoseStamped ps;
       ps.header.frame_id = viz_manager_->getFixedFrame().toStdString();
-      ps.header.stamp = ros::Time::now();
+      ps.header.stamp = node_->now();
       ps.pose.position.x = pos.x;
       ps.pose.position.y = pos.y;
       ps.pose.position.z = pos.z;

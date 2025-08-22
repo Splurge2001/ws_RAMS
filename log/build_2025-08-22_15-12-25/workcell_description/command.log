@@ -1,0 +1,2 @@
+Invoking command in '/home/ros2/ws_RAMS/build/workcell_description': /usr/bin/cmake /home/ros2/ws_RAMS/src/workcell_description -DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/install/workcell_description
+Invoked command in '/home/ros2/ws_RAMS/build/workcell_description' returned '1': /usr/bin/cmake /home/ros2/ws_RAMS/src/workcell_description -DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/install/workcell_description

@@ -1,47 +1,56 @@
-#include <ros/ros.h>
-#include <sensor_msgs/PointCloud2.h>
+#include <memory>
+#include <functional>
+
+#include <rclcpp/rclcpp.hpp>
+#include <sensor_msgs/msg/point_cloud2.hpp>
 #include <tf2_ros/transform_listener.h>
 #include <tf2_sensor_msgs/tf2_sensor_msgs.h>
-#include <moveit_msgs/PlanningScene.h>
+#include <moveit_msgs/msg/planning_scene.hpp>
 
 class PerceptionNode
 {
 public:
-  PerceptionNode()
-  : tf_listener_(tf_buffer_)
+  explicit PerceptionNode(const rclcpp::Node::SharedPtr & node)
+  : node_(node),
+    tf_buffer_(node_->get_clock()),
+    tf_listener_(tf_buffer_)
   {
-    ros::NodeHandle nh;
-    ros::NodeHandle pnh("~");
-    pnh.param<std::string>("target_frame", target_frame_, std::string("world"));
+    node_->declare_parameter("target_frame", "world");
+    node_->get_parameter("target_frame", target_frame_);
 
-    cloud_pub_ = nh.advertise<sensor_msgs::PointCloud2>("/rams/perception/cloud", 1);
-    planning_scene_pub_ = nh.advertise<moveit_msgs::PlanningScene>("planning_scene", 1);
+    cloud_pub_ = node_->create_publisher<sensor_msgs::msg::PointCloud2>(
+      "/rams/perception/cloud", rclcpp::QoS(1));
+    planning_scene_pub_ = node_->create_publisher<moveit_msgs::msg::PlanningScene>(
+      "planning_scene", rclcpp::QoS(1));
 
-    cloud_sub_ = nh.subscribe("/camera/depth/points", 1, &PerceptionNode::cloudCallback, this);
+    cloud_sub_ = node_->create_subscription<sensor_msgs::msg::PointCloud2>(
+      "/camera/depth/points", rclcpp::QoS(1),
+      std::bind(&PerceptionNode::cloudCallback, this, std::placeholders::_1));
   }
 
 private:
-  void cloudCallback(const sensor_msgs::PointCloud2ConstPtr& msg)
+  void cloudCallback(const sensor_msgs::msg::PointCloud2::SharedPtr msg)
   {
-    sensor_msgs::PointCloud2 cloud_out;
+    sensor_msgs::msg::PointCloud2 cloud_out;
     try
     {
-      tf_buffer_.transform(*msg, cloud_out, target_frame_, ros::Duration(1.0));
-      cloud_pub_.publish(cloud_out);
+      tf_buffer_.transform(*msg, cloud_out, target_frame_, rclcpp::Duration::from_seconds(1.0));
+      cloud_pub_->publish(cloud_out);
 
-      moveit_msgs::PlanningScene ps;
+      moveit_msgs::msg::PlanningScene ps;
       ps.is_diff = true;
-      planning_scene_pub_.publish(ps);
+      planning_scene_pub_->publish(ps);
     }
     catch (tf2::TransformException &ex)
     {
-      ROS_WARN_STREAM("Transform failed: " << ex.what());
+      RCLCPP_WARN(node_->get_logger(), "Transform failed: %s", ex.what());
     }
   }
 
-  ros::Subscriber cloud_sub_;
-  ros::Publisher cloud_pub_;
-  ros::Publisher planning_scene_pub_;
+  rclcpp::Node::SharedPtr node_;
+  rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr cloud_sub_;
+  rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr cloud_pub_;
+  rclcpp::Publisher<moveit_msgs::msg::PlanningScene>::SharedPtr planning_scene_pub_;
   tf2_ros::Buffer tf_buffer_;
   tf2_ros::TransformListener tf_listener_;
   std::string target_frame_;
@@ -49,8 +58,11 @@ private:
 
 int main(int argc, char** argv)
 {
-  ros::init(argc, argv, "rams_perception_node");
-  PerceptionNode node;
-  ros::spin();
+  rclcpp::init(argc, argv);
+  auto node = std::make_shared<rclcpp::Node>("rams_perception_node");
+  auto perception_node = std::make_shared<PerceptionNode>(node);
+  (void)perception_node; // suppress unused variable warning
+  rclcpp::spin(node);
+  rclcpp::shutdown();
   return 0;
 }

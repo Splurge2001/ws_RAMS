@@ -1,5 +1,0 @@
-<launch>
-  <node pkg="rams_perception" type="perception_node" name="rams_perception_node" output="screen">
-    <param name="target_frame" value="world" />
-  </node>
-</launch>

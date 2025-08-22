@@ -18,6 +18,7 @@ find_package(moveit_ros_planning_interface REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(Qt5 REQUIRED COMPONENTS Widgets)
 find_package(rviz_common QUIET)
+find_package(rviz_rendering QUIET)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/MoveToPose.srv"
@@ -48,8 +49,8 @@ ament_target_dependencies(gui_node
   std_msgs
   std_srvs
 )
-if(rviz_common_FOUND)
-  ament_target_dependencies(gui_node rviz_common)
+if(rviz_common_FOUND AND rviz_rendering_FOUND)
+  ament_target_dependencies(gui_node rviz_common rviz_rendering)
   target_compile_definitions(gui_node PRIVATE HAS_RVIZ)
 endif()
 rosidl_target_interfaces(gui_node ${PROJECT_NAME} "rosidl_typesupport_cpp")

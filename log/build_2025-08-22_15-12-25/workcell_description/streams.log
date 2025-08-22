@@ -1,0 +1,33 @@
+[0.012s] Invoking command in '/home/ros2/ws_RAMS/build/workcell_description': /usr/bin/cmake /home/ros2/ws_RAMS/src/workcell_description -DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/install/workcell_description
+[0.177s] -- The C compiler identification is GNU 11.4.0
+[0.287s] -- The CXX compiler identification is GNU 11.4.0
+[0.302s] -- Detecting C compiler ABI info
+[0.374s] -- Detecting C compiler ABI info - done
+[0.379s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.379s] -- Detecting C compile features
+[0.380s] -- Detecting C compile features - done
+[0.384s] -- Detecting CXX compiler ABI info
+[0.471s] -- Detecting CXX compiler ABI info - done
+[0.475s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.475s] -- Detecting CXX compile features
+[0.478s] -- Detecting CXX compile features - done
+[0.485s] [31mCMake Error at CMakeLists.txt:4 (find_package):
+[0.486s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[0.486s]   has asked CMake to find a package configuration file provided by
+[0.486s]   "ament_cmake", but CMake did not find one.
+[0.486s] 
+[0.486s]   Could not find a package configuration file provided by "ament_cmake" with
+[0.486s]   any of the following names:
+[0.486s] 
+[0.486s]     ament_cmakeConfig.cmake
+[0.486s]     ament_cmake-config.cmake
+[0.486s] 
+[0.486s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[0.486s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[0.486s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[0.486s]   has been installed.
+[0.486s] 
+[0.486s] [0m
+[0.486s] -- Configuring incomplete, errors occurred!
+[0.487s] See also "/home/ros2/ws_RAMS/build/workcell_description/CMakeFiles/CMakeOutput.log".
+[0.493s] Invoked command in '/home/ros2/ws_RAMS/build/workcell_description' returned '1': /usr/bin/cmake /home/ros2/ws_RAMS/src/workcell_description -DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/install/workcell_description
