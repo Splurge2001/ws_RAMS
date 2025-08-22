@@ -1,0 +1,29 @@
+cmake_minimum_required(VERSION 3.0.2)
+project(rams_perception)
+
+find_package(catkin REQUIRED COMPONENTS
+  roscpp
+  sensor_msgs
+  tf2_ros
+  tf2_sensor_msgs
+  moveit_msgs
+)
+
+catkin_package(
+  CATKIN_DEPENDS roscpp sensor_msgs tf2_ros tf2_sensor_msgs moveit_msgs
+)
+
+include_directories(
+  ${catkin_INCLUDE_DIRS}
+)
+
+add_executable(perception_node src/perception_node.cpp)
+add_dependencies(perception_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+target_link_libraries(perception_node
+  ${catkin_LIBRARIES}
+)
+
+install(TARGETS perception_node
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)

@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="rams_interface" type="gui_node" name="rams_gui" output="screen"/>
+</launch>

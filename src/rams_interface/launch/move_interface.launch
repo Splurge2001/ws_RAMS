@@ -1,0 +1,7 @@
+<launch>
+  <arg name="planning_group" default="manipulator"/>
+  <include file="$(find workcell_config)/launch/move_group.launch.py"/>
+  <node pkg="rams_interface" type="move_to_pose_server" name="move_to_pose_server" output="screen">
+    <param name="planning_group" value="$(arg planning_group)"/>
+  </node>
+</launch>
