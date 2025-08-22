@@ -35,8 +35,7 @@ private:
 
   rviz_common::RenderPanel *render_panel_;
   std::unique_ptr<rviz_common::VisualizationManager> viz_manager_;
-  rviz_common::ros_integration::RosNodeAbstractionIface::SharedPtr
-      ros_node_abstraction_;
+  std::shared_ptr<rviz_common::ros_integration::RosNodeAbstractionIface> ros_node_abstraction_;
 
 public:
   rclcpp::Node::SharedPtr get_node() const { return node_; }

@@ -1,8 +1,0 @@
-In file included from [01m[K/home/ros2/ws_RAMS/src/rams_interface/src/main.cpp:5[m[K:
-[01m[K/home/ros2/ws_RAMS/src/rams_interface/include/rams_interface/main_window.h:38:58:[m[K [01;31m[Kerror: [m[K‘[01m[KSharedPtr[m[K’ in ‘[01m[Kclass rviz_common::ros_integration::RosNodeAbstractionIface[m[K’ does not name a type
-   38 |   rviz_common::ros_integration::RosNodeAbstractionIface::[01;31m[KSharedPtr[m[K
-      |                                                          [01;31m[K^~~~~~~~~[m[K
-gmake[2]: *** [CMakeFiles/gui_node.dir/build.make:90: CMakeFiles/gui_node.dir/src/main.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:647: CMakeFiles/gui_node.dir/all] Error 2
-gmake[1]: *** Waiting for unfinished jobs....
-gmake: *** [Makefile:146: all] Error 2
