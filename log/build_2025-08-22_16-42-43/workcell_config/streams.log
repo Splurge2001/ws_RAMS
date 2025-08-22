@@ -1,0 +1,62 @@
+[0.023s] Invoking command in '/home/ros2/ws_RAMS/build/workcell_config': AMENT_PREFIX_PATH=/home/ros2/ws_RAMS/install/workcell_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros2/ws_RAMS/install/workcell_description:/opt/ros/humble /usr/bin/cmake /home/ros2/ws_RAMS/src/workcell_config -DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/install/workcell_config
+[0.143s] -- The C compiler identification is GNU 11.4.0
+[0.277s] -- The CXX compiler identification is GNU 11.4.0
+[0.288s] -- Detecting C compiler ABI info
+[0.450s] -- Detecting C compiler ABI info - done
+[0.461s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.461s] -- Detecting C compile features
+[0.462s] -- Detecting C compile features - done
+[0.465s] -- Detecting CXX compiler ABI info
+[0.570s] -- Detecting CXX compiler ABI info - done
+[0.574s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.574s] -- Detecting CXX compile features
+[0.575s] -- Detecting CXX compile features - done
+[0.578s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.818s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.248s] -- Configuring done
+[1.248s] -- Generating done
+[1.248s] -- Build files have been written to: /home/ros2/ws_RAMS/build/workcell_config
+[1.266s] Invoked command in '/home/ros2/ws_RAMS/build/workcell_config' returned '0': AMENT_PREFIX_PATH=/home/ros2/ws_RAMS/install/workcell_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros2/ws_RAMS/install/workcell_description:/opt/ros/humble /usr/bin/cmake /home/ros2/ws_RAMS/src/workcell_config -DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/install/workcell_config
+[1.266s] Invoking command in '/home/ros2/ws_RAMS/build/workcell_config': AMENT_PREFIX_PATH=/home/ros2/ws_RAMS/install/workcell_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros2/ws_RAMS/install/workcell_description:/opt/ros/humble /usr/bin/cmake --build /home/ros2/ws_RAMS/build/workcell_config -- -j2 -l2
+[1.347s] Invoked command in '/home/ros2/ws_RAMS/build/workcell_config' returned '0': AMENT_PREFIX_PATH=/home/ros2/ws_RAMS/install/workcell_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros2/ws_RAMS/install/workcell_description:/opt/ros/humble /usr/bin/cmake --build /home/ros2/ws_RAMS/build/workcell_config -- -j2 -l2
+[1.353s] Invoking command in '/home/ros2/ws_RAMS/build/workcell_config': AMENT_PREFIX_PATH=/home/ros2/ws_RAMS/install/workcell_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros2/ws_RAMS/install/workcell_description:/opt/ros/humble /usr/bin/cmake --install /home/ros2/ws_RAMS/build/workcell_config
+[1.364s] -- Install configuration: ""
+[1.365s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/ament_index/resource_index/package_run_dependencies/workcell_config
+[1.365s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/ament_index/resource_index/parent_prefix_path/workcell_config
+[1.367s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/environment/ament_prefix_path.sh
+[1.368s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/environment/ament_prefix_path.dsv
+[1.371s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/environment/path.sh
+[1.371s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/environment/path.dsv
+[1.371s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/local_setup.bash
+[1.371s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/local_setup.sh
+[1.371s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/local_setup.zsh
+[1.373s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/local_setup.dsv
+[1.373s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/package.dsv
+[1.373s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/ament_index/resource_index/packages/workcell_config
+[1.373s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/cmake/workcell_configConfig.cmake
+[1.374s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/cmake/workcell_configConfig-version.cmake
+[1.374s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/package.xml
+[1.375s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/launch
+[1.376s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/launch/demo.launch.py
+[1.376s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/launch/setup_assistant.launch.py
+[1.376s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/launch/static_virtual_joint_tfs.launch.py
+[1.377s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/launch/spawn_controllers.launch.py
+[1.383s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/launch/move_group.launch.py
+[1.383s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/launch/rsp.launch.py
+[1.383s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/launch/warehouse_db.launch.py
+[1.383s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/launch/moveit_rviz.launch.py
+[1.388s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config
+[1.388s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/moveit.rviz
+[1.388s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/ros2_controllers.yaml
+[1.388s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/sensors_3d.yaml
+[1.389s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/initial_positions.yaml
+[1.389s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/joint_limits.yaml
+[1.389s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/workcell.srdf
+[1.389s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/workcell.ros2_control.xacro
+[1.389s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/moveit_controllers.yaml
+[1.389s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/pilz_cartesian_limits.yaml
+[1.389s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/abb_controllers.yaml
+[1.389s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/workcell.urdf.xacro
+[1.389s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/kinematics.yaml
+[1.389s] -- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/.setup_assistant
+[1.396s] Invoked command in '/home/ros2/ws_RAMS/build/workcell_config' returned '0': AMENT_PREFIX_PATH=/home/ros2/ws_RAMS/install/workcell_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros2/ws_RAMS/install/workcell_description:/opt/ros/humble /usr/bin/cmake --install /home/ros2/ws_RAMS/build/workcell_config

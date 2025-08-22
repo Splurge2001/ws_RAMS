@@ -1,0 +1,769 @@
+[0.000000] (-) TimerEvent: {}
+[0.000697] (rams_interface) JobQueued: {'identifier': 'rams_interface', 'dependencies': OrderedDict()}
+[0.000825] (rams_perception) JobQueued: {'identifier': 'rams_perception', 'dependencies': OrderedDict()}
+[0.000855] (workcell_description) JobQueued: {'identifier': 'workcell_description', 'dependencies': OrderedDict()}
+[0.000880] (workcell_config) JobQueued: {'identifier': 'workcell_config', 'dependencies': OrderedDict([('workcell_description', '/home/ros2/ws_RAMS/install/workcell_description')])}
+[0.000907] (workcell_description) JobStarted: {'identifier': 'workcell_description'}
+[0.007508] (rams_interface) JobStarted: {'identifier': 'rams_interface'}
+[0.014208] (workcell_description) JobProgress: {'identifier': 'workcell_description', 'progress': 'cmake'}
+[0.014277] (workcell_description) Command: {'cmd': ['/usr/bin/cmake', '/home/ros2/ws_RAMS/src/workcell_description', '-DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/install/workcell_description'], 'cwd': '/home/ros2/ws_RAMS/build/workcell_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros2'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros2'), ('OLDPWD', '/home/ros2'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1576'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros2'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros2-virtual-machine:@/tmp/.ICE-unix/1388,unix/ros2-virtual-machine:/tmp/.ICE-unix/1388'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5637b44f_a5be_4c38_a31a_d70f666e4bc6'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.94'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros2/ws_RAMS/build/workcell_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.029852] (rams_interface) JobProgress: {'identifier': 'rams_interface', 'progress': 'cmake'}
+[0.029939] (rams_interface) Command: {'cmd': ['/usr/bin/cmake', '/home/ros2/ws_RAMS/src/rams_interface', '-DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/install/rams_interface'], 'cwd': '/home/ros2/ws_RAMS/build/rams_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros2'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros2'), ('OLDPWD', '/home/ros2'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1576'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros2'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros2-virtual-machine:@/tmp/.ICE-unix/1388,unix/ros2-virtual-machine:/tmp/.ICE-unix/1388'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5637b44f_a5be_4c38_a31a_d70f666e4bc6'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.94'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros2/ws_RAMS/build/rams_interface'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.089984] (rams_interface) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.091701] (workcell_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099617] (-) TimerEvent: {}
+[0.150427] (rams_interface) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.158133] (rams_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.183390] (workcell_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.194663] (workcell_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199948] (-) TimerEvent: {}
+[0.218357] (rams_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.224816] (rams_interface) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.225187] (rams_interface) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.225434] (rams_interface) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.230151] (rams_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300364] (-) TimerEvent: {}
+[0.302142] (workcell_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.302819] (workcell_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.303070] (workcell_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.304766] (workcell_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.305574] (workcell_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.338601] (rams_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.344961] (rams_interface) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.345589] (rams_interface) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.345677] (rams_interface) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.348423] (rams_interface) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400486] (-) TimerEvent: {}
+[0.462999] (workcell_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.476823] (workcell_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.478956] (workcell_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.479122] (workcell_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.484555] (workcell_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.500590] (-) TimerEvent: {}
+[0.563767] (rams_interface) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.601963] (-) TimerEvent: {}
+[0.634901] (workcell_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.679160] (rams_interface) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.702080] (-) TimerEvent: {}
+[0.726393] (rams_interface) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.733604] (rams_interface) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.740136] (rams_interface) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.757851] (rams_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.769799] (rams_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.782338] (workcell_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.785249] (workcell_description) StdoutLine: {'line': b'-- Generating done\n'}
+[0.786961] (workcell_description) StdoutLine: {'line': b'-- Build files have been written to: /home/ros2/ws_RAMS/build/workcell_description\n'}
+[0.792157] (workcell_description) CommandEnded: {'returncode': 0}
+[0.796439] (workcell_description) JobProgress: {'identifier': 'workcell_description', 'progress': 'build'}
+[0.796564] (workcell_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros2/ws_RAMS/build/workcell_description', '--', '-j2', '-l2'], 'cwd': '/home/ros2/ws_RAMS/build/workcell_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros2'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros2'), ('OLDPWD', '/home/ros2'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1576'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros2'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros2-virtual-machine:@/tmp/.ICE-unix/1388,unix/ros2-virtual-machine:/tmp/.ICE-unix/1388'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5637b44f_a5be_4c38_a31a_d70f666e4bc6'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.94'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros2/ws_RAMS/build/workcell_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.804072] (-) TimerEvent: {}
+[0.825649] (rams_interface) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.831866] (rams_interface) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.838679] (workcell_description) CommandEnded: {'returncode': 0}
+[0.842097] (workcell_description) JobProgress: {'identifier': 'workcell_description', 'progress': 'install'}
+[0.848814] (workcell_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros2/ws_RAMS/build/workcell_description'], 'cwd': '/home/ros2/ws_RAMS/build/workcell_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros2'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros2'), ('OLDPWD', '/home/ros2'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1576'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros2'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros2-virtual-machine:@/tmp/.ICE-unix/1388,unix/ros2-virtual-machine:/tmp/.ICE-unix/1388'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5637b44f_a5be_4c38_a31a_d70f666e4bc6'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.94'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros2/ws_RAMS/build/workcell_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.859562] (workcell_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.860628] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf\n'}
+[0.860926] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/robots\n'}
+[0.861087] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/robots/irb6700_200_260.xacro\n'}
+[0.861287] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/sensors\n'}
+[0.861423] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/actuators\n'}
+[0.861548] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/actuators/spindle.xacro\n'}
+[0.861723] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/workcell.urdf.xacro\n'}
+[0.861891] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/workcell.urdf\n'}
+[0.862063] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/props\n'}
+[0.862197] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/urdf/props/common_props.xacro\n'}
+[0.863563] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes\n'}
+[0.863838] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots\n'}
+[0.863945] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/visual\n'}
+[0.864769] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/visual/link_3.stl\n'}
+[0.864867] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/visual/link_2.stl\n'}
+[0.865633] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/visual/cylinder.stl\n'}
+[0.865946] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/visual/link_1.stl\n'}
+[0.866777] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/visual/link_6.stl\n'}
+[0.867670] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/visual/base_link.stl\n'}
+[0.867776] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/visual/piston.stl\n'}
+[0.868001] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/visual/link_4.stl\n'}
+[0.868593] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/visual/link_5.stl\n'}
+[0.868973] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/collision\n'}
+[0.869127] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/collision/link_3.stl\n'}
+[0.869341] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/collision/link_2.stl\n'}
+[0.869879] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/collision/cylinder.stl\n'}
+[0.869995] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/collision/link_1.stl\n'}
+[0.870273] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/collision/link_6.stl\n'}
+[0.870508] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/collision/base_link.stl\n'}
+[0.870696] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/collision/piston.stl\n'}
+[0.870880] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/collision/link_4.stl\n'}
+[0.871148] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/robots/collision/link_5.stl\n'}
+[0.871414] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/sensors\n'}
+[0.871496] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/sensors/visual\n'}
+[0.871625] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/sensors/visual/d415.stl\n'}
+[0.903963] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/sensors/visual/d435.dae\n'}
+[0.904114] (-) TimerEvent: {}
+[0.932457] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/sensors/collision\n'}
+[0.935978] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/sensors/collision/d415.stl\n'}
+[0.960638] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/sensors/collision/d435.dae\n'}
+[0.975693] (rams_interface) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.981297] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/actuators\n'}
+[0.981637] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/actuators/visual\n'}
+[0.982788] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/actuators/visual/spindle.STL\n'}
+[0.985963] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/actuators/collision\n'}
+[0.986247] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/meshes/actuators/collision/spindle.STL\n'}
+[0.988185] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/launch\n'}
+[0.988493] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/launch/description.launch.py\n'}
+[0.988695] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/launch/robot_viz.launch.py\n'}
+[0.989176] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/ament_index/resource_index/package_run_dependencies/workcell_description\n'}
+[0.989283] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/ament_index/resource_index/parent_prefix_path/workcell_description\n'}
+[0.989503] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/environment/ament_prefix_path.sh\n'}
+[0.989817] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/environment/ament_prefix_path.dsv\n'}
+[0.990040] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/environment/path.sh\n'}
+[0.990224] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/environment/path.dsv\n'}
+[0.990309] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/local_setup.bash\n'}
+[0.990887] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/local_setup.sh\n'}
+[0.991190] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/local_setup.zsh\n'}
+[0.991417] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/local_setup.dsv\n'}
+[0.991504] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/package.dsv\n'}
+[0.991845] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/ament_index/resource_index/packages/workcell_description\n'}
+[0.992000] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/cmake/workcell_descriptionConfig.cmake\n'}
+[0.992312] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/cmake/workcell_descriptionConfig-version.cmake\n'}
+[0.992395] (workcell_description) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_description/share/workcell_description/package.xml\n'}
+[0.994475] (workcell_description) CommandEnded: {'returncode': 0}
+[1.004194] (-) TimerEvent: {}
+[1.007072] (rams_interface) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.009055] (workcell_description) JobEnded: {'identifier': 'workcell_description', 'rc': 0}
+[1.012977] (rams_perception) JobStarted: {'identifier': 'rams_perception'}
+[1.018873] (rams_perception) JobProgress: {'identifier': 'rams_perception', 'progress': 'cmake'}
+[1.019567] (rams_perception) Command: {'cmd': ['/usr/bin/cmake', '/home/ros2/ws_RAMS/src/rams_perception', '-DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/install/rams_perception'], 'cwd': '/home/ros2/ws_RAMS/build/rams_perception', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros2'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros2'), ('OLDPWD', '/home/ros2'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1576'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros2'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros2-virtual-machine:@/tmp/.ICE-unix/1388,unix/ros2-virtual-machine:/tmp/.ICE-unix/1388'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5637b44f_a5be_4c38_a31a_d70f666e4bc6'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.94'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros2/ws_RAMS/build/rams_perception'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.056804] (rams_interface) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.066135] (rams_interface) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.083680] (rams_perception) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.104307] (-) TimerEvent: {}
+[1.157251] (rams_perception) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.171066] (rams_perception) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.178775] (rams_interface) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.185093] (rams_interface) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.204425] (-) TimerEvent: {}
+[1.254902] (rams_perception) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.262019] (rams_perception) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.262167] (rams_perception) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.262219] (rams_perception) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.267260] (rams_perception) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.267408] (rams_interface) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.267469] (rams_interface) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.304527] (-) TimerEvent: {}
+[1.307169] (rams_interface) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.336765] (rams_interface) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.358447] (rams_interface) StdoutLine: {'line': b'-- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[1.367542] (rams_interface) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)\n'}
+[1.387571] (rams_interface) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread \n'}
+[1.393095] (rams_perception) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.406120] (-) TimerEvent: {}
+[1.407430] (rams_perception) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.407779] (rams_perception) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.408304] (rams_perception) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.415342] (rams_perception) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.507005] (-) TimerEvent: {}
+[1.537570] (rams_interface) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[1.584003] (rams_perception) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.585343] (rams_interface) StdoutLine: {'line': b'-- Found parameter_traits: 0.5.0 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[1.594250] (rams_interface) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.14 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[1.608872] (-) TimerEvent: {}
+[1.616558] (rams_interface) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem \n'}
+[1.682100] (rams_perception) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.708940] (-) TimerEvent: {}
+[1.718866] (rams_perception) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.724022] (rams_perception) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.732156] (rams_perception) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.737001] (rams_interface) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[1.740508] (rams_perception) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.755563] (rams_perception) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.770019] (rams_interface) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.770256] (rams_interface) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.790043] (rams_perception) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.792066] (rams_perception) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.809024] (-) TimerEvent: {}
+[1.880751] (rams_perception) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.902917] (rams_perception) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.909481] (-) TimerEvent: {}
+[1.914418] (rams_interface) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono \n'}
+[1.940174] (rams_perception) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.944061] (rams_interface) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options \n'}
+[1.950413] (rams_perception) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.976828] (rams_interface) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread \n'}
+[1.991697] (rams_interface) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[2.009636] (-) TimerEvent: {}
+[2.017039] (rams_interface) StdoutLine: {'line': b"-- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'\n"}
+[2.019138] (rams_interface) StdoutLine: {'line': b"-- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'\n"}
+[2.020167] (rams_interface) StdoutLine: {'line': b'-- Found OGRE\n'}
+[2.020229] (rams_interface) StdoutLine: {'line': b'--   static     : OFF\n'}
+[2.020279] (rams_interface) StdoutLine: {'line': b'--   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume\n'}
+[2.020328] (rams_interface) StdoutLine: {'line': b'--   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[2.020374] (rams_interface) StdoutLine: {'line': b'--   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media\n'}
+[2.020982] (rams_interface) StdoutLine: {'line': b'-- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain\n'}
+[2.021451] (rams_interface) StdoutLine: {'line': b'-- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib\n'}
+[2.021506] (rams_interface) StdoutLine: {'line': b'-- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[2.021555] (rams_interface) StdoutLine: {'line': b'-- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE\n'}
+[2.021601] (rams_interface) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[2.021646] (rams_interface) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[2.021692] (rams_interface) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[2.021737] (rams_interface) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[2.023933] (rams_interface) StdoutLine: {'line': b'-- Could not find freeimage library\n'}
+[2.038490] (rams_perception) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.038691] (rams_perception) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.040308] (rams_interface) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[2.046629] (rams_interface) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   \n'}
+[2.109975] (-) TimerEvent: {}
+[2.125698] (rams_perception) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.133028] (rams_perception) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.146216] (rams_interface) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[2.146381] (rams_interface) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[2.181529] (rams_perception) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.210090] (-) TimerEvent: {}
+[2.215977] (rams_perception) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.15 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[2.257580] (rams_interface) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[2.258120] (rams_interface) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[2.302960] (rams_perception) StdoutLine: {'line': b'-- Found tf2_sensor_msgs: 0.25.15 (/opt/ros/humble/share/tf2_sensor_msgs/cmake)\n'}
+[2.310186] (-) TimerEvent: {}
+[2.313907] (rams_perception) StdoutLine: {'line': b'-- Found moveit_msgs: 2.2.1 (/opt/ros/humble/share/moveit_msgs/cmake)\n'}
+[2.338837] (rams_interface) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[2.339017] (rams_interface) StdoutLine: {'line': b'-- Looking for connect\n'}
+[2.411299] (-) TimerEvent: {}
+[2.423840] (rams_interface) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[2.424338] (rams_interface) StdoutLine: {'line': b'-- Looking for remove\n'}
+[2.489151] (rams_perception) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.512804] (-) TimerEvent: {}
+[2.515070] (rams_perception) StdoutLine: {'line': b'-- Generating done\n'}
+[2.522965] (rams_perception) StdoutLine: {'line': b'-- Build files have been written to: /home/ros2/ws_RAMS/build/rams_perception\n'}
+[2.523495] (rams_interface) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[2.523644] (rams_interface) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[2.533714] (rams_perception) CommandEnded: {'returncode': 0}
+[2.535062] (rams_perception) JobProgress: {'identifier': 'rams_perception', 'progress': 'build'}
+[2.535100] (rams_perception) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros2/ws_RAMS/build/rams_perception', '--', '-j2', '-l2'], 'cwd': '/home/ros2/ws_RAMS/build/rams_perception', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros2'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros2'), ('OLDPWD', '/home/ros2'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1576'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros2'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros2-virtual-machine:@/tmp/.ICE-unix/1388,unix/ros2-virtual-machine:/tmp/.ICE-unix/1388'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5637b44f_a5be_4c38_a31a_d70f666e4bc6'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.94'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros2/ws_RAMS/build/rams_perception'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.590116] (rams_perception) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/perception_node.dir/src/perception_node.cpp.o\x1b[0m\n'}
+[2.610747] (rams_interface) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[2.611757] (rams_interface) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[2.613829] (-) TimerEvent: {}
+[2.700981] (rams_interface) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[2.714959] (-) TimerEvent: {}
+[2.815291] (-) TimerEvent: {}
+[2.915716] (-) TimerEvent: {}
+[3.018166] (-) TimerEvent: {}
+[3.039102] (rams_interface) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[3.118265] (-) TimerEvent: {}
+[3.218533] (-) TimerEvent: {}
+[3.318900] (-) TimerEvent: {}
+[3.419296] (-) TimerEvent: {}
+[3.515541] (rams_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.519397] (-) TimerEvent: {}
+[3.619766] (-) TimerEvent: {}
+[3.702083] (rams_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.719861] (-) TimerEvent: {}
+[3.724397] (rams_interface) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[3.727354] (rams_interface) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[3.753277] (rams_interface) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[3.753589] (rams_interface) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.753890] (rams_interface) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[3.754130] (rams_interface) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[3.780737] (rams_interface) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[3.819959] (-) TimerEvent: {}
+[3.869535] (rams_interface) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.920076] (-) TimerEvent: {}
+[4.020460] (-) TimerEvent: {}
+[4.042969] (rams_interface) StdoutLine: {'line': b'-- Generating done\n'}
+[4.091640] (rams_interface) StdoutLine: {'line': b'-- Build files have been written to: /home/ros2/ws_RAMS/build/rams_interface\n'}
+[4.120564] (-) TimerEvent: {}
+[4.157861] (rams_interface) CommandEnded: {'returncode': 0}
+[4.158200] (rams_interface) JobProgress: {'identifier': 'rams_interface', 'progress': 'build'}
+[4.158222] (rams_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros2/ws_RAMS/build/rams_interface', '--', '-j2', '-l2'], 'cwd': '/home/ros2/ws_RAMS/build/rams_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros2'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros2'), ('OLDPWD', '/home/ros2'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1576'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros2'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros2-virtual-machine:@/tmp/.ICE-unix/1388,unix/ros2-virtual-machine:/tmp/.ICE-unix/1388'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5637b44f_a5be_4c38_a31a_d70f666e4bc6'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.94'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros2/ws_RAMS/build/rams_interface'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.220726] (-) TimerEvent: {}
+[4.283046] (rams_interface) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[4.290127] (rams_interface) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[4.320835] (-) TimerEvent: {}
+[4.421271] (-) TimerEvent: {}
+[4.523966] (-) TimerEvent: {}
+[4.624379] (-) TimerEvent: {}
+[4.639012] (rams_interface) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mAutomatic MOC for target rams_interface__rosidl_generator_c\x1b[0m\n'}
+[4.662196] (rams_interface) StdoutLine: {'line': b'[  4%] Built target rams_interface__cpp\n'}
+[4.706814] (rams_interface) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_copy_rams_interface\n'}
+[4.710969] (rams_interface) StdoutLine: {'line': b'[  4%] Built target rams_interface__rosidl_generator_c_autogen\n'}
+[4.724506] (-) TimerEvent: {}
+[4.738967] (rams_interface) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.770104] (rams_interface) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.824595] (-) TimerEvent: {}
+[4.925968] (-) TimerEvent: {}
+[5.028133] (-) TimerEvent: {}
+[5.128590] (-) TimerEvent: {}
+[5.175964] (rams_interface) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mAutomatic MOC for target rams_interface__rosidl_typesupport_cpp\x1b[0m\n'}
+[5.232629] (-) TimerEvent: {}
+[5.323982] (rams_interface) StdoutLine: {'line': b'[  8%] Built target rams_interface__rosidl_typesupport_cpp_autogen\n'}
+[5.333973] (-) TimerEvent: {}
+[5.343163] (rams_interface) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mAutomatic MOC for target rams_interface__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[5.399107] (rams_interface) StdoutLine: {'line': b'[ 11%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[5.438974] (-) TimerEvent: {}
+[5.443825] (rams_interface) StdoutLine: {'line': b'[ 11%] Built target rams_interface__rosidl_typesupport_fastrtps_cpp_autogen\n'}
+[5.539065] (-) TimerEvent: {}
+[5.639638] (-) TimerEvent: {}
+[5.747030] (-) TimerEvent: {}
+[5.848961] (-) TimerEvent: {}
+[5.951054] (-) TimerEvent: {}
+[5.952203] (rams_interface) StdoutLine: {'line': b'[ 13%] \x1b[34m\x1b[1mAutomatic MOC for target rams_interface__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[6.029871] (rams_interface) StdoutLine: {'line': b'[ 13%] Built target rams_interface__rosidl_typesupport_introspection_cpp_autogen\n'}
+[6.051355] (-) TimerEvent: {}
+[6.087288] (rams_interface) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_cpp.dir/rams_interface__rosidl_typesupport_cpp_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[6.141985] (rams_interface) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rams_interface/srv/move_to_pose__type_support.cpp.o\x1b[0m\n'}
+[6.153136] (-) TimerEvent: {}
+[6.255074] (-) TimerEvent: {}
+[6.288958] (rams_interface) StdoutLine: {'line': b'running egg_info\n'}
+[6.293188] (rams_interface) StdoutLine: {'line': b'creating rams_interface.egg-info\n'}
+[6.294731] (rams_interface) StdoutLine: {'line': b'writing rams_interface.egg-info/PKG-INFO\n'}
+[6.299764] (rams_interface) StdoutLine: {'line': b'writing dependency_links to rams_interface.egg-info/dependency_links.txt\n'}
+[6.300725] (rams_interface) StdoutLine: {'line': b'writing top-level names to rams_interface.egg-info/top_level.txt\n'}
+[6.300794] (rams_interface) StdoutLine: {'line': b"writing manifest file 'rams_interface.egg-info/SOURCES.txt'\n"}
+[6.308085] (rams_interface) StdoutLine: {'line': b"reading manifest file 'rams_interface.egg-info/SOURCES.txt'\n"}
+[6.308247] (rams_interface) StdoutLine: {'line': b"writing manifest file 'rams_interface.egg-info/SOURCES.txt'\n"}
+[6.356101] (-) TimerEvent: {}
+[6.409984] (rams_interface) StdoutLine: {'line': b'[ 15%] Built target ament_cmake_python_build_rams_interface_egg\n'}
+[6.456989] (-) TimerEvent: {}
+[6.509929] (rams_interface) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/rams_interface__rosidl_generator_c.dir/rams_interface__rosidl_generator_c_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[6.564409] (-) TimerEvent: {}
+[6.588721] (rams_interface) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/rams_interface__rosidl_generator_c.dir/rosidl_generator_c/rams_interface/srv/detail/move_to_pose__functions.c.o\x1b[0m\n'}
+[6.666003] (-) TimerEvent: {}
+[6.767379] (-) TimerEvent: {}
+[6.830860] (rams_interface) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking CXX shared library librams_interface__rosidl_generator_c.so\x1b[0m\n'}
+[6.869562] (-) TimerEvent: {}
+[6.971983] (-) TimerEvent: {}
+[6.986570] (rams_interface) StdoutLine: {'line': b'[ 21%] Built target rams_interface__rosidl_generator_c\n'}
+[7.032500] (rams_interface) StdoutLine: {'line': b'[ 23%] \x1b[32m\x1b[1mLinking CXX shared library librams_interface__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[7.036313] (rams_interface) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_fastrtps_cpp.dir/rams_interface__rosidl_typesupport_fastrtps_cpp_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[7.073939] (-) TimerEvent: {}
+[7.104842] (rams_interface) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rams_interface/srv/detail/dds_fastrtps/move_to_pose__type_support.cpp.o\x1b[0m\n'}
+[7.173974] (-) TimerEvent: {}
+[7.179893] (rams_interface) StdoutLine: {'line': b'[ 27%] Built target rams_interface__rosidl_typesupport_cpp\n'}
+[7.275992] (rams_interface) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[7.276370] (-) TimerEvent: {}
+[7.376604] (-) TimerEvent: {}
+[7.479974] (-) TimerEvent: {}
+[7.581966] (-) TimerEvent: {}
+[7.682310] (-) TimerEvent: {}
+[7.782662] (-) TimerEvent: {}
+[7.883293] (-) TimerEvent: {}
+[7.954277] (rams_interface) StdoutLine: {'line': b'[ 30%] \x1b[34m\x1b[1mAutomatic MOC for target rams_interface__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[7.985978] (-) TimerEvent: {}
+[8.087007] (-) TimerEvent: {}
+[8.099988] (rams_interface) StdoutLine: {'line': b'[ 30%] Built target rams_interface__rosidl_typesupport_introspection_c_autogen\n'}
+[8.169772] (rams_interface) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[8.187097] (-) TimerEvent: {}
+[8.232402] (rams_interface) StdoutLine: {'line': b'[ 33%] \x1b[32m\x1b[1mLinking CXX shared library librams_interface__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[8.287963] (-) TimerEvent: {}
+[8.390383] (-) TimerEvent: {}
+[8.493075] (-) TimerEvent: {}
+[8.518277] (rams_interface) StdoutLine: {'line': b'[ 34%] Built target rams_interface__rosidl_typesupport_fastrtps_cpp\n'}
+[8.593214] (-) TimerEvent: {}
+[8.601212] (rams_interface) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_introspection_cpp.dir/rams_interface__rosidl_typesupport_introspection_cpp_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[8.678640] (rams_interface) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rams_interface/srv/detail/move_to_pose__type_support.cpp.o\x1b[0m\n'}
+[8.688716] (rams_interface) StdoutLine: {'line': b'[ 39%] \x1b[34m\x1b[1mAutomatic MOC for target rams_interface__rosidl_typesupport_c\x1b[0m\n'}
+[8.696024] (-) TimerEvent: {}
+[8.797099] (-) TimerEvent: {}
+[8.811048] (rams_interface) StdoutLine: {'line': b'[ 39%] Built target rams_interface__rosidl_typesupport_c_autogen\n'}
+[8.883051] (rams_interface) StdoutLine: {'line': b'[ 40%] \x1b[34m\x1b[1mAutomatic MOC for target move_to_pose_server\x1b[0m\n'}
+[8.897199] (-) TimerEvent: {}
+[8.997570] (-) TimerEvent: {}
+[9.005520] (rams_interface) StdoutLine: {'line': b'[ 40%] Built target move_to_pose_server_autogen\n'}
+[9.090978] (rams_interface) StdoutLine: {'line': b'[ 42%] \x1b[34m\x1b[1mAutomatic MOC for target gui_node\x1b[0m\n'}
+[9.101648] (-) TimerEvent: {}
+[9.202985] (-) TimerEvent: {}
+[9.211961] (rams_interface) StdoutLine: {'line': b'[ 42%] Built target gui_node_autogen\n'}
+[9.277104] (rams_interface) StdoutLine: {'line': b'[ 43%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[9.303070] (-) TimerEvent: {}
+[9.404971] (-) TimerEvent: {}
+[9.510010] (-) TimerEvent: {}
+[9.611960] (-) TimerEvent: {}
+[9.714970] (-) TimerEvent: {}
+[9.750955] (rams_interface) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking CXX shared library librams_interface__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[9.815073] (-) TimerEvent: {}
+[9.919666] (-) TimerEvent: {}
+[9.921291] (rams_interface) StdoutLine: {'line': b'[ 46%] \x1b[34m\x1b[1mAutomatic MOC for target rams_interface__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[9.954632] (rams_interface) StdoutLine: {'line': b'[ 47%] Built target rams_interface__rosidl_typesupport_introspection_cpp\n'}
+[9.999979] (rams_interface) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_introspection_c.dir/rams_interface__rosidl_typesupport_introspection_c_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[10.022979] (-) TimerEvent: {}
+[10.027156] (rams_interface) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/rams_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rams_interface/srv/detail/move_to_pose__type_support.c.o\x1b[0m\n'}
+[10.057154] (rams_interface) StdoutLine: {'line': b'[ 50%] Built target rams_interface__rosidl_typesupport_fastrtps_c_autogen\n'}
+[10.081896] (rams_interface) StdoutLine: {'line': b'[ 52%] \x1b[32m\x1b[1mLinking CXX shared library librams_interface__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[10.123095] (-) TimerEvent: {}
+[10.128129] (rams_interface) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_c.dir/rams_interface__rosidl_typesupport_c_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[10.187738] (rams_interface) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/rams_interface/srv/move_to_pose__type_support.cpp.o\x1b[0m\n'}
+[10.202566] (rams_interface) StdoutLine: {'line': b'[ 56%] Built target rams_interface__rosidl_typesupport_introspection_c\n'}
+[10.228150] (-) TimerEvent: {}
+[10.252729] (rams_interface) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library librams_interface__rosidl_typesupport_c.so\x1b[0m\n'}
+[10.268483] (rams_interface) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/move_to_pose_server.dir/move_to_pose_server_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[10.334104] (-) TimerEvent: {}
+[10.336132] (rams_interface) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/move_to_pose_server.dir/src/move_to_pose_server.cpp.o\x1b[0m\n'}
+[10.415032] (rams_interface) StdoutLine: {'line': b'[ 62%] Built target rams_interface__rosidl_typesupport_c\n'}
+[10.436007] (-) TimerEvent: {}
+[10.489035] (rams_interface) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/gui_node.dir/gui_node_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[10.536107] (-) TimerEvent: {}
+[10.560056] (rams_interface) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/gui_node.dir/src/main.cpp.o\x1b[0m\n'}
+[10.643124] (-) TimerEvent: {}
+[10.743431] (-) TimerEvent: {}
+[10.843994] (-) TimerEvent: {}
+[10.944796] (-) TimerEvent: {}
+[11.046969] (-) TimerEvent: {}
+[11.147829] (-) TimerEvent: {}
+[11.248142] (-) TimerEvent: {}
+[11.348434] (-) TimerEvent: {}
+[11.448718] (-) TimerEvent: {}
+[11.549090] (-) TimerEvent: {}
+[11.649402] (-) TimerEvent: {}
+[11.751104] (-) TimerEvent: {}
+[11.851393] (-) TimerEvent: {}
+[11.951939] (-) TimerEvent: {}
+[12.052260] (-) TimerEvent: {}
+[12.152571] (-) TimerEvent: {}
+[12.255110] (-) TimerEvent: {}
+[12.359264] (-) TimerEvent: {}
+[12.459551] (-) TimerEvent: {}
+[12.559843] (-) TimerEvent: {}
+[12.660366] (-) TimerEvent: {}
+[12.760694] (-) TimerEvent: {}
+[12.861975] (-) TimerEvent: {}
+[12.962266] (-) TimerEvent: {}
+[13.063971] (-) TimerEvent: {}
+[13.164258] (-) TimerEvent: {}
+[13.265967] (-) TimerEvent: {}
+[13.366318] (-) TimerEvent: {}
+[13.466609] (-) TimerEvent: {}
+[13.566929] (-) TimerEvent: {}
+[13.667246] (-) TimerEvent: {}
+[13.767565] (-) TimerEvent: {}
+[13.870190] (-) TimerEvent: {}
+[13.970488] (-) TimerEvent: {}
+[14.070781] (-) TimerEvent: {}
+[14.171392] (-) TimerEvent: {}
+[14.273976] (-) TimerEvent: {}
+[14.374352] (-) TimerEvent: {}
+[14.474788] (-) TimerEvent: {}
+[14.575343] (-) TimerEvent: {}
+[14.677138] (-) TimerEvent: {}
+[14.777564] (-) TimerEvent: {}
+[14.878987] (-) TimerEvent: {}
+[14.979474] (-) TimerEvent: {}
+[15.080157] (-) TimerEvent: {}
+[15.180607] (-) TimerEvent: {}
+[15.281082] (-) TimerEvent: {}
+[15.383973] (-) TimerEvent: {}
+[15.484434] (-) TimerEvent: {}
+[15.584957] (-) TimerEvent: {}
+[15.685435] (-) TimerEvent: {}
+[15.785906] (-) TimerEvent: {}
+[15.887975] (-) TimerEvent: {}
+[15.988430] (-) TimerEvent: {}
+[16.088927] (-) TimerEvent: {}
+[16.189211] (-) TimerEvent: {}
+[16.289668] (-) TimerEvent: {}
+[16.390278] (-) TimerEvent: {}
+[16.492976] (-) TimerEvent: {}
+[16.593422] (-) TimerEvent: {}
+[16.693891] (-) TimerEvent: {}
+[16.794973] (-) TimerEvent: {}
+[16.895422] (-) TimerEvent: {}
+[16.995900] (-) TimerEvent: {}
+[17.097986] (-) TimerEvent: {}
+[17.198504] (-) TimerEvent: {}
+[17.299308] (-) TimerEvent: {}
+[17.401972] (-) TimerEvent: {}
+[17.502267] (-) TimerEvent: {}
+[17.602719] (-) TimerEvent: {}
+[17.705283] (-) TimerEvent: {}
+[17.800991] (rams_interface) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/gui_node.dir/src/main_window.cpp.o\x1b[0m\n'}
+[17.805408] (-) TimerEvent: {}
+[17.908012] (-) TimerEvent: {}
+[18.008495] (-) TimerEvent: {}
+[18.108924] (-) TimerEvent: {}
+[18.209425] (-) TimerEvent: {}
+[18.309879] (-) TimerEvent: {}
+[18.410337] (-) TimerEvent: {}
+[18.510999] (-) TimerEvent: {}
+[18.614971] (-) TimerEvent: {}
+[18.715327] (-) TimerEvent: {}
+[18.815788] (-) TimerEvent: {}
+[18.917960] (-) TimerEvent: {}
+[19.019288] (-) TimerEvent: {}
+[19.119834] (-) TimerEvent: {}
+[19.222156] (-) TimerEvent: {}
+[19.322588] (-) TimerEvent: {}
+[19.423149] (-) TimerEvent: {}
+[19.523644] (-) TimerEvent: {}
+[19.625120] (-) TimerEvent: {}
+[19.727655] (-) TimerEvent: {}
+[19.829995] (-) TimerEvent: {}
+[19.930437] (-) TimerEvent: {}
+[20.031822] (-) TimerEvent: {}
+[20.133980] (-) TimerEvent: {}
+[20.234475] (-) TimerEvent: {}
+[20.335122] (-) TimerEvent: {}
+[20.435658] (-) TimerEvent: {}
+[20.536084] (-) TimerEvent: {}
+[20.636533] (-) TimerEvent: {}
+[20.736811] (-) TimerEvent: {}
+[20.837977] (-) TimerEvent: {}
+[20.939266] (-) TimerEvent: {}
+[21.040988] (-) TimerEvent: {}
+[21.141521] (-) TimerEvent: {}
+[21.243284] (-) TimerEvent: {}
+[21.343737] (-) TimerEvent: {}
+[21.446083] (-) TimerEvent: {}
+[21.548981] (-) TimerEvent: {}
+[21.649810] (-) TimerEvent: {}
+[21.705792] (rams_perception) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable perception_node\x1b[0m\n'}
+[21.751980] (-) TimerEvent: {}
+[21.852976] (-) TimerEvent: {}
+[21.954982] (-) TimerEvent: {}
+[22.056977] (-) TimerEvent: {}
+[22.158308] (-) TimerEvent: {}
+[22.258863] (-) TimerEvent: {}
+[22.359422] (-) TimerEvent: {}
+[22.459872] (-) TimerEvent: {}
+[22.560406] (-) TimerEvent: {}
+[22.584900] (rams_interface) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX executable move_to_pose_server\x1b[0m\n'}
+[22.662027] (-) TimerEvent: {}
+[22.764027] (-) TimerEvent: {}
+[22.864406] (-) TimerEvent: {}
+[22.954595] (rams_perception) StdoutLine: {'line': b'[100%] Built target perception_node\n'}
+[22.964513] (-) TimerEvent: {}
+[22.985082] (rams_perception) CommandEnded: {'returncode': 0}
+[22.986679] (rams_perception) JobProgress: {'identifier': 'rams_perception', 'progress': 'install'}
+[22.986710] (rams_perception) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros2/ws_RAMS/build/rams_perception'], 'cwd': '/home/ros2/ws_RAMS/build/rams_perception', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros2'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros2'), ('OLDPWD', '/home/ros2'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1576'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros2'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros2-virtual-machine:@/tmp/.ICE-unix/1388,unix/ros2-virtual-machine:/tmp/.ICE-unix/1388'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5637b44f_a5be_4c38_a31a_d70f666e4bc6'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.94'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros2/ws_RAMS/build/rams_perception'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[23.006043] (rams_perception) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[23.008909] (rams_perception) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/rams_perception/lib/rams_perception/perception_node\n'}
+[23.019052] (rams_perception) StdoutLine: {'line': b'-- Set runtime path of "/home/ros2/ws_RAMS/install/rams_perception/lib/rams_perception/perception_node" to ""\n'}
+[23.019436] (rams_perception) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/rams_perception/share/ament_index/resource_index/package_run_dependencies/rams_perception\n'}
+[23.019756] (rams_perception) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/rams_perception/share/ament_index/resource_index/parent_prefix_path/rams_perception\n'}
+[23.019857] (rams_perception) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/rams_perception/share/rams_perception/environment/ament_prefix_path.sh\n'}
+[23.019909] (rams_perception) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/rams_perception/share/rams_perception/environment/ament_prefix_path.dsv\n'}
+[23.021615] (rams_perception) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/rams_perception/share/rams_perception/environment/path.sh\n'}
+[23.021755] (rams_perception) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/rams_perception/share/rams_perception/environment/path.dsv\n'}
+[23.021807] (rams_perception) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/rams_perception/share/rams_perception/local_setup.bash\n'}
+[23.021985] (rams_perception) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/rams_perception/share/rams_perception/local_setup.sh\n'}
+[23.022056] (rams_perception) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/rams_perception/share/rams_perception/local_setup.zsh\n'}
+[23.022105] (rams_perception) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/rams_perception/share/rams_perception/local_setup.dsv\n'}
+[23.022152] (rams_perception) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/rams_perception/share/rams_perception/package.dsv\n'}
+[23.022198] (rams_perception) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/rams_perception/share/ament_index/resource_index/packages/rams_perception\n'}
+[23.022245] (rams_perception) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/rams_perception/share/rams_perception/cmake/rams_perceptionConfig.cmake\n'}
+[23.022290] (rams_perception) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/rams_perception/share/rams_perception/cmake/rams_perceptionConfig-version.cmake\n'}
+[23.022336] (rams_perception) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/rams_perception/share/rams_perception/package.xml\n'}
+[23.031107] (rams_perception) CommandEnded: {'returncode': 0}
+[23.061168] (rams_perception) JobEnded: {'identifier': 'rams_perception', 'rc': 0}
+[23.061569] (workcell_config) JobStarted: {'identifier': 'workcell_config'}
+[23.064950] (-) TimerEvent: {}
+[23.078015] (workcell_config) JobProgress: {'identifier': 'workcell_config', 'progress': 'cmake'}
+[23.084479] (workcell_config) Command: {'cmd': ['/usr/bin/cmake', '/home/ros2/ws_RAMS/src/workcell_config', '-DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/install/workcell_config'], 'cwd': '/home/ros2/ws_RAMS/build/workcell_config', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros2'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros2'), ('OLDPWD', '/home/ros2'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1576'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros2'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros2-virtual-machine:@/tmp/.ICE-unix/1388,unix/ros2-virtual-machine:/tmp/.ICE-unix/1388'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5637b44f_a5be_4c38_a31a_d70f666e4bc6'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.94'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ros2/ws_RAMS/install/workcell_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros2/ws_RAMS/build/workcell_config'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ros2/ws_RAMS/install/workcell_description:/opt/ros/humble')]), 'shell': False}
+[23.165073] (-) TimerEvent: {}
+[23.204015] (workcell_config) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[23.265180] (-) TimerEvent: {}
+[23.280978] (rams_interface) StdoutLine: {'line': b'[ 68%] Built target move_to_pose_server\n'}
+[23.338785] (workcell_config) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[23.339998] (rams_interface) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_fastrtps_c.dir/rams_interface__rosidl_typesupport_fastrtps_c_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[23.349223] (workcell_config) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[23.365299] (-) TimerEvent: {}
+[23.373791] (rams_interface) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rams_interface/srv/detail/move_to_pose__type_support_c.cpp.o\x1b[0m\n'}
+[23.465988] (-) TimerEvent: {}
+[23.511059] (workcell_config) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[23.522132] (workcell_config) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[23.522726] (workcell_config) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[23.523526] (workcell_config) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[23.526724] (workcell_config) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[23.566577] (-) TimerEvent: {}
+[23.629775] (workcell_config) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[23.635590] (workcell_config) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[23.635952] (workcell_config) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[23.636553] (workcell_config) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[23.639206] (workcell_config) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[23.666670] (-) TimerEvent: {}
+[23.769073] (-) TimerEvent: {}
+[23.869433] (-) TimerEvent: {}
+[23.879410] (workcell_config) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[23.969524] (-) TimerEvent: {}
+[24.069721] (rams_interface) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library librams_interface__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[24.070276] (-) TimerEvent: {}
+[24.171979] (-) TimerEvent: {}
+[24.272313] (-) TimerEvent: {}
+[24.303450] (rams_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros2/ws_RAMS/src/rams_interface/src/main_window.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Krams_interface::MainWindow::MainWindow(QWidget*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[24.303615] (rams_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros2/ws_RAMS/src/rams_interface/src/main_window.cpp:29:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[KOgre::SceneManager*\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Krviz_common::DisplayContext*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.303668] (rams_interface) StderrLine: {'line': b'   29 |   render_panel_->initialize(\x1b[01;31m\x1b[Kviz_manager_->getSceneManager()\x1b[m\x1b[K,\n'}
+[24.303712] (rams_interface) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[24.303757] (rams_interface) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[24.303800] (rams_interface) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[KOgre::SceneManager*\x1b[m\x1b[K\n'}
+[24.303842] (rams_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ros2/ws_RAMS/src/rams_interface/src/main_window.cpp:12\x1b[m\x1b[K:\n'}
+[24.303883] (rams_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rviz_common/rviz_common/render_panel.hpp:80:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 1 of \xe2\x80\x98\x1b[01m\x1b[Kvoid rviz_common::RenderPanel::initialize(rviz_common::DisplayContext*, bool)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.303948] (rams_interface) StderrLine: {'line': b'   80 |   void initialize(\x1b[01;36m\x1b[KDisplayContext * manager\x1b[m\x1b[K, bool use_main_scene = false);\n'}
+[24.303995] (rams_interface) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[24.304036] (rams_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros2/ws_RAMS/src/rams_interface/src/main_window.cpp:41:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of incomplete type \xe2\x80\x98\x1b[01m\x1b[Kclass rviz_common::Display\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.304078] (rams_interface) StderrLine: {'line': b'   41 |     cloud\x1b[01;31m\x1b[K->\x1b[m\x1b[KsubProp("Topic")->setValue("/rams/perception/cloud");\n'}
+[24.304119] (rams_interface) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[24.304159] (rams_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rviz_common/rviz_common/display_context.hpp:42\x1b[m\x1b[K,\n'}
+[24.304200] (rams_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rviz_common/rviz_common/visualization_manager.hpp:44\x1b[m\x1b[K,\n'}
+[24.304241] (rams_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ros2/ws_RAMS/src/rams_interface/include/rams_interface/main_window.h:9\x1b[m\x1b[K,\n'}
+[24.304282] (rams_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ros2/ws_RAMS/src/rams_interface/src/main_window.cpp:1\x1b[m\x1b[K:\n'}
+[24.304323] (rams_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rviz_common/rviz_common/frame_manager_iface.hpp:75:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kforward declaration of \xe2\x80\x98\x1b[01m\x1b[Kclass rviz_common::Display\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.304398] (rams_interface) StderrLine: {'line': b'   75 | class \x1b[01;36m\x1b[KDisplay\x1b[m\x1b[K;\n'}
+[24.304452] (rams_interface) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[24.304496] (rams_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros2/ws_RAMS/src/rams_interface/src/main_window.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual bool rams_interface::MainWindow::eventFilter(QObject*, QEvent*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[24.304541] (rams_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros2/ws_RAMS/src/rams_interface/src/main_window.cpp:77:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to deduce \xe2\x80\x98\x1b[01m\x1b[Kauto*\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Krviz_common::VisualizationManager::getSelectionManager()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.304585] (rams_interface) StderrLine: {'line': b'   77 |     auto *sel = viz_manager_->getSelectionManager(\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[24.304628] (rams_interface) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[24.309195] (rams_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros2/ws_RAMS/src/rams_interface/src/main_window.cpp:77:51:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kauto*\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rviz_common::interaction::SelectionManagerIface>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.309330] (rams_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros2/ws_RAMS/src/rams_interface/src/main_window.cpp:78:66:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass rviz_rendering::RenderWindow\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[KgetViewport\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.309384] (rams_interface) StderrLine: {'line': b'   78 | gre::Viewport *viewport = render_panel_->getRenderWindow()->\x1b[01;31m\x1b[KgetViewport\x1b[m\x1b[K(0);\n'}
+[24.309430] (rams_interface) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.309473] (rams_interface) StderrLine: {'line': b'\n'}
+[24.309516] (workcell_config) StdoutLine: {'line': b'-- Configuring done\n'}
+[24.309571] (workcell_config) StdoutLine: {'line': b'-- Generating done\n'}
+[24.309615] (workcell_config) StdoutLine: {'line': b'-- Build files have been written to: /home/ros2/ws_RAMS/build/workcell_config\n'}
+[24.327223] (workcell_config) CommandEnded: {'returncode': 0}
+[24.327541] (workcell_config) JobProgress: {'identifier': 'workcell_config', 'progress': 'build'}
+[24.327563] (workcell_config) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros2/ws_RAMS/build/workcell_config', '--', '-j2', '-l2'], 'cwd': '/home/ros2/ws_RAMS/build/workcell_config', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros2'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros2'), ('OLDPWD', '/home/ros2'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1576'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros2'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros2-virtual-machine:@/tmp/.ICE-unix/1388,unix/ros2-virtual-machine:/tmp/.ICE-unix/1388'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5637b44f_a5be_4c38_a31a_d70f666e4bc6'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.94'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ros2/ws_RAMS/install/workcell_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros2/ws_RAMS/build/workcell_config'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ros2/ws_RAMS/install/workcell_description:/opt/ros/humble')]), 'shell': False}
+[24.337074] (rams_interface) StdoutLine: {'line': b'[ 73%] Built target rams_interface__rosidl_typesupport_fastrtps_c\n'}
+[24.374113] (-) TimerEvent: {}
+[24.396650] (rams_interface) StdoutLine: {'line': b'[ 73%] Built target rams_interface\n'}
+[24.408179] (workcell_config) CommandEnded: {'returncode': 0}
+[24.409585] (workcell_config) JobProgress: {'identifier': 'workcell_config', 'progress': 'install'}
+[24.414155] (workcell_config) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros2/ws_RAMS/build/workcell_config'], 'cwd': '/home/ros2/ws_RAMS/build/workcell_config', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ros2'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ros2'), ('OLDPWD', '/home/ros2'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1576'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'ros2'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ros2'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ros2-virtual-machine:@/tmp/.ICE-unix/1388,unix/ros2-virtual-machine:/tmp/.ICE-unix/1388'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5637b44f_a5be_4c38_a31a_d70f666e4bc6'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.94'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/ros2/ws_RAMS/install/workcell_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ros2/ws_RAMS/build/workcell_config'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ros2/ws_RAMS/install/workcell_description:/opt/ros/humble')]), 'shell': False}
+[24.425759] (workcell_config) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[24.426263] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/ament_index/resource_index/package_run_dependencies/workcell_config\n'}
+[24.426983] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/ament_index/resource_index/parent_prefix_path/workcell_config\n'}
+[24.428621] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/environment/ament_prefix_path.sh\n'}
+[24.429170] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/environment/ament_prefix_path.dsv\n'}
+[24.432585] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/environment/path.sh\n'}
+[24.432695] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/environment/path.dsv\n'}
+[24.432745] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/local_setup.bash\n'}
+[24.432791] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/local_setup.sh\n'}
+[24.432839] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/local_setup.zsh\n'}
+[24.432885] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/local_setup.dsv\n'}
+[24.434240] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/package.dsv\n'}
+[24.434302] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/ament_index/resource_index/packages/workcell_config\n'}
+[24.434377] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/cmake/workcell_configConfig.cmake\n'}
+[24.435695] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/cmake/workcell_configConfig-version.cmake\n'}
+[24.435786] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/package.xml\n'}
+[24.436489] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/launch\n'}
+[24.437249] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/launch/demo.launch.py\n'}
+[24.437347] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/launch/setup_assistant.launch.py\n'}
+[24.437740] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/launch/static_virtual_joint_tfs.launch.py\n'}
+[24.438473] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/launch/spawn_controllers.launch.py\n'}
+[24.444216] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/launch/move_group.launch.py\n'}
+[24.444483] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/launch/rsp.launch.py\n'}
+[24.444536] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/launch/warehouse_db.launch.py\n'}
+[24.444583] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/launch/moveit_rviz.launch.py\n'}
+[24.449673] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config\n'}
+[24.449962] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/moveit.rviz\n'}
+[24.450023] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/ros2_controllers.yaml\n'}
+[24.450070] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/sensors_3d.yaml\n'}
+[24.450115] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/initial_positions.yaml\n'}
+[24.450161] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/joint_limits.yaml\n'}
+[24.450205] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/workcell.srdf\n'}
+[24.450259] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/workcell.ros2_control.xacro\n'}
+[24.450305] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/moveit_controllers.yaml\n'}
+[24.450350] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/pilz_cartesian_limits.yaml\n'}
+[24.450394] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/abb_controllers.yaml\n'}
+[24.450441] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/workcell.urdf.xacro\n'}
+[24.450486] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/config/kinematics.yaml\n'}
+[24.450528] (workcell_config) StdoutLine: {'line': b'-- Installing: /home/ros2/ws_RAMS/install/workcell_config/share/workcell_config/.setup_assistant\n'}
+[24.453465] (rams_interface) StdoutLine: {'line': b'[ 75%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[24.457064] (workcell_config) CommandEnded: {'returncode': 0}
+[24.471811] (workcell_config) JobEnded: {'identifier': 'workcell_config', 'rc': 0}
+[24.474170] (-) TimerEvent: {}
+[24.513886] (rams_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:76\x1b[m\x1b[K,\n'}
+[24.516300] (rams_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer_impl.h:71\x1b[m\x1b[K,\n'}
+[24.518096] (rams_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer.h:48\x1b[m\x1b[K,\n'}
+[24.518426] (rams_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h:48\x1b[m\x1b[K,\n'}
+[24.518482] (rams_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h:52\x1b[m\x1b[K,\n'}
+[24.518527] (rams_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h:46\x1b[m\x1b[K,\n'}
+[24.518573] (rams_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:48\x1b[m\x1b[K,\n'}
+[24.518617] (rams_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h:44\x1b[m\x1b[K,\n'}
+[24.518673] (rams_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow:1\x1b[m\x1b[K,\n'}
+[24.518717] (rams_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ros2/ws_RAMS/src/rams_interface/include/rams_interface/main_window.h:4\x1b[m\x1b[K,\n'}
+[24.518761] (rams_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ros2/ws_RAMS/src/rams_interface/src/main_window.cpp:1\x1b[m\x1b[K:\n'}
+[24.518805] (rams_interface) StderrLine: {'line': b'/usr/include/c++/11/bits/unique_ptr.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Ktypename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...) [with _Tp = rviz_common::VisualizationManager; _Args = {rviz_common::RenderPanel*&}; typename std::_MakeUniq<_Tp>::__single_object = std::unique_ptr<rviz_common::VisualizationManager>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[24.518859] (rams_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ros2/ws_RAMS/src/rams_interface/src/main_window.cpp:28:58:\x1b[m\x1b[K   required from here\n'}
+[24.518904] (rams_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/unique_ptr.h:962:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krviz_common::VisualizationManager::VisualizationManager(rviz_common::RenderPanel*&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.518971] (rams_interface) StderrLine: {'line': b'  962 |     { return unique_ptr<_Tp>(\x1b[01;31m\x1b[Knew _Tp(std::forward<_Args>(__args)...)\x1b[m\x1b[K); }\n'}
+[24.519016] (rams_interface) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.519060] (rams_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ros2/ws_RAMS/src/rams_interface/include/rams_interface/main_window.h:9\x1b[m\x1b[K,\n'}
+[24.519107] (rams_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ros2/ws_RAMS/src/rams_interface/src/main_window.cpp:1\x1b[m\x1b[K:\n'}
+[24.519151] (rams_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rviz_common/rviz_common/visualization_manager.hpp:103:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krviz_common::VisualizationManager::VisualizationManager(rviz_common::RenderPanel*, rviz_common::ros_integration::RosNodeAbstractionIface::WeakPtr, rviz_common::WindowManagerInterface*, rclcpp::Clock::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[24.519200] (rams_interface) StderrLine: {'line': b'  103 |   explicit \x1b[01;36m\x1b[KVisualizationManager\x1b[m\x1b[K(\n'}
+[24.519245] (rams_interface) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[24.519290] (rams_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rviz_common/rviz_common/visualization_manager.hpp:103:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 4 arguments, 1 provided\n'}
+[24.574276] (-) TimerEvent: {}
+[24.674836] (-) TimerEvent: {}
+[24.778186] (-) TimerEvent: {}
+[24.841120] (rams_interface) StdoutLine: {'line': b'[ 75%] Built target rams_interface__py\n'}
+[24.879155] (-) TimerEvent: {}
+[24.909115] (rams_interface) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mAutomatic MOC for target rams_interface__rosidl_generator_py\x1b[0m\n'}
+[24.979257] (-) TimerEvent: {}
+[25.003541] (rams_interface) StdoutLine: {'line': b'[ 76%] Built target rams_interface__rosidl_generator_py_autogen\n'}
+[25.069025] (rams_interface) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/rams_interface__rosidl_generator_py.dir/rams_interface__rosidl_generator_py_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[25.079980] (-) TimerEvent: {}
+[25.123016] (rams_interface) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/rams_interface__rosidl_generator_py.dir/rosidl_generator_py/rams_interface/srv/_move_to_pose_s.c.o\x1b[0m\n'}
+[25.180083] (-) TimerEvent: {}
+[25.283502] (-) TimerEvent: {}
+[25.385982] (-) TimerEvent: {}
+[25.429850] (rams_interface) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/rams_interface/librams_interface__rosidl_generator_py.so\x1b[0m\n'}
+[25.486079] (-) TimerEvent: {}
+[25.587005] (-) TimerEvent: {}
+[25.598532] (rams_interface) StdoutLine: {'line': b'[ 81%] Built target rams_interface__rosidl_generator_py\n'}
+[25.658094] (rams_interface) StdoutLine: {'line': b'[ 82%] \x1b[34m\x1b[1mAutomatic MOC for target rams_interface__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[25.690389] (-) TimerEvent: {}
+[25.732963] (rams_interface) StdoutLine: {'line': b'[ 82%] Built target rams_interface__rosidl_typesupport_fastrtps_c__pyext_autogen\n'}
+[25.792010] (-) TimerEvent: {}
+[25.795026] (rams_interface) StdoutLine: {'line': b'[ 84%] \x1b[34m\x1b[1mAutomatic MOC for target rams_interface__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[25.864158] (rams_interface) StdoutLine: {'line': b'[ 84%] Built target rams_interface__rosidl_typesupport_introspection_c__pyext_autogen\n'}
+[25.894004] (-) TimerEvent: {}
+[25.930629] (rams_interface) StdoutLine: {'line': b'[ 85%] \x1b[34m\x1b[1mAutomatic MOC for target rams_interface__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[25.995348] (-) TimerEvent: {}
+[26.023570] (rams_interface) StdoutLine: {'line': b'[ 85%] Built target rams_interface__rosidl_typesupport_c__pyext_autogen\n'}
+[26.098161] (rams_interface) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rams_interface__rosidl_typesupport_fastrtps_c__pyext_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[26.098316] (-) TimerEvent: {}
+[26.161136] (rams_interface) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/rams_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/rams_interface/_rams_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[26.198428] (-) TimerEvent: {}
+[26.306004] (-) TimerEvent: {}
+[26.352103] (rams_interface) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/rams_interface/rams_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[26.406278] (-) TimerEvent: {}
+[26.474026] (rams_interface) StdoutLine: {'line': b'[ 89%] Built target rams_interface__rosidl_typesupport_fastrtps_c__pyext\n'}
+[26.506390] (-) TimerEvent: {}
+[26.529721] (rams_interface) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_introspection_c__pyext.dir/rams_interface__rosidl_typesupport_introspection_c__pyext_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[26.578186] (rams_interface) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/rams_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/rams_interface/_rams_interface_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[26.606978] (-) TimerEvent: {}
+[26.707986] (-) TimerEvent: {}
+[26.808346] (-) TimerEvent: {}
+[26.815312] (rams_interface) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/rams_interface/rams_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[26.908449] (-) TimerEvent: {}
+[26.969851] (rams_interface) StdoutLine: {'line': b'[ 94%] Built target rams_interface__rosidl_typesupport_introspection_c__pyext\n'}
+[27.009238] (-) TimerEvent: {}
+[27.021369] (rams_interface) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_c__pyext.dir/rams_interface__rosidl_typesupport_c__pyext_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[27.073839] (rams_interface) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/rams_interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/rams_interface/_rams_interface_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[27.112490] (-) TimerEvent: {}
+[27.214990] (-) TimerEvent: {}
+[27.291443] (rams_interface) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/rams_interface/rams_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[27.315987] (-) TimerEvent: {}
+[27.416266] (-) TimerEvent: {}
+[27.476029] (rams_interface) StdoutLine: {'line': b'[ 98%] Built target rams_interface__rosidl_typesupport_c__pyext\n'}
+[27.516367] (-) TimerEvent: {}
+[27.616673] (-) TimerEvent: {}
+[27.717012] (-) TimerEvent: {}
+[27.818971] (-) TimerEvent: {}
+[27.920977] (-) TimerEvent: {}
+[28.021362] (-) TimerEvent: {}
+[28.121738] (-) TimerEvent: {}
+[28.222165] (-) TimerEvent: {}
+[28.322515] (-) TimerEvent: {}
+[28.422862] (-) TimerEvent: {}
+[28.523300] (-) TimerEvent: {}
+[28.624098] (-) TimerEvent: {}
+[28.726124] (-) TimerEvent: {}
+[28.826519] (-) TimerEvent: {}
+[28.874962] (rams_interface) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/gui_node.dir/build.make:104: CMakeFiles/gui_node.dir/src/main_window.cpp.o] Error 1\n'}
+[28.876168] (rams_interface) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:647: CMakeFiles/gui_node.dir/all] Error 2\n'}
+[28.876702] (rams_interface) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[28.878987] (rams_interface) CommandEnded: {'returncode': 2}
+[28.882990] (rams_interface) JobEnded: {'identifier': 'rams_interface', 'rc': 2}
+[28.894619] (-) EventReactorShutdown: {}

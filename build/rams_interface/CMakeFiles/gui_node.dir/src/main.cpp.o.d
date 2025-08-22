@@ -724,23 +724,15 @@ CMakeFiles/gui_node.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__struct.hpp \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__builder.hpp \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__traits.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__traits.hpp \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__type_support.hpp \
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
@@ -751,4 +743,172 @@ CMakeFiles/gui_node.dir/src/main.cpp.o: \
  /home/ros2/ws_RAMS/build/rams_interface/rosidl_generator_cpp/rams_interface/srv/detail/move_to_pose__builder.hpp \
  /home/ros2/ws_RAMS/build/rams_interface/rosidl_generator_cpp/rams_interface/srv/detail/move_to_pose__traits.hpp \
  /home/ros2/ws_RAMS/build/rams_interface/rosidl_generator_cpp/rams_interface/srv/detail/move_to_pose__type_support.hpp \
- /home/ros2/ws_RAMS/build/rams_interface/rosidl_generator_cpp/rams_interface/msg/rosidl_generator_cpp__visibility_control.hpp
+ /home/ros2/ws_RAMS/build/rams_interface/rosidl_generator_cpp/rams_interface/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/humble/include/rviz_common/rviz_common/visualization_manager.hpp \
+ /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
+ /usr/include/c++/11/bits/deque.tcc \
+ /opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h \
+ /opt/ros/humble/include/tf2/tf2/buffer_core.hpp \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Transform.hpp \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Scalar.hpp \
+ /usr/include/c++/11/math.h /usr/include/c++/11/cfloat \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/MinMax.hpp \
+ /opt/ros/humble/include/tf2/tf2/visibility_control.h \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/velocity_stamped.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__builder.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__type_support.hpp \
+ /opt/ros/humble/include/tf2/tf2/buffer_core_interface.hpp \
+ /opt/ros/humble/include/tf2/tf2/time.hpp \
+ /opt/ros/humble/include/tf2/tf2/exceptions.hpp \
+ /opt/ros/humble/include/tf2/tf2/transform_storage.hpp \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp \
+ /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h \
+ /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp \
+ /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp \
+ /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp \
+ /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__traits.hpp \
+ /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__type_support.hpp \
+ /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/humble/include/tf2_ros/tf2_ros/qos.hpp \
+ /opt/ros/humble/include/rviz_common/rviz_common/bit_allocator.hpp \
+ /opt/ros/humble/include/rviz_common/rviz_common/visibility_control.hpp \
+ /opt/ros/humble/include/rviz_common/rviz_common/config.hpp \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QMap \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
+ /opt/ros/humble/include/rviz_common/rviz_common/display_context.hpp \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
+ /opt/ros/humble/include/rviz_common/rviz_common/ros_integration/ros_node_abstraction_iface.hpp \
+ /opt/ros/humble/include/rviz_common/rviz_common/frame_manager_iface.hpp \
+ /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreVector3.h \
+ /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreVector.h \
+ /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgrePrerequisites.h \
+ /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgrePlatform.h \
+ /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreConfig.h \
+ /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreBuildSettings.h \
+ /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreExports.h \
+ /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreStdHeaders.h \
+ /usr/include/c++/11/cstdarg /usr/include/c++/11/queue \
+ /usr/include/c++/11/bits/stl_queue.h /usr/include/c++/11/bitset \
+ /usr/include/c++/11/fstream \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+ /usr/include/c++/11/bits/fstream.tcc \
+ /usr/include/x86_64-linux-gnu/sys/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+ /usr/include/x86_64-linux-gnu/bits/statx.h /usr/include/linux/stat.h \
+ /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
+ /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+ /usr/include/asm-generic/posix_types.h \
+ /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
+ /usr/include/dlfcn.h /usr/include/x86_64-linux-gnu/bits/dlfcn.h \
+ /usr/include/x86_64-linux-gnu/bits/dl_find_object.h \
+ /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreMemoryAllocatorConfig.h \
+ /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreAlignedAllocator.h \
+ /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreMath.h \
+ /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreHeaderPrefix.h \
+ /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreHeaderSuffix.h \
+ /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreQuaternion.h \
+ /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreQuaternion.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__builder.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__type_support.hpp \
+ /opt/ros/humble/include/rviz_common/rviz_common/transformation/frame_transformer.hpp \
+ /opt/ros/humble/include/tf2/tf2/buffer_core_interface.h \
+ /opt/ros/humble/include/tf2/tf2/exceptions.h \
+ /opt/ros/humble/include/tf2_ros/tf2_ros/async_buffer_interface.h \
+ /opt/ros/humble/include/tf2/tf2/transform_datatypes.hpp \
+ /opt/ros/humble/include/rviz_common/rviz_common/ros_integration/ros_node_abstraction.hpp \
+ /opt/ros/humble/include/rviz_common/rviz_common/frame_manager_iface.hpp \
+ /opt/ros/humble/include/rviz_common/rviz_common/transformation/transformation_manager.hpp \
+ /opt/ros/humble/include/rviz_common/rviz_common/factory/factory.hpp \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QIcon \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringList \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h \
+ /opt/ros/humble/include/rviz_common/rviz_common/factory/pluginlib_factory.hpp \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QHash \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qhash.h \
+ /opt/ros/humble/include/pluginlib/pluginlib/class_loader.hpp \
+ /opt/ros/humble/include/class_loader/class_loader/multi_library_class_loader.hpp \
+ /usr/include/console_bridge/console.h \
+ /usr/include/console_bridge_export.h \
+ /opt/ros/humble/include/class_loader/class_loader/class_loader.hpp \
+ /opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp \
+ /opt/ros/humble/include/class_loader/class_loader/exceptions.hpp \
+ /opt/ros/humble/include/class_loader/class_loader/visibility_control.hpp \
+ /opt/ros/humble/include/class_loader/class_loader/meta_object.hpp \
+ /opt/ros/humble/include/class_loader/class_loader/register_macro.hpp \
+ /opt/ros/humble/include/pluginlib/pluginlib/class_desc.hpp \
+ /opt/ros/humble/include/pluginlib/pluginlib/class_loader_base.hpp \
+ /opt/ros/humble/include/pluginlib/pluginlib/exceptions.hpp \
+ /usr/include/tinyxml2.h /usr/include/c++/11/climits \
+ /opt/ros/humble/include/pluginlib/pluginlib/class_loader_imp.hpp \
+ /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/get_package_prefix.hpp \
+ /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/visibility_control.h \
+ /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/get_package_share_directory.hpp \
+ /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/get_resource.hpp \
+ /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/get_resources.hpp \
+ /opt/ros/humble/include/pluginlib/pluginlib/class_loader.hpp \
+ /opt/ros/humble/include/pluginlib/pluginlib/impl/split.hpp \
+ /usr/include/c++/11/regex /usr/include/c++/11/stack \
+ /usr/include/c++/11/bits/stl_stack.h \
+ /usr/include/c++/11/bits/regex_constants.h \
+ /usr/include/c++/11/bits/regex_error.h \
+ /usr/include/c++/11/bits/regex_automaton.h \
+ /usr/include/c++/11/bits/regex_automaton.tcc \
+ /usr/include/c++/11/bits/regex_scanner.h \
+ /usr/include/c++/11/bits/regex_scanner.tcc \
+ /usr/include/c++/11/bits/regex_compiler.h \
+ /usr/include/c++/11/bits/regex_compiler.tcc \
+ /usr/include/c++/11/bits/regex.h /usr/include/c++/11/bits/regex.tcc \
+ /usr/include/c++/11/bits/regex_executor.h \
+ /usr/include/c++/11/bits/regex_executor.tcc \
+ /opt/ros/humble/include/rviz_common/rviz_common/factory/class_id_recording_factory.hpp \
+ /opt/ros/humble/include/rviz_common/rviz_common/factory/factory.hpp \
+ /opt/ros/humble/include/rviz_common/rviz_common/load_resource.hpp \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QPixmap \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QCursor \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h \
+ /opt/ros/humble/include/rviz_common/rviz_common/logging.hpp \
+ /opt/ros/humble/include/rviz_rendering/rviz_rendering/logging_handler.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__struct.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__builder.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__traits.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__traits.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__type_support.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp

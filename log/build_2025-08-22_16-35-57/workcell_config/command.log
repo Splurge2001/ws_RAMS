@@ -1,1 +1,0 @@
-Invoking command in '/home/ros2/ws_RAMS/build/workcell_config': AMENT_PREFIX_PATH=/home/ros2/ws_RAMS/install/workcell_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros2/ws_RAMS/install/workcell_description:/opt/ros/humble /usr/bin/cmake /home/ros2/ws_RAMS/src/workcell_config -DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/install/workcell_config
