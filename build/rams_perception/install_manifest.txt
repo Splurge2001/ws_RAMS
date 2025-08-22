@@ -1,0 +1,16 @@
+/home/ros2/ws_RAMS/install/rams_perception/lib/rams_perception/perception_node
+/home/ros2/ws_RAMS/install/rams_perception/share/ament_index/resource_index/package_run_dependencies/rams_perception
+/home/ros2/ws_RAMS/install/rams_perception/share/ament_index/resource_index/parent_prefix_path/rams_perception
+/home/ros2/ws_RAMS/install/rams_perception/share/rams_perception/environment/ament_prefix_path.sh
+/home/ros2/ws_RAMS/install/rams_perception/share/rams_perception/environment/ament_prefix_path.dsv
+/home/ros2/ws_RAMS/install/rams_perception/share/rams_perception/environment/path.sh
+/home/ros2/ws_RAMS/install/rams_perception/share/rams_perception/environment/path.dsv
+/home/ros2/ws_RAMS/install/rams_perception/share/rams_perception/local_setup.bash
+/home/ros2/ws_RAMS/install/rams_perception/share/rams_perception/local_setup.sh
+/home/ros2/ws_RAMS/install/rams_perception/share/rams_perception/local_setup.zsh
+/home/ros2/ws_RAMS/install/rams_perception/share/rams_perception/local_setup.dsv
+/home/ros2/ws_RAMS/install/rams_perception/share/rams_perception/package.dsv
+/home/ros2/ws_RAMS/install/rams_perception/share/ament_index/resource_index/packages/rams_perception
+/home/ros2/ws_RAMS/install/rams_perception/share/rams_perception/cmake/rams_perceptionConfig.cmake
+/home/ros2/ws_RAMS/install/rams_perception/share/rams_perception/cmake/rams_perceptionConfig-version.cmake
+/home/ros2/ws_RAMS/install/rams_perception/share/rams_perception/package.xml

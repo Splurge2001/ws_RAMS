@@ -1,0 +1,344 @@
+[0.015s] Invoking command in '/home/ros2/ws_RAMS/build/rams_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros2/ws_RAMS/src/rams_interface -DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/install/rams_interface
+[0.060s] -- The C compiler identification is GNU 11.4.0
+[0.103s] -- The CXX compiler identification is GNU 11.4.0
+[0.111s] -- Detecting C compiler ABI info
+[0.179s] -- Detecting C compiler ABI info - done
+[0.185s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.185s] -- Detecting C compile features
+[0.186s] -- Detecting C compile features - done
+[0.189s] -- Detecting CXX compiler ABI info
+[0.296s] -- Detecting CXX compiler ABI info - done
+[0.302s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.302s] -- Detecting CXX compile features
+[0.302s] -- Detecting CXX compile features - done
+[0.303s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.455s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.546s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.576s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.579s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.587s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.595s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.608s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.637s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.638s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.702s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.727s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.758s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.764s] -- Looking for pthread.h
+[0.851s] -- Looking for pthread.h - found
+[0.852s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.934s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.935s] -- Found Threads: TRUE  
+[0.979s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.988s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.007s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[1.019s] -- Found moveit_ros_planning_interface: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[1.038s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[1.147s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.171s] -- Found parameter_traits: 0.5.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.179s] -- Found rclcpp_lifecycle: 16.0.14 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.195s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[1.275s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.296s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.296s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.385s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[1.406s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[1.418s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[1.434s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.447s] -- Found rviz_common: 11.2.19 (/opt/ros/humble/share/rviz_common/cmake)
+[1.450s] -- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'
+[1.454s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[1.455s] -- Found OGRE
+[1.455s] --   static     : OFF
+[1.455s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[1.455s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[1.455s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[1.456s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[1.456s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[1.456s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[1.456s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[1.456s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[1.456s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[1.456s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[1.456s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[1.457s] -- Could not find freeimage library
+[1.467s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[1.472s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[1.548s] -- Found X11: /usr/include   
+[1.549s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[1.629s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[1.629s] -- Looking for gethostbyname
+[1.694s] -- Looking for gethostbyname - found
+[1.694s] -- Looking for connect
+[1.783s] -- Looking for connect - found
+[1.784s] -- Looking for remove
+[1.865s] -- Looking for remove - found
+[1.867s] -- Looking for shmat
+[1.952s] -- Looking for shmat - found
+[1.952s] -- Looking for IceConnectionNumber in ICE
+[2.046s] -- Looking for IceConnectionNumber in ICE - found
+[2.331s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.729s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.882s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.905s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.906s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.928s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.928s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.928s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.928s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.952s] -- Found PythonExtra: .so  
+[3.027s] -- Configuring done
+[3.183s] -- Generating done
+[3.200s] -- Build files have been written to: /home/ros2/ws_RAMS/build/rams_interface
+[3.214s] Invoked command in '/home/ros2/ws_RAMS/build/rams_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros2/ws_RAMS/src/rams_interface -DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/install/rams_interface
+[3.216s] Invoking command in '/home/ros2/ws_RAMS/build/rams_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros2/ws_RAMS/build/rams_interface -- -j2 -l2
+[3.264s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.288s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.488s] [  4%] [34m[1mAutomatic MOC for target rams_interface__rosidl_generator_c[0m
+[3.531s] [  4%] Built target rams_interface__rosidl_generator_c_autogen
+[3.591s] [  4%] Built target ament_cmake_python_copy_rams_interface
+[3.624s] [  5%] [32mBuilding CXX object CMakeFiles/rams_interface__rosidl_generator_c.dir/rams_interface__rosidl_generator_c_autogen/mocs_compilation.cpp.o[0m
+[3.652s] [  7%] [32mBuilding C object CMakeFiles/rams_interface__rosidl_generator_c.dir/rosidl_generator_c/rams_interface/srv/detail/move_to_pose__functions.c.o[0m
+[3.710s] [  8%] [32m[1mLinking CXX shared library librams_interface__rosidl_generator_c.so[0m
+[3.713s] [  8%] Built target rams_interface__cpp
+[3.858s] [ 10%] Built target rams_interface__rosidl_generator_c
+[3.920s] [ 11%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[4.272s] running egg_info
+[4.272s] creating rams_interface.egg-info
+[4.272s] writing rams_interface.egg-info/PKG-INFO
+[4.272s] writing dependency_links to rams_interface.egg-info/dependency_links.txt
+[4.272s] writing top-level names to rams_interface.egg-info/top_level.txt
+[4.272s] writing manifest file 'rams_interface.egg-info/SOURCES.txt'
+[4.276s] reading manifest file 'rams_interface.egg-info/SOURCES.txt'
+[4.276s] writing manifest file 'rams_interface.egg-info/SOURCES.txt'
+[4.324s] [ 11%] Built target ament_cmake_python_build_rams_interface_egg
+[4.344s] [ 13%] [34m[1mAutomatic MOC for target rams_interface__rosidl_typesupport_cpp[0m
+[4.394s] [ 14%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.447s] [ 14%] Built target rams_interface__rosidl_typesupport_cpp_autogen
+[4.525s] [ 15%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.849s] [ 17%] [34m[1mAutomatic MOC for target rams_interface__rosidl_typesupport_fastrtps_c[0m
+[4.939s] [ 17%] Built target rams_interface__rosidl_typesupport_fastrtps_c_autogen
+[4.985s] [ 18%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[5.012s] [ 20%] [34m[1mAutomatic MOC for target rams_interface__rosidl_typesupport_fastrtps_cpp[0m
+[5.077s] [ 20%] Built target rams_interface__rosidl_typesupport_fastrtps_cpp_autogen
+[5.124s] [ 21%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[5.405s] [ 23%] [34m[1mAutomatic MOC for target rams_interface__rosidl_typesupport_introspection_c[0m
+[5.480s] [ 23%] Built target rams_interface__rosidl_typesupport_introspection_c_autogen
+[5.519s] [ 24%] [34m[1mAutomatic MOC for target rams_interface__rosidl_typesupport_c[0m
+[5.519s] [ 26%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[5.597s] [ 26%] Built target rams_interface__rosidl_typesupport_c_autogen
+[5.650s] [ 27%] [32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_cpp.dir/rams_interface__rosidl_typesupport_cpp_autogen/mocs_compilation.cpp.o[0m
+[5.713s] [ 28%] [32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rams_interface/srv/move_to_pose__type_support.cpp.o[0m
+[5.932s] [ 30%] [34m[1mAutomatic MOC for target rams_interface__rosidl_typesupport_introspection_cpp[0m
+[5.993s] [ 30%] Built target rams_interface__rosidl_typesupport_introspection_cpp_autogen
+[6.042s] [ 31%] [32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_fastrtps_c.dir/rams_interface__rosidl_typesupport_fastrtps_c_autogen/mocs_compilation.cpp.o[0m
+[6.093s] [ 33%] [32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rams_interface/srv/detail/move_to_pose__type_support_c.cpp.o[0m
+[6.429s] [ 34%] [32m[1mLinking CXX shared library librams_interface__rosidl_typesupport_cpp.so[0m
+[6.562s] [ 36%] Built target rams_interface__rosidl_typesupport_cpp
+[6.620s] [ 37%] [32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_fastrtps_cpp.dir/rams_interface__rosidl_typesupport_fastrtps_cpp_autogen/mocs_compilation.cpp.o[0m
+[6.690s] [ 39%] [32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rams_interface/srv/detail/dds_fastrtps/move_to_pose__type_support.cpp.o[0m
+[6.787s] [ 40%] [32m[1mLinking CXX shared library librams_interface__rosidl_typesupport_fastrtps_c.so[0m
+[7.010s] [ 42%] Built target rams_interface__rosidl_typesupport_fastrtps_c
+[7.069s] [ 43%] [32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_introspection_c.dir/rams_interface__rosidl_typesupport_introspection_c_autogen/mocs_compilation.cpp.o[0m
+[7.128s] [ 44%] [32mBuilding C object CMakeFiles/rams_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rams_interface/srv/detail/move_to_pose__type_support.c.o[0m
+[7.248s] [ 46%] [32m[1mLinking CXX shared library librams_interface__rosidl_typesupport_introspection_c.so[0m
+[7.376s] [ 47%] Built target rams_interface__rosidl_typesupport_introspection_c
+[7.443s] [ 49%] [32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_c.dir/rams_interface__rosidl_typesupport_c_autogen/mocs_compilation.cpp.o[0m
+[7.512s] [ 50%] [32m[1mLinking CXX shared library librams_interface__rosidl_typesupport_fastrtps_cpp.so[0m
+[7.517s] [ 52%] [32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/rams_interface/srv/move_to_pose__type_support.cpp.o[0m
+[7.615s] [ 53%] [32m[1mLinking CXX shared library librams_interface__rosidl_typesupport_c.so[0m
+[7.673s] [ 55%] Built target rams_interface__rosidl_typesupport_fastrtps_cpp
+[7.720s] [ 56%] Built target rams_interface__rosidl_typesupport_c
+[7.729s] [ 57%] [32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_introspection_cpp.dir/rams_interface__rosidl_typesupport_introspection_cpp_autogen/mocs_compilation.cpp.o[0m
+[7.745s] [ 59%] [32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rams_interface/srv/detail/move_to_pose__type_support.cpp.o[0m
+[7.818s] [ 60%] [34m[1mAutomatic MOC for target move_to_pose_server[0m
+[7.907s] [ 60%] Built target move_to_pose_server_autogen
+[7.964s] [ 62%] [34m[1mAutomatic MOC for target gui_node[0m
+[8.477s] [ 63%] [32m[1mLinking CXX shared library librams_interface__rosidl_typesupport_introspection_cpp.so[0m
+[8.539s] [ 65%] Built target rams_interface__rosidl_typesupport_introspection_cpp
+[8.581s] [ 65%] Built target rams_interface
+[8.622s] [ 66%] [32mBuilding CXX object CMakeFiles/move_to_pose_server.dir/move_to_pose_server_autogen/mocs_compilation.cpp.o[0m
+[8.663s] [ 68%] [32mBuilding CXX object CMakeFiles/move_to_pose_server.dir/src/move_to_pose_server.cpp.o[0m
+[8.665s] [ 68%] Built target gui_node_autogen
+[8.698s] [ 69%] [34m[1mGenerating Python code for ROS interfaces[0m
+[9.380s] [ 69%] Built target rams_interface__py
+[9.450s] [ 71%] [32mBuilding CXX object CMakeFiles/gui_node.dir/gui_node_autogen/mocs_compilation.cpp.o[0m
+[16.842s] [ 72%] [32mBuilding CXX object CMakeFiles/gui_node.dir/src/main.cpp.o[0m
+[20.358s] [ 73%] [32m[1mLinking CXX executable move_to_pose_server[0m
+[20.870s] [ 73%] Built target move_to_pose_server
+[20.916s] [ 75%] [34m[1mAutomatic MOC for target rams_interface__rosidl_generator_py[0m
+[20.965s] [ 75%] Built target rams_interface__rosidl_generator_py_autogen
+[20.993s] [ 76%] [32mBuilding CXX object CMakeFiles/rams_interface__rosidl_generator_py.dir/rams_interface__rosidl_generator_py_autogen/mocs_compilation.cpp.o[0m
+[21.037s] [ 78%] [32mBuilding C object CMakeFiles/rams_interface__rosidl_generator_py.dir/rosidl_generator_py/rams_interface/srv/_move_to_pose_s.c.o[0m
+[21.221s] [ 79%] [32m[1mLinking CXX shared library rosidl_generator_py/rams_interface/librams_interface__rosidl_generator_py.so[0m
+[21.334s] [ 79%] Built target rams_interface__rosidl_generator_py
+[21.373s] [ 81%] [34m[1mAutomatic MOC for target rams_interface__rosidl_typesupport_fastrtps_c__pyext[0m
+[21.414s] [ 81%] Built target rams_interface__rosidl_typesupport_fastrtps_c__pyext_autogen
+[21.454s] [ 82%] [34m[1mAutomatic MOC for target rams_interface__rosidl_typesupport_introspection_c__pyext[0m
+[21.494s] [ 82%] Built target rams_interface__rosidl_typesupport_introspection_c__pyext_autogen
+[21.516s] [ 84%] [34m[1mAutomatic MOC for target rams_interface__rosidl_typesupport_c__pyext[0m
+[21.549s] [ 84%] Built target rams_interface__rosidl_typesupport_c__pyext_autogen
+[21.557s] [ 85%] [32mBuilding CXX object CMakeFiles/gui_node.dir/src/main_window.cpp.o[0m
+[22.379s] [ 86%] [32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rams_interface__rosidl_typesupport_fastrtps_c__pyext_autogen/mocs_compilation.cpp.o[0m
+[22.399s] [ 88%] [32mBuilding C object CMakeFiles/rams_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/rams_interface/_rams_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[22.486s] [ 89%] [32m[1mLinking CXX shared library rosidl_generator_py/rams_interface/rams_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[22.535s] [ 89%] Built target rams_interface__rosidl_typesupport_fastrtps_c__pyext
+[22.550s] [ 91%] [32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_introspection_c__pyext.dir/rams_interface__rosidl_typesupport_introspection_c__pyext_autogen/mocs_compilation.cpp.o[0m
+[22.567s] [ 92%] [32mBuilding C object CMakeFiles/rams_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/rams_interface/_rams_interface_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[22.651s] [ 94%] [32m[1mLinking CXX shared library rosidl_generator_py/rams_interface/rams_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[22.698s] [ 94%] Built target rams_interface__rosidl_typesupport_introspection_c__pyext
+[22.718s] [ 95%] [32mBuilding CXX object CMakeFiles/rams_interface__rosidl_typesupport_c__pyext.dir/rams_interface__rosidl_typesupport_c__pyext_autogen/mocs_compilation.cpp.o[0m
+[22.733s] [ 97%] [32mBuilding C object CMakeFiles/rams_interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/rams_interface/_rams_interface_s.ep.rosidl_typesupport_c.c.o[0m
+[22.816s] [ 98%] [32m[1mLinking CXX shared library rosidl_generator_py/rams_interface/rams_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[22.863s] [ 98%] Built target rams_interface__rosidl_typesupport_c__pyext
+[30.047s] [100%] [32m[1mLinking CXX executable gui_node[0m
+[31.134s] [100%] Built target gui_node
+[31.144s] Invoked command in '/home/ros2/ws_RAMS/build/rams_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros2/ws_RAMS/build/rams_interface -- -j2 -l2
+[31.146s] Invoking command in '/home/ros2/ws_RAMS/build/rams_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros2/ws_RAMS/build/rams_interface
+[31.157s] -- Install configuration: ""
+[31.158s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/ament_index/resource_index/rosidl_interfaces/rams_interface
+[31.158s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface
+[31.158s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv
+[31.158s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv/detail
+[31.158s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv/detail/move_to_pose__type_support.h
+[31.158s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv/detail/move_to_pose__functions.c
+[31.158s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv/detail/move_to_pose__struct.h
+[31.158s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv/detail/move_to_pose__functions.h
+[31.158s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv/move_to_pose.h
+[31.158s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/msg
+[31.158s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/msg/rosidl_generator_c__visibility_control.h
+[31.158s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/environment/library_path.sh
+[31.158s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/environment/library_path.dsv
+[31.158s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/lib/librams_interface__rosidl_generator_c.so
+[31.159s] -- Set runtime path of "/home/ros2/ws_RAMS/install/rams_interface/lib/librams_interface__rosidl_generator_c.so" to ""
+[31.159s] -- Up-to-date: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface
+[31.159s] -- Up-to-date: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv
+[31.160s] -- Up-to-date: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv/detail
+[31.160s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv/detail/move_to_pose__rosidl_typesupport_fastrtps_c.h
+[31.160s] -- Up-to-date: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/msg
+[31.160s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[31.160s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/lib/librams_interface__rosidl_typesupport_fastrtps_c.so
+[31.160s] -- Set runtime path of "/home/ros2/ws_RAMS/install/rams_interface/lib/librams_interface__rosidl_typesupport_fastrtps_c.so" to ""
+[31.160s] -- Up-to-date: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface
+[31.161s] -- Up-to-date: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv
+[31.161s] -- Up-to-date: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv/detail
+[31.161s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv/detail/move_to_pose__builder.hpp
+[31.161s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv/detail/move_to_pose__traits.hpp
+[31.161s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv/detail/move_to_pose__struct.hpp
+[31.161s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv/detail/move_to_pose__type_support.hpp
+[31.161s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv/move_to_pose.hpp
+[31.161s] -- Up-to-date: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/msg
+[31.161s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/msg/rosidl_generator_cpp__visibility_control.hpp
+[31.161s] -- Up-to-date: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface
+[31.162s] -- Up-to-date: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv
+[31.163s] -- Up-to-date: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv/detail
+[31.163s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv/detail/dds_fastrtps
+[31.163s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv/detail/move_to_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[31.163s] -- Up-to-date: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/msg
+[31.163s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[31.163s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/lib/librams_interface__rosidl_typesupport_fastrtps_cpp.so
+[31.163s] -- Set runtime path of "/home/ros2/ws_RAMS/install/rams_interface/lib/librams_interface__rosidl_typesupport_fastrtps_cpp.so" to ""
+[31.164s] -- Up-to-date: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface
+[31.164s] -- Up-to-date: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv
+[31.165s] -- Up-to-date: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv/detail
+[31.165s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv/detail/move_to_pose__type_support.c
+[31.165s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv/detail/move_to_pose__rosidl_typesupport_introspection_c.h
+[31.165s] -- Up-to-date: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/msg
+[31.165s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[31.165s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/lib/librams_interface__rosidl_typesupport_introspection_c.so
+[31.166s] -- Set runtime path of "/home/ros2/ws_RAMS/install/rams_interface/lib/librams_interface__rosidl_typesupport_introspection_c.so" to ""
+[31.166s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/lib/librams_interface__rosidl_typesupport_c.so
+[31.166s] -- Set runtime path of "/home/ros2/ws_RAMS/install/rams_interface/lib/librams_interface__rosidl_typesupport_c.so" to ""
+[31.166s] -- Up-to-date: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface
+[31.166s] -- Up-to-date: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv
+[31.166s] -- Up-to-date: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv/detail
+[31.166s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv/detail/move_to_pose__type_support.cpp
+[31.166s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/include/rams_interface/rams_interface/srv/detail/move_to_pose__rosidl_typesupport_introspection_cpp.hpp
+[31.166s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/lib/librams_interface__rosidl_typesupport_introspection_cpp.so
+[31.166s] -- Set runtime path of "/home/ros2/ws_RAMS/install/rams_interface/lib/librams_interface__rosidl_typesupport_introspection_cpp.so" to ""
+[31.166s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/lib/librams_interface__rosidl_typesupport_cpp.so
+[31.167s] -- Set runtime path of "/home/ros2/ws_RAMS/install/rams_interface/lib/librams_interface__rosidl_typesupport_cpp.so" to ""
+[31.167s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/environment/pythonpath.sh
+[31.167s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/environment/pythonpath.dsv
+[31.167s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface-0.0.1-py3.10.egg-info
+[31.167s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface-0.0.1-py3.10.egg-info/PKG-INFO
+[31.167s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface-0.0.1-py3.10.egg-info/SOURCES.txt
+[31.167s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface-0.0.1-py3.10.egg-info/dependency_links.txt
+[31.167s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface-0.0.1-py3.10.egg-info/top_level.txt
+[31.167s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface
+[31.167s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface/_rams_interface_s.ep.rosidl_typesupport_c.c
+[31.167s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface/rams_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[31.167s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface/__init__.py
+[31.167s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface/srv
+[31.167s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface/srv/_move_to_pose_s.c
+[31.167s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface/srv/_move_to_pose.py
+[31.167s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface/srv/__init__.py
+[31.168s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface/_rams_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+[31.168s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface/rams_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[31.168s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface/librams_interface__rosidl_generator_py.so
+[31.168s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface/rams_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[31.168s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface/_rams_interface_s.ep.rosidl_typesupport_introspection_c.c
+[31.197s] Listing '/home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface'...
+[31.197s] Compiling '/home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface/__init__.py'...
+[31.197s] Listing '/home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface/srv'...
+[31.197s] Compiling '/home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface/srv/__init__.py'...
+[31.197s] Compiling '/home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface/srv/_move_to_pose.py'...
+[31.199s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface/rams_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[31.200s] -- Set runtime path of "/home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface/rams_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[31.200s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface/rams_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[31.200s] -- Set runtime path of "/home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface/rams_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[31.201s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface/rams_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[31.201s] -- Set runtime path of "/home/ros2/ws_RAMS/install/rams_interface/local/lib/python3.10/dist-packages/rams_interface/rams_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[31.201s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/lib/librams_interface__rosidl_generator_py.so
+[31.202s] -- Set runtime path of "/home/ros2/ws_RAMS/install/rams_interface/lib/librams_interface__rosidl_generator_py.so" to ""
+[31.202s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/srv/MoveToPose.idl
+[31.202s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/srv/MoveToPose.srv
+[31.202s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/srv/MoveToPose_Request.msg
+[31.202s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/srv/MoveToPose_Response.msg
+[31.202s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/lib/rams_interface/move_to_pose_server
+[31.205s] -- Set runtime path of "/home/ros2/ws_RAMS/install/rams_interface/lib/rams_interface/move_to_pose_server" to ""
+[31.205s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/lib/rams_interface/gui_node
+[31.207s] -- Set runtime path of "/home/ros2/ws_RAMS/install/rams_interface/lib/rams_interface/gui_node" to ""
+[31.207s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/launch
+[31.207s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/launch/gui.launch.py
+[31.207s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/launch/move_to_pose_server.launch.py
+[31.208s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/ament_index/resource_index/package_run_dependencies/rams_interface
+[31.208s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/ament_index/resource_index/parent_prefix_path/rams_interface
+[31.208s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/environment/ament_prefix_path.sh
+[31.208s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/environment/ament_prefix_path.dsv
+[31.208s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/environment/path.sh
+[31.208s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/environment/path.dsv
+[31.208s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/local_setup.bash
+[31.209s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/local_setup.sh
+[31.209s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/local_setup.zsh
+[31.209s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/local_setup.dsv
+[31.209s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/package.dsv
+[31.209s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/ament_index/resource_index/packages/rams_interface
+[31.209s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/cmake/export_rams_interface__rosidl_generator_cExport.cmake
+[31.210s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/cmake/export_rams_interface__rosidl_generator_cExport-noconfig.cmake
+[31.210s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/cmake/export_rams_interface__rosidl_typesupport_fastrtps_cExport.cmake
+[31.210s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/cmake/export_rams_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[31.210s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/cmake/export_rams_interface__rosidl_generator_cppExport.cmake
+[31.210s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/cmake/export_rams_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+[31.210s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/cmake/export_rams_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[31.210s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/cmake/rams_interface__rosidl_typesupport_introspection_cExport.cmake
+[31.210s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/cmake/rams_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[31.211s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/cmake/rams_interface__rosidl_typesupport_cExport.cmake
+[31.211s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/cmake/rams_interface__rosidl_typesupport_cExport-noconfig.cmake
+[31.211s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/cmake/rams_interface__rosidl_typesupport_introspection_cppExport.cmake
+[31.211s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/cmake/rams_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[31.211s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/cmake/rams_interface__rosidl_typesupport_cppExport.cmake
+[31.211s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/cmake/rams_interface__rosidl_typesupport_cppExport-noconfig.cmake
+[31.212s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/cmake/export_rams_interface__rosidl_generator_pyExport.cmake
+[31.212s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/cmake/export_rams_interface__rosidl_generator_pyExport-noconfig.cmake
+[31.212s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/cmake/rosidl_cmake-extras.cmake
+[31.212s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[31.212s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[31.212s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[31.212s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/cmake/ament_cmake_export_targets-extras.cmake
+[31.212s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[31.213s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[31.213s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/cmake/rams_interfaceConfig.cmake
+[31.213s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/cmake/rams_interfaceConfig-version.cmake
+[31.214s] -- Installing: /home/ros2/ws_RAMS/install/rams_interface/share/rams_interface/package.xml
+[31.215s] Invoked command in '/home/ros2/ws_RAMS/build/rams_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros2/ws_RAMS/build/rams_interface
