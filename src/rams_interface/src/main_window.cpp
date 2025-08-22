@@ -83,8 +83,8 @@ bool MainWindow::eventFilter(QObject *obj, QEvent *event) {
     QMouseEvent *mouse = static_cast<QMouseEvent *>(event);
     Ogre::Vector3 pos;
     auto sel = viz_manager_->getSelectionManager();
-    Ogre::Viewport *viewport =
-        render_panel_->getRenderWindow()->get_render_window()->getViewport(0);
+    auto ogre_window = render_panel_->getRenderWindow()->getRenderWindow();
+    Ogre::Viewport *viewport = ogre_window->getViewport(0);
     if (sel->get3DPoint(viewport, mouse->x(), mouse->y(), pos)) {
       geometry_msgs::msg::PoseStamped ps;
       ps.header.frame_id = viz_manager_->getFixedFrame().toStdString();
