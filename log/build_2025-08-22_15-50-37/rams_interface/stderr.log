@@ -1,0 +1,217 @@
+[0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+  Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+  rosidl_target_interfaces()
+Call Stack (most recent call first):
+  CMakeLists.txt:37 (rosidl_target_interfaces)
+
+[0m
+[0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+  Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+  rosidl_target_interfaces()
+Call Stack (most recent call first):
+  CMakeLists.txt:56 (rosidl_target_interfaces)
+
+[0m
+[33mCMake Warning (dev) in CMakeLists.txt:
+  Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+  Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  For compatibility, CMake is excluding the GENERATED source file(s):
+
+    "/home/ros2/ws_RAMS/build/rams_interface/rosidl_generator_c/rams_interface/srv/move_to_pose.h"
+    "/home/ros2/ws_RAMS/build/rams_interface/rosidl_generator_c/rams_interface/srv/detail/move_to_pose__functions.h"
+    "/home/ros2/ws_RAMS/build/rams_interface/rosidl_generator_c/rams_interface/srv/detail/move_to_pose__struct.h"
+    "/home/ros2/ws_RAMS/build/rams_interface/rosidl_generator_c/rams_interface/srv/detail/move_to_pose__type_support.h"
+    "/home/ros2/ws_RAMS/build/rams_interface/rosidl_generator_c/rams_interface/srv/detail/move_to_pose__functions.c"
+
+  from processing by AUTOMOC.  If any of the files should be processed, set
+  CMP0071 to NEW.  If any of the files should not be processed, explicitly
+  exclude them by setting the source file property SKIP_AUTOMOC:
+
+    set_property(SOURCE file.h PROPERTY SKIP_AUTOMOC ON)
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) in CMakeLists.txt:
+  Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+  Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  For compatibility, CMake is excluding the GENERATED source file(s):
+
+    "/home/ros2/ws_RAMS/build/rams_interface/rosidl_typesupport_fastrtps_c/rams_interface/srv/detail/move_to_pose__rosidl_typesupport_fastrtps_c.h"
+    "/home/ros2/ws_RAMS/build/rams_interface/rosidl_typesupport_fastrtps_c/rams_interface/srv/detail/move_to_pose__type_support_c.cpp"
+
+  from processing by AUTOMOC.  If any of the files should be processed, set
+  CMP0071 to NEW.  If any of the files should not be processed, explicitly
+  exclude them by setting the source file property SKIP_AUTOMOC:
+
+    set_property(SOURCE file.h PROPERTY SKIP_AUTOMOC ON)
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) in CMakeLists.txt:
+  Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+  Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  For compatibility, CMake is excluding the GENERATED source file(s):
+
+    "/home/ros2/ws_RAMS/build/rams_interface/rosidl_typesupport_fastrtps_cpp/rams_interface/srv/detail/dds_fastrtps/move_to_pose__type_support.cpp"
+    "/home/ros2/ws_RAMS/build/rams_interface/rosidl_typesupport_fastrtps_cpp/rams_interface/srv/detail/move_to_pose__rosidl_typesupport_fastrtps_cpp.hpp"
+
+  from processing by AUTOMOC.  If any of the files should be processed, set
+  CMP0071 to NEW.  If any of the files should not be processed, explicitly
+  exclude them by setting the source file property SKIP_AUTOMOC:
+
+    set_property(SOURCE file.h PROPERTY SKIP_AUTOMOC ON)
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) in CMakeLists.txt:
+  Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+  Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  For compatibility, CMake is excluding the GENERATED source file(s):
+
+    "/home/ros2/ws_RAMS/build/rams_interface/rosidl_typesupport_introspection_c/rams_interface/srv/detail/move_to_pose__rosidl_typesupport_introspection_c.h"
+    "/home/ros2/ws_RAMS/build/rams_interface/rosidl_typesupport_introspection_c/rams_interface/srv/detail/move_to_pose__type_support.c"
+
+  from processing by AUTOMOC.  If any of the files should be processed, set
+  CMP0071 to NEW.  If any of the files should not be processed, explicitly
+  exclude them by setting the source file property SKIP_AUTOMOC:
+
+    set_property(SOURCE file.h PROPERTY SKIP_AUTOMOC ON)
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) in CMakeLists.txt:
+  Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+  Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  For compatibility, CMake is excluding the GENERATED source file(s):
+
+    "/home/ros2/ws_RAMS/build/rams_interface/rosidl_typesupport_c/rams_interface/srv/move_to_pose__type_support.cpp"
+
+  from processing by AUTOMOC.  If any of the files should be processed, set
+  CMP0071 to NEW.  If any of the files should not be processed, explicitly
+  exclude them by setting the source file property SKIP_AUTOMOC:
+
+    set_property(SOURCE file.h PROPERTY SKIP_AUTOMOC ON)
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) in CMakeLists.txt:
+  Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+  Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  For compatibility, CMake is excluding the GENERATED source file(s):
+
+    "/home/ros2/ws_RAMS/build/rams_interface/rosidl_typesupport_introspection_cpp/rams_interface/srv/detail/move_to_pose__rosidl_typesupport_introspection_cpp.hpp"
+    "/home/ros2/ws_RAMS/build/rams_interface/rosidl_typesupport_introspection_cpp/rams_interface/srv/detail/move_to_pose__type_support.cpp"
+
+  from processing by AUTOMOC.  If any of the files should be processed, set
+  CMP0071 to NEW.  If any of the files should not be processed, explicitly
+  exclude them by setting the source file property SKIP_AUTOMOC:
+
+    set_property(SOURCE file.h PROPERTY SKIP_AUTOMOC ON)
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) in CMakeLists.txt:
+  Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+  Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  For compatibility, CMake is excluding the GENERATED source file(s):
+
+    "/home/ros2/ws_RAMS/build/rams_interface/rosidl_typesupport_cpp/rams_interface/srv/move_to_pose__type_support.cpp"
+
+  from processing by AUTOMOC.  If any of the files should be processed, set
+  CMP0071 to NEW.  If any of the files should not be processed, explicitly
+  exclude them by setting the source file property SKIP_AUTOMOC:
+
+    set_property(SOURCE file.h PROPERTY SKIP_AUTOMOC ON)
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) in CMakeLists.txt:
+  Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+  Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  For compatibility, CMake is excluding the GENERATED source file(s):
+
+    "/home/ros2/ws_RAMS/build/rams_interface/rosidl_generator_py/rams_interface/srv/_move_to_pose_s.c"
+
+  from processing by AUTOMOC.  If any of the files should be processed, set
+  CMP0071 to NEW.  If any of the files should not be processed, explicitly
+  exclude them by setting the source file property SKIP_AUTOMOC:
+
+    set_property(SOURCE file.h PROPERTY SKIP_AUTOMOC ON)
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) in CMakeLists.txt:
+  Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+  Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  For compatibility, CMake is excluding the GENERATED source file(s):
+
+    "/home/ros2/ws_RAMS/build/rams_interface/rosidl_generator_py/rams_interface/_rams_interface_s.ep.rosidl_typesupport_fastrtps_c.c"
+
+  from processing by AUTOMOC.  If any of the files should be processed, set
+  CMP0071 to NEW.  If any of the files should not be processed, explicitly
+  exclude them by setting the source file property SKIP_AUTOMOC:
+
+    set_property(SOURCE file.h PROPERTY SKIP_AUTOMOC ON)
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) in CMakeLists.txt:
+  Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+  Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  For compatibility, CMake is excluding the GENERATED source file(s):
+
+    "/home/ros2/ws_RAMS/build/rams_interface/rosidl_generator_py/rams_interface/_rams_interface_s.ep.rosidl_typesupport_introspection_c.c"
+
+  from processing by AUTOMOC.  If any of the files should be processed, set
+  CMP0071 to NEW.  If any of the files should not be processed, explicitly
+  exclude them by setting the source file property SKIP_AUTOMOC:
+
+    set_property(SOURCE file.h PROPERTY SKIP_AUTOMOC ON)
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) in CMakeLists.txt:
+  Policy CMP0071 is not set: Let AUTOMOC and AUTOUIC process GENERATED files.
+  Run "cmake --help-policy CMP0071" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  For compatibility, CMake is excluding the GENERATED source file(s):
+
+    "/home/ros2/ws_RAMS/build/rams_interface/rosidl_generator_py/rams_interface/_rams_interface_s.ep.rosidl_typesupport_c.c"
+
+  from processing by AUTOMOC.  If any of the files should be processed, set
+  CMP0071 to NEW.  If any of the files should not be processed, explicitly
+  exclude them by setting the source file property SKIP_AUTOMOC:
+
+    set_property(SOURCE file.h PROPERTY SKIP_AUTOMOC ON)
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[01m[K/home/ros2/ws_RAMS/src/rams_interface/src/main_window.cpp:14:10:[m[K [01;31m[Kfatal error: [m[Krviz_rendering/ogre_helpers/qt_ogre_render_window.hpp: No such file or directory
+   14 | #include [01;31m[K<rviz_rendering/ogre_helpers/qt_ogre_render_window.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/gui_node.dir/build.make:104: CMakeFiles/gui_node.dir/src/main_window.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:649: CMakeFiles/gui_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

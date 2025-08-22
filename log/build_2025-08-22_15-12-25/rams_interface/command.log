@@ -1,2 +1,0 @@
-Invoking command in '/home/ros2/ws_RAMS/build/rams_interface': /usr/bin/cmake /home/ros2/ws_RAMS/src/rams_interface -DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/install/rams_interface
-Invoked command in '/home/ros2/ws_RAMS/build/rams_interface' returned '1': /usr/bin/cmake /home/ros2/ws_RAMS/src/rams_interface -DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/install/rams_interface
