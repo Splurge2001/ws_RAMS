@@ -9,6 +9,7 @@
 #include <memory>
 
 #include <rclcpp/clock.hpp>
+#include <rviz_common/display.hpp>
 #include <rviz_common/interaction/selection_manager.hpp>
 #include <rviz_common/render_panel.hpp>
 #include <rviz_common/ros_integration/ros_node_abstraction.hpp>
