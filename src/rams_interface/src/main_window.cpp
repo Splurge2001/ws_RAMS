@@ -26,8 +26,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
 
   viz_manager_ =
       std::make_unique<rviz_common::VisualizationManager>(render_panel_);
-  render_panel_->initialize(viz_manager_->getSceneManager(),
-                            viz_manager_.get());
+  render_panel_->initialize(viz_manager_.get());
   viz_manager_->initialize();
   viz_manager_->startUpdate();
 
