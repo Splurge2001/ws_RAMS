@@ -6,6 +6,7 @@
 #include <memory>
 #include <rams_interface/srv/move_to_pose.hpp>
 #include <rclcpp/rclcpp.hpp>
+#include <rviz_common/ros_integration/ros_node_abstraction.hpp>
 #include <rviz_common/visualization_manager.hpp>
 #include <sensor_msgs/msg/point_cloud2.hpp>
 
@@ -34,6 +35,8 @@ private:
 
   rviz_common::RenderPanel *render_panel_;
   std::unique_ptr<rviz_common::VisualizationManager> viz_manager_;
+  rviz_common::ros_integration::RosNodeAbstractionIface::SharedPtr
+      ros_node_abstraction_;
 
 public:
   rclcpp::Node::SharedPtr get_node() const { return node_; }
