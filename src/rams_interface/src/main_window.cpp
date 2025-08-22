@@ -29,7 +29,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) {
   setCentralWidget(render_panel_);
 
   ros_node_abstraction_ =
-      std::make_shared<rviz_common::ros_integration::RosNodeAbstraction>(node_);
+      std::make_shared<rviz_common::ros_integration::RosNodeAbstraction>(
+          node_, node_->get_name());
   viz_manager_ = std::make_unique<rviz_common::VisualizationManager>(
       render_panel_, ros_node_abstraction_, nullptr, node_->get_clock());
   render_panel_->initialize(viz_manager_.get());
