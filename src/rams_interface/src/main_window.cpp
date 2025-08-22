@@ -61,12 +61,10 @@ void MainWindow::cloudCallback(const sensor_msgs::msg::PointCloud2::SharedPtr) {
 }
 
 void MainWindow::handlePose(const geometry_msgs::msg::PoseStamped &pose) {
-  auto request =
-      std::make_shared<rams_interface::srv::MoveToPose::Request>();
+  auto request = std::make_shared<rams_interface::srv::MoveToPose::Request>();
   request->target = pose;
   auto future = move_client_->async_send_request(request);
-  if (future.wait_for(std::chrono::seconds(5)) ==
-      std::future_status::ready) {
+  if (future.wait_for(std::chrono::seconds(5)) == std::future_status::ready) {
     auto response = future.get();
     QString msg = QString::fromStdString(response->message);
     if (response->success) {
@@ -84,7 +82,7 @@ bool MainWindow::eventFilter(QObject *obj, QEvent *event) {
     QMouseEvent *mouse = static_cast<QMouseEvent *>(event);
     Ogre::Vector3 pos;
     auto sel = viz_manager_->getSelectionManager();
-    auto ogre_window = render_panel_->getRenderWindow()->getRenderWindow();
+    auto ogre_window = render_panel_->getRenderWindow();
     Ogre::Viewport *viewport = ogre_window->getViewport(0);
     if (sel->get3DPoint(viewport, mouse->x(), mouse->y(), pos)) {
       geometry_msgs::msg::PoseStamped ps;
