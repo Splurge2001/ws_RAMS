@@ -6,6 +6,7 @@
 #include <sensor_msgs/msg/point_cloud2.hpp>
 #include <geometry_msgs/msg/pose_stamped.hpp>
 #include <rams_interface/srv/move_to_pose.hpp>
+#include <memory>
 
 namespace rviz_common
 {
@@ -35,7 +36,7 @@ private:
   rclcpp::Client<rams_interface::srv::MoveToPose>::SharedPtr move_client_;
 
   rviz_common::RenderPanel* render_panel_;
-  rviz_common::VisualizationManager* viz_manager_;
+  std::unique_ptr<rviz_common::VisualizationManager> viz_manager_;
 
 public:
   rclcpp::Node::SharedPtr get_node() const { return node_; }

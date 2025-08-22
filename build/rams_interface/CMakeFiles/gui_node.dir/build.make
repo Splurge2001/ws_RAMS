@@ -132,6 +132,7 @@ gui_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_cpp.so
 gui_node: /opt/ros/humble/lib/libstd_srvs__rosidl_generator_py.so
 gui_node: /opt/ros/humble/lib/librviz_common.so
 gui_node: /opt/ros/humble/lib/librviz_rendering.so
+gui_node: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3
 gui_node: librams_interface__rosidl_typesupport_cpp.so
 gui_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_c.so
 gui_node: /opt/ros/humble/lib/libstd_srvs__rosidl_generator_c.so
@@ -143,12 +144,11 @@ gui_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_py.so
 gui_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so
 gui_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_c.so
 gui_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so
-gui_node: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3
-gui_node: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3
-gui_node: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3
 gui_node: /usr/lib/x86_64-linux-gnu/libassimp.so.5.2.0
 gui_node: /usr/lib/x86_64-linux-gnu/libdraco.so.4.0.0
 gui_node: /usr/lib/x86_64-linux-gnu/librt.a
+gui_node: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3
+gui_node: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3
 gui_node: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
 gui_node: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
 gui_node: /usr/lib/x86_64-linux-gnu/libfreetype.so

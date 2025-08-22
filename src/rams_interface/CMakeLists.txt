@@ -25,6 +25,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   DEPENDENCIES geometry_msgs std_msgs
 )
 
+rosidl_get_typesupport_target(${PROJECT_NAME}__rosidl_typesupport_cpp ${PROJECT_NAME} "rosidl_typesupport_cpp")
+
 add_executable(move_to_pose_server src/move_to_pose_server.cpp)
 target_include_directories(move_to_pose_server PRIVATE include)
 ament_target_dependencies(move_to_pose_server
@@ -34,14 +36,13 @@ ament_target_dependencies(move_to_pose_server
   std_srvs
   moveit_ros_planning_interface
 )
-rosidl_target_interfaces(move_to_pose_server ${PROJECT_NAME} "rosidl_typesupport_cpp")
+target_link_libraries(move_to_pose_server ${${PROJECT_NAME}__rosidl_typesupport_cpp})
 
 add_executable(gui_node
   src/main.cpp
   src/main_window.cpp
 )
 target_include_directories(gui_node PRIVATE include)
-target_link_libraries(gui_node Qt5::Widgets)
 ament_target_dependencies(gui_node
   rclcpp
   geometry_msgs
@@ -53,7 +54,7 @@ if(rviz_common_FOUND AND rviz_rendering_FOUND)
   ament_target_dependencies(gui_node rviz_common rviz_rendering)
   target_compile_definitions(gui_node PRIVATE HAS_RVIZ)
 endif()
-rosidl_target_interfaces(gui_node ${PROJECT_NAME} "rosidl_typesupport_cpp")
+target_link_libraries(gui_node Qt5::Widgets ${${PROJECT_NAME}__rosidl_typesupport_cpp})
 
 install(TARGETS
   move_to_pose_server

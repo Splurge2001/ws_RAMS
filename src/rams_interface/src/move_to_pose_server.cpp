@@ -13,7 +13,7 @@ public:
     : node_(node), move_group_(node_, planning_group)
   {
     service_ = node_->create_service<rams_interface::srv::MoveToPose>(
-      "move_to_pose",
+      "/rams_interface/move_to_pose",
       std::bind(&MoveToPoseServer::callback, this, std::placeholders::_1, std::placeholders::_2));
   }
 

@@ -18,16 +18,12 @@
 	[
 		{
 			"backtrace" : 0,
-			"id" : "rams_interface::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 0,
 			"id" : "rams_interface__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "gui_node_autogen::@6890427a1f51a3e7e1df",
+	"id" : "move_to_pose_server_autogen::@6890427a1f51a3e7e1df",
 	"isGeneratorProvided" : true,
-	"name" : "gui_node_autogen",
+	"name" : "move_to_pose_server_autogen",
 	"paths" : 
 	{
 		"build" : ".",
@@ -55,13 +51,13 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "/home/ros2/ws_RAMS/build/rams_interface/CMakeFiles/gui_node_autogen",
+			"path" : "/home/ros2/ws_RAMS/build/rams_interface/CMakeFiles/move_to_pose_server_autogen",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "/home/ros2/ws_RAMS/build/rams_interface/CMakeFiles/gui_node_autogen.rule",
+			"path" : "/home/ros2/ws_RAMS/build/rams_interface/CMakeFiles/move_to_pose_server_autogen.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

@@ -11,7 +11,7 @@
 #include <rviz_common/render_panel.hpp>
 #include <rviz_common/visualization_manager.hpp>
 #include <rviz_common/interaction/selection_manager.hpp>
-#include <rviz_rendering/ogre_helpers/qt_ogre_render_window.hpp>
+#include <rviz_rendering/render_window.hpp>
 
 #include <OgreVector3.h>
 
@@ -26,8 +26,8 @@ MainWindow::MainWindow(QWidget* parent)
   render_panel_ = new rviz_common::RenderPanel(this);
   setCentralWidget(render_panel_);
 
-  viz_manager_ = new rviz_common::VisualizationManager(render_panel_);
-  render_panel_->initialize(viz_manager_->getSceneManager(), viz_manager_);
+  viz_manager_ = std::make_unique<rviz_common::VisualizationManager>(render_panel_);
+  render_panel_->initialize(viz_manager_->getSceneManager(), viz_manager_.get());
   viz_manager_->initialize();
   viz_manager_->startUpdate();
 
@@ -50,8 +50,6 @@ MainWindow::MainWindow(QWidget* parent)
 
   render_panel_->installEventFilter(this);
 }
-
-MainWindow::~MainWindow() = default;
 
 void MainWindow::cloudCallback(const sensor_msgs::msg::PointCloud2::SharedPtr)
 {
@@ -85,7 +83,8 @@ bool MainWindow::eventFilter(QObject* obj, QEvent* event)
     QMouseEvent* mouse = static_cast<QMouseEvent*>(event);
     Ogre::Vector3 pos;
     auto* sel = viz_manager_->getSelectionManager();
-    Ogre::Viewport* viewport = render_panel_->getRenderWindow()->getViewport(0);
+    Ogre::Viewport* viewport =
+      render_panel_->getRenderWindow()->get_render_window()->getViewport(0);
     if (sel->get3DPoint(viewport, mouse->x(), mouse->y(), pos))
     {
       geometry_msgs::msg::PoseStamped ps;
