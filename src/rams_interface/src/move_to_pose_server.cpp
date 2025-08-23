@@ -41,7 +41,7 @@ int main(int argc, char** argv)
 {
   rclcpp::init(argc, argv);
   auto node = rclcpp::Node::make_shared("move_to_pose_server");
-  node->declare_parameter<std::string>("planning_group", "manipulator");
+  node->declare_parameter<std::string>("planning_group", "abb_irb6700");
   std::string group = node->get_parameter("planning_group").as_string();
   MoveToPoseServer server(node, group);
   rclcpp::spin(node);

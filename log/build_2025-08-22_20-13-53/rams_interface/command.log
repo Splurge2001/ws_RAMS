@@ -1,6 +1,0 @@
-Invoking command in '/home/ros2/ws_RAMS/build/rams_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros2/ws_RAMS/src/rams_interface -DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/install/rams_interface
-Invoked command in '/home/ros2/ws_RAMS/build/rams_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ros2/ws_RAMS/src/rams_interface -DCMAKE_INSTALL_PREFIX=/home/ros2/ws_RAMS/install/rams_interface
-Invoking command in '/home/ros2/ws_RAMS/build/rams_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros2/ws_RAMS/build/rams_interface -- -j2 -l2
-Invoked command in '/home/ros2/ws_RAMS/build/rams_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ros2/ws_RAMS/build/rams_interface -- -j2 -l2
-Invoking command in '/home/ros2/ws_RAMS/build/rams_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros2/ws_RAMS/build/rams_interface
-Invoked command in '/home/ros2/ws_RAMS/build/rams_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ros2/ws_RAMS/build/rams_interface
