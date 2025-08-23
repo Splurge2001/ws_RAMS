@@ -1,10 +1,9 @@
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
-from launch.substitutions import LaunchConfiguration
+from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
-from ament_index_python.packages import get_package_share_directory
-import os
+from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
     # ---- Launch 参数（可按需覆盖）----
@@ -17,31 +16,29 @@ def generate_launch_description():
         description="Serial number of the wrist RealSense camera"
     )
 
-    # 包路径
-    realsense_share = get_package_share_directory("realsense2_camera")
-    abb_bringup_share = get_package_share_directory("abb_bringup")
-    workcell_description_share = get_package_share_directory("workcell_description")
-    workcell_config_share = get_package_share_directory("workcell_config")
-
     # ========== 相机 ==========
-    # fixed_cam = IncludeLaunchDescription(
-    #     PythonLaunchDescriptionSource(
-    #         os.path.join(realsense_share, "launch", "rs_launch.py")
-    #     ),
-    #     launch_arguments={
-    #         "camera_name": "fixed_cam",
-    #         "camera_namespace": "/fixed_cam",
-    #         "serial_no": LaunchConfiguration("fixed_serial"),
-    #         "align_depth": "true",
-    #         "pointcloud.enable": "true",
-    #         "color_qos": "SENSOR_DATA",
-    #         "depth_qos": "SENSOR_DATA",
-    #     }.items(),
-    # )
+    fixed_cam = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            PathJoinSubstitution(
+                [FindPackageShare("realsense2_camera"), "launch", "rs_launch.py"]
+            )
+        ),
+        launch_arguments={
+            "camera_name": "fixed_cam",
+            "camera_namespace": "/fixed_cam",
+            "serial_no": LaunchConfiguration("fixed_serial"),
+            "align_depth": "true",
+            "pointcloud.enable": "true",
+            "color_qos": "SENSOR_DATA",
+            "depth_qos": "SENSOR_DATA",
+        }.items(),
+    )
 
     wrist_cam = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            os.path.join(realsense_share, "launch", "rs_launch.py")
+            PathJoinSubstitution(
+                [FindPackageShare("realsense2_camera"), "launch", "rs_launch.py"]
+            )
         ),
         launch_arguments={
             "camera_name": "wrist_cam",
@@ -75,7 +72,9 @@ def generate_launch_description():
     # ========== ABB 控制 & MoveIt ==========
     abb_control = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            os.path.join(abb_bringup_share, "launch", "abb_control.launch.py")
+            PathJoinSubstitution(
+                [FindPackageShare("abb_bringup"), "launch", "abb_control.launch.py"]
+            )
         ),
         launch_arguments={
             "description_package": "workcell_description",
@@ -89,7 +88,9 @@ def generate_launch_description():
 
     abb_moveit = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            os.path.join(abb_bringup_share, "launch", "abb_moveit.launch.py")
+            PathJoinSubstitution(
+                [FindPackageShare("abb_bringup"), "launch", "abb_moveit.launch.py"]
+            )
         ),
         launch_arguments={
             "robot_xacro_file": "workcell.urdf.xacro",
